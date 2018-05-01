@@ -10,13 +10,14 @@ gdim = 2
 Nside = 25
 L = 1.0
 Ndesired = 8
-cutoff = L/float(Nside)*2.5
+cutoff = L/float(Nside)*2.5*(2.0)**0.5
 
 # Place the particles and make the mesh
 x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
 particle_Vol = L**2/float(Nside**2)
 NPart = x.shape[0]
-HBond = cf.Graphers.Build_Pair_Graph(x, cutoff)
+HPair = cf.Graphers.Build_Pair_Graph(x, cutoff*1.1)
+HBond = cf.Graphers.Build_Pair_Graph(x, cutoff*1.1)
 NBond = len(HBond)
 HBond.Add_Edge_Vertex(NPart)
 HAdj = util.Make_Bond_Adjacency(HBond)
@@ -61,3 +62,7 @@ F,K = cf.Assemble(hp.kernel_silling,HAdj,
                   gdim*NPart) 
 cf.Apply_BC(dirrdofs,ubc, K,F)
 F[loaddofs]-= 1.0
+u = splin.spsolve(K,F)
+
+cf.GraphIO.write_graph("./out.vtk",HPair,x,
+                       [('x',x),('u',u.reshape((-1,2)))])
