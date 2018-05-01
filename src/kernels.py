@@ -85,26 +85,20 @@ class StateBased():
     def _tang_prgm(self, var, expr):
         return []
     def kernel(self):
-        prgm = self._sum_prgm(m, Matrix([self.m_expr()]) )
         theta_expr = self.theta_expr()
-        prgm += self._sum_prgm(theta, Matrix([theta_expr]))
-
+        tA = self.force()
         theta_Dy0 = PopcornVariable("theta_Dy0",gdim,1)
-        prgm += self._sum_prgm( theta_Dy0, Matrix([theta_expr]).jacobian(y0).T )
-        
         theta_exprJ = theta_expr.subs([ (yI,yJ),(xI,xJ), (alpha_I,alpha_J)])
         theta_DyJ = Matrix([theta_exprJ]).jacobian(yJ).T
-
-        tA = self.force()
-
         # And tangent matrices
         tA_Dtheta = tA.diff(theta[0])
         tAI_Dy0 =  tA.jacobian(y0) + tA_Dtheta*theta_Dy0.T 
         tAI_DyI =  tA.jacobian(yI)
         tAI_DyJ = tA_Dtheta * theta_DyJ.T
-
-        
-        prgm += [
+        prgm = self._sum_prgm(m, Matrix([self.m_expr()]) ) + \
+            self._sum_prgm(theta, Matrix([theta_expr])) + \
+            self._sum_prgm( theta_Dy0, Matrix([theta_expr]).jacobian(y0).T ) + \
+        [
             Loop(II,1,Npart,[
                 Asgn(o_F.View((0,)), tA,"+="),
                 Asgn(o_F.View((gdim*II,)), tA,"-="),                
@@ -114,9 +108,12 @@ class StateBased():
                 Asgn(o_K.View((0,gdim*II)),       tAI_DyI,"+="),
                 Asgn(o_K.View((gdim*II,0)),       tAI_Dy0,"-="),
                 Asgn(o_K.View((gdim*II,gdim*II)), tAI_DyI,"-="),
+                Loop(JJ,1,Npart,[
+                    Asgn(o_K.View((0,gdim*JJ)),   tAI_DyJ,"+="),
+                    Asgn(o_K.View((gdim*II,gdim*JJ)),   tAI_DyJ,"-="),
+                ])
             ])
         ]
-        print prgm
         return Kernel(self.name, listing=prgm)
 
 
