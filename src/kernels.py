@@ -143,12 +143,52 @@ class Oterkus(StateBased):
         A = 2 * self.w0I* alpha_I  * ( a*2/m[0]*(yn.T*xn)[0,0]*theta[0] + b*(ryabs-rxabs) )
         return A * yn
     
+mK = PopcornVariable("mK",gdim,2)
+mKi = PopcornVariable("mKi",gdim,2)
+mN = PopcornVariable("mN",gdim,2)
+class Fbased(StateBased):
+    def K_expr(self):
+        return self.w0I * alpha_I * rxI * rxI.T * i_Vol[0]
+    def N_expr(self):
+        return self.w0I * alpha_I * ryI * rxI.T * i_Vol[0]
+    def stress(self):
+        F = mN * mKi
+        E = 0.5 * ( F.T + F ) - eye(gdim)
+        return ( -p_biot*p0*eye(gdim) + c_lambda*trace(E)*eye(gdim) + 2.0*c_G*E )
+    def force(self):
+        P = self.stress()
+        return self.w0I * alpha_I * P * sKi.T * rxI * i_Vol[0]
+    def kernel(self):
+        N_expr = self.N_expr()
+        NJ_expr = N_expr.subs([ (yI,yJ),(xI,xJ), (alpha_I,alpha_J)])
+        N_dy0 =  [ [PopcornVariable("N00_dy0",gdim,1),
+                    PopcornVariable("N01_dy0",gdim,1)],
+                   [PopcornVariable("N10_dy0",gdim,1),
+                    PopcornVariable("N11_dy0",gdim,1)] ]
+        N_dy0_expr = [ [ Matrix([N_expr[j,i]]).jacobian(y0).T
+                         for j in xrange(gdim) ]
+                       for i in xrange(gdim) ]
+        N_dyJ_expr = [ [ Matrix([NJ_expr[j,i]]).jacobian(yJ).T
+                         for j in xrange(gdim) ]
+                       for i in xrange(gdim) ]
+        
+        
+        prgm = self._sum_prgm(mK,self.K_expr()) + \
+               [ mKi, Asgn(mKi,mK.inv()) ] + \
+               self._sum_prgm(mN, N_expr) + \
+               sum([
+                   self._sum_prgm(N_dy0[i][j], N_dy0_expr[i][j])
+                   for i in xrange(gdim) for j in xrange(gdim)
+                   ],[])
+        
+               
+        return Kernel(self.name, listing=prgm)
 
-
+        
 formulations = {
-    'silling' : StateBased,
-    'Oterkus2': Oterkus,
-    # 'Fbased':Fbased
+    #'silling' : StateBased,
+    #'Oterkus2': Oterkus,
+    'Fbased':Fbased
 }
 delta = i_delta[0]
 weight_funcs = {
