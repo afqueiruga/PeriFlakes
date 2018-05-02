@@ -1,4 +1,5 @@
 from popcorn import *
+import operator
 # This is going to be a variable length kernel, but it's a little funky.
 # It has both Particle and Bond DOFs, and in the edge they'll be ordered like this
 #
@@ -154,10 +155,10 @@ class Fbased(StateBased):
     def stress(self):
         F = mN * mKi
         E = 0.5 * ( F.T + F ) - eye(gdim)
-        return ( -p_biot*p0*eye(gdim) + c_lambda*trace(E)*eye(gdim) + 2.0*c_G*E )
+        return ( (c_K-2.0*c_G/3.0)*trace(E)*eye(gdim) + 2.0*c_G*E )
     def force(self):
         P = self.stress()
-        return self.w0I * alpha_I * P * sKi.T * rxI * i_Vol[0]
+        return self.w0I * alpha_I * P * mKi.T * rxI * i_Vol[0]
     def kernel(self):
         N_expr = self.N_expr()
         NJ_expr = N_expr.subs([ (yI,yJ),(xI,xJ), (alpha_I,alpha_J)])
@@ -171,17 +172,44 @@ class Fbased(StateBased):
         N_dyJ_expr = [ [ Matrix([NJ_expr[j,i]]).jacobian(yJ).T
                          for j in xrange(gdim) ]
                        for i in xrange(gdim) ]
+
+        tI = self.force()
+        tI_DN = [ [ tI.diff(mN[i,j]) for j in xrange(gdim) ]
+                  for i in xrange(gdim) ]
+        #from IPython import embed ; embed()
+        tI_Dy0 = tI.jacobian(y0) + reduce(operator.add,
+                [ tI_DN[i][j]*N_dy0[i][j].T
+                  for i in xrange(gdim) for j in xrange(gdim) ])
+        tI_DyI = tI.jacobian(yI)
+        tI_DyJ = tI.jacobian(yI)+ reduce(operator.add,
+                [ tI_DN[i][j]*N_dyJ_expr[i][j].T
+                  for i in xrange(gdim) for j in xrange(gdim) ])
+        
         
         
         prgm = self._sum_prgm(mK,self.K_expr()) + \
                [ mKi, Asgn(mKi,mK.inv()) ] + \
                self._sum_prgm(mN, N_expr) + \
-               sum([
+               reduce(operator.add,[
                    self._sum_prgm(N_dy0[i][j], N_dy0_expr[i][j])
                    for i in xrange(gdim) for j in xrange(gdim)
-                   ],[])
-        
-               
+                   ]) + \
+        [
+            Loop(II,1,Npart,[
+                Asgn(o_R.View((0,)), tI,"+="),
+                Asgn(o_R.View((gdim*II,)), tI,"-="),                
+            ]),
+            Loop(II,1,Npart,[
+                Asgn(o_K.View((0,0)),             tI_Dy0,"+="),
+                Asgn(o_K.View((0,gdim*II)),       tI_DyI,"+="),
+                Asgn(o_K.View((gdim*II,0)),       tI_Dy0,"-="),
+                Asgn(o_K.View((gdim*II,gdim*II)), tI_DyI,"-="),
+                Loop(JJ,1,Npart,[
+                    Asgn(o_K.View((0,gdim*JJ)),   tI_DyJ,"+="),
+                    Asgn(o_K.View((gdim*II,gdim*JJ)),   tI_DyJ,"-="),
+                ])
+            ])
+        ]
         return Kernel(self.name, listing=prgm)
 
         
