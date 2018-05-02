@@ -36,7 +36,7 @@ i_E = Input("p_E", Param)
 i_nu = Input("p_nu", Param)
 i_Vol = Input("p_Vol", Param)
 # Outputs
-o_F  = Output("F",  [PointVec], 1)
+o_R  = Output("R",  [PointVec], 1)
 o_K  = Output("K",  [PointVec], 2 )
 
 # Do some symbolic math
@@ -106,8 +106,8 @@ class StateBased():
             self._sum_prgm( theta_Dy0, Matrix([theta_expr]).jacobian(y0).T ) + \
         [
             Loop(II,1,Npart,[
-                Asgn(o_F.View((0,)), tA,"+="),
-                Asgn(o_F.View((gdim*II,)), tA,"-="),                
+                Asgn(o_R.View((0,)), tA,"+="),
+                Asgn(o_R.View((gdim*II,)), tA,"-="),                
             ]),
             Loop(II,1,Npart,[
                 Asgn(o_K.View((0,0)),             tAI_Dy0,"+="),

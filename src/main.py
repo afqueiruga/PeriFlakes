@@ -55,14 +55,14 @@ Nbc = len(dirrdofs)
 ubc = np.zeros(Nbc)
 
 # Make the linear system
-F,K = cf.Assemble(hp.kernel_silling_const,HAdj,
+K,R = cf.Assemble(hp.kernel_silling_const,HAdj,
                   data,
-                  {'F':(cf.Dofmap_Strided(gdim),),
+                  {'R':(cf.Dofmap_Strided(gdim),),
                    'K':(cf.Dofmap_Strided(gdim),)},
                   gdim*NPart) 
-cf.Apply_BC(dirrdofs,ubc, K,F)
-F[loaddofs]-= 1.0
-u = splin.spsolve(K,F)
+cf.Apply_BC(dirrdofs,ubc, K,R)
+R[loaddofs]-= 1.0
+u = splin.spsolve(K,R)
 
 cf.GraphIO.write_graph("./out.vtk",HPair,x,
                        [('x',x),('u',u.reshape((-1,2)))])
