@@ -84,6 +84,10 @@ class StateBased():
             ]
     def _tang_prgm(self, var, expr):
         return []
+    def list_states(self):
+        return [(theta,self.theta_expr())]
+    def list_moments(self):
+        return [(m, Matrix([self.m_expr()]) )]
     def kernel(self):
         theta_expr = self.theta_expr()
         tA = self.force()
@@ -95,7 +99,9 @@ class StateBased():
         tAI_Dy0 =  tA.jacobian(y0) + tA_Dtheta*theta_Dy0.T 
         tAI_DyI =  tA.jacobian(yI)
         tAI_DyJ = tA_Dtheta * theta_DyJ.T
-        prgm = self._sum_prgm(m, Matrix([self.m_expr()]) ) + \
+        # self._sum_prgm(m, Matrix([self.m_expr()]) ) + \
+
+        prgm = sum([self._sum_prgm(P,E) for P,E in self.list_moments()],[]) + \
             self._sum_prgm(theta, Matrix([theta_expr])) + \
             self._sum_prgm( theta_Dy0, Matrix([theta_expr]).jacobian(y0).T ) + \
         [
@@ -116,12 +122,33 @@ class StateBased():
         ]
         return Kernel(self.name, listing=prgm)
 
+a_integ = PopcornVariable('a_integ',1,1)
+b_denom = PopcornVariable('b_denom',1,1)
+class Oterkus(StateBased):
+    def m_expr(self):
+        return self.w0I * alpha_I * rxabs
+    def a_expr(self):
+        return self.w0I * alpha_I * rxabs**2
+    def b_expr(self):
+        return self.w0I * alpha_I * (xn[0] * xn[1] )**2 * rxabs**2
+    def list_moments(self):
+        return [(m, Matrix([self.m_expr()]) ),
+                (a_integ,Matrix([self.a_expr()])),
+                (b_denom,Matrix([self.b_expr()])) ]
+    def theta_expr(self):
+        return 2/m[0] * self.w0I * alpha_I * (ryabs-rxabs) *  (yn.T*xn)[0,0]
+    def force(self):
+        a = (c_K - 2*c_G*a_integ[0]/b_denom[0])/2
+        b = c_G /( 2* b_denom[0])
+        A = 2 * self.w0I* alpha_I  * ( a*2/m[0]*(yn.T*xn)[0,0]*theta[0] + b*(ryabs-rxabs) )
+        return A * yn
+    
 
 
 formulations = {
-    'peri_ouchi' : StateBased,
-    # 'peri_Oterkus2_strain': Oterkus,
-    # 'peri_Fbased_strain':Fbased
+    'silling' : StateBased,
+    'Oterkus2': Oterkus,
+    # 'Fbased':Fbased
 }
 delta = i_delta[0]
 weight_funcs = {
@@ -137,8 +164,10 @@ weight_funcs = {
     'quarticA':lambda r: Piecewise( (1.0 - 6.0*(r/delta)**2 + 8.0*(r/delta)**3 - 3.0*(r/delta)**4, Le(r,delta)), (0.0,True))
 
 }
-    
-Pdbg = StateBased("silling",weight_funcs['cubic'])
-Pdbg.kernel()
+
+for n,c in formulations.iteritems():
+    for w,f in weight_funcs.iteritems():
+       c(n+"_"+w,weight_funcs['cubic']).kernel()
+
 
 Husk('peridynamics')

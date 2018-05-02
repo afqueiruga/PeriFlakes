@@ -55,7 +55,7 @@ Nbc = len(dirrdofs)
 ubc = np.zeros(Nbc)
 
 # Make the linear system
-F,K = cf.Assemble(hp.kernel_silling,HAdj,
+F,K = cf.Assemble(hp.kernel_silling_const,HAdj,
                   data,
                   {'F':(cf.Dofmap_Strided(gdim),),
                    'K':(cf.Dofmap_Strided(gdim),)},
