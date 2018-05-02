@@ -102,7 +102,7 @@ class StateBased():
         tAI_DyJ = tA_Dtheta * theta_DyJ.T
         # self._sum_prgm(m, Matrix([self.m_expr()]) ) + \
 
-        prgm = sum([self._sum_prgm(P,E) for P,E in self.list_moments()],[]) + \
+        prgm = reduce(operator.add,[self._sum_prgm(P,E) for P,E in self.list_moments()]) + \
             self._sum_prgm(theta, Matrix([theta_expr])) + \
             self._sum_prgm( theta_Dy0, Matrix([theta_expr]).jacobian(y0).T ) + \
         [
@@ -172,7 +172,7 @@ class Fbased(StateBased):
         N_dyJ_expr = [ [ Matrix([NJ_expr[j,i]]).jacobian(yJ).T
                          for j in xrange(gdim) ]
                        for i in xrange(gdim) ]
-
+        # Derivatives of the force
         tI = self.force()
         tI_DN = [ [ tI.diff(mN[i,j]) for j in xrange(gdim) ]
                   for i in xrange(gdim) ]
@@ -184,9 +184,7 @@ class Fbased(StateBased):
         tI_DyJ = tI.jacobian(yI)+ reduce(operator.add,
                 [ tI_DN[i][j]*N_dyJ_expr[i][j].T
                   for i in xrange(gdim) for j in xrange(gdim) ])
-        
-        
-        
+        # The final program
         prgm = self._sum_prgm(mK,self.K_expr()) + \
                [ mKi, Asgn(mKi,mK.inv()) ] + \
                self._sum_prgm(mN, N_expr) + \
@@ -214,8 +212,8 @@ class Fbased(StateBased):
 
         
 formulations = {
-    #'silling' : StateBased,
-    #'Oterkus2': Oterkus,
+    'silling' : StateBased,
+    'Oterkus2': Oterkus,
     'Fbased':Fbased
 }
 delta = i_delta[0]
