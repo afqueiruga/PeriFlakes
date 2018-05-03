@@ -161,7 +161,7 @@ class Fbased(StateBased):
         return self.w0I * alpha_I * P * mKi.T * rxI * i_Vol[0]
     def kernel(self):
         N_expr = self.N_expr()
-        NJ_expr = N_expr.subs([ (yI,yJ),(xI,xJ), (alpha_I,alpha_J)])
+        NJ_expr = N_expr.subs(zip(yI,yJ)+zip(xI,xJ)+[(alpha_I,alpha_J)])
         N_dy0 =  [ [PopcornVariable("N00_dy0",gdim,1),
                     PopcornVariable("N01_dy0",gdim,1)],
                    [PopcornVariable("N10_dy0",gdim,1),
