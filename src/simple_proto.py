@@ -37,6 +37,7 @@ data = {
     'delta':(delta,dm_PtSca),
     'p_E':(np.array([1.0]),dm_GlobalSca),
     'p_nu':(np.array([0.25]),dm_GlobalSca),
+    'p_vol':(np.array([particle_Vol]),dm_GlobalSca),
 }
 
 # Mark boundaries
