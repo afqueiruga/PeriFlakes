@@ -134,7 +134,7 @@ class Oterkus(StateBased):
         return self.w0I * alpha_I * (xn[0] * xn[1] )**2 * rxabs**2
     def list_moments(self):
         return [(m, Matrix([self.m_expr()]) ),
-                (a_integ,Matrix([self.a_expr()])),
+                (a_integ,Matrix([self.b_expr()])), # THIS IS WHAT I HAD IMPLEMENTED
                 (b_denom,Matrix([self.b_expr()])) ]
     def theta_expr(self):
         return 2/m[0] * self.w0I * alpha_I * (ryabs-rxabs) *  (yn.T*xn)[0,0]
