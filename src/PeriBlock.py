@@ -54,11 +54,11 @@ class PeriBlock():
         self.ubc = np.zeros(Nbc)
     
     def solve(self, method, weight):
-        K,R = cf.Assemble(hp.kernel_silling_const,self.HAdj,
-                  self.data,
-                  {'R':(self.dm_PtVec,),
-                   'K':(self.dm_PtVec,)},
-                  gdim*self.NPart) 
+        K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+                          self.HAdj, self.data,
+                          {'R':(self.dm_PtVec,),
+                           'K':(self.dm_PtVec,)},
+                          gdim*self.NPart)
         cf.Apply_BC(self.dirrdofs,self.ubc, K,R)
         R[self.loaddofs]-= 1.0
         u = splin.spsolve(K,R)
@@ -66,5 +66,6 @@ class PeriBlock():
 
     def output(self, fname, u=None):
         cf.GraphIO.write_graph(fname,self.HPair,self.x,
-                       [('x',self.x)] + ([('u',u.reshape((-1,2)))] if not u is None else [])
+                       [('x',self.x)] +
+                       ([('u',u.reshape((-1,2)))] if not u is None else [])
                        )
