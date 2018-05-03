@@ -14,19 +14,19 @@ class PeriBlock():
     def __init__(self, L,Nside, cutoff):
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
         particle_Vol = L**2/float(Nside**2)
-        self.NPart = x.shape[0]
+        self.NPart = self.x.shape[0]
         self.HPair = cf.Graphers.Build_Pair_Graph(self.x, cutoff*1.1)
         self.NBond = len(self.HPair)
         self.HBond = cf.Graphers.Build_Pair_Graph(self.x, cutoff*1.1)
         self.HBond.Add_Edge_Vertex(self.NPart)
         self.HAdj = util.Make_Bond_Adjacency(self.HBond)
 
-        y = x.copy()
-        alpha = np.ones(NBond,dtype=np.double)
-        delta = np.ones(NPart,dtype=np.double)
+        y = self.x.copy()
+        alpha = np.ones(self.NBond,dtype=np.double)
+        delta = np.ones(self.NPart,dtype=np.double)
         self.dm_PtVec = cf.Dofmap_Strided(gdim)
         self.dm_PtSca = cf.Dofmap_Strided(1)
-        self.dm_BondSca = cf.Dofmap_Strided(1,-NPart)
+        self.dm_BondSca = cf.Dofmap_Strided(1,-self.NPart)
         self.dm_GlobalSca = cf.Dofmap_Strided(1,stride=0)
         self.data = {
             'x':(self.x, self.dm_PtVec),
@@ -45,7 +45,7 @@ class PeriBlock():
         self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
         
     def setbcs(self):
-        self.loaddofs = dm_PtVec.Get_List(self.top)[1::2]
+        self.loaddofs = self.dm_PtVec.Get_List(self.top)[1::2]
         self.dirrdofs = np.array([
             self.dm_PtVec.Get_List(self.right)[0::2],
             self.dm_PtVec.Get_List(self.left)[0::2],
