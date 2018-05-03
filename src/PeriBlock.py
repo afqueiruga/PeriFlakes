@@ -35,7 +35,7 @@ class PeriBlock():
             'delta':(delta,self.dm_PtSca),
             'p_E':(np.array([1.0]),self.dm_GlobalSca),
             'p_nu':(np.array([0.25]),self.dm_GlobalSca),
-            'p_vol':(np.array([particle_Vol]),self.dm_GlobalSca),
+            'p_Vol':(np.array([particle_Vol]),self.dm_GlobalSca),
         }
         # Mark boundaries
         eps = 1.0e-10
