@@ -1,6 +1,6 @@
 from PeriBlock import PeriBlock
 
-PB = PeriBlock(1.0,25, 2.5*1.0/25.0)
+PB = PeriBlock(1.0,25, 1.5*2.0/25.0)
 
 PB.setbcs()
 

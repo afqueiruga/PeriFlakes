@@ -10,7 +10,7 @@ gdim = 2
 Nside = 25
 L = 1.0
 Ndesired = 8
-cutoff = L/float(Nside)*2.5*(2.0)**0.5
+cutoff = L/float(Nside)*3.5*(2.0)**0.5
 
 # Place the particles and make the mesh
 x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
@@ -56,7 +56,7 @@ Nbc = len(dirrdofs)
 ubc = np.zeros(Nbc)
 
 # Make the linear system
-K,R = cf.Assemble(hp.kernel_silling_const,HAdj,
+K,R = cf.Assemble(hp.kernel_silling_cubic,HAdj,
                   data,
                   {'R':(cf.Dofmap_Strided(gdim),),
                    'K':(cf.Dofmap_Strided(gdim),)},
