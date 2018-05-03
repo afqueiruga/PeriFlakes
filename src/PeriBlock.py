@@ -37,9 +37,21 @@ class PeriBlock():
             'p_nu':(np.array([0.25]),self.dm_GlobalSca),
             'p_vol':(np.array([particle_Vol]),self.dm_GlobalSca),
         }
+        # Mark boundaries
+        eps = 1.0e-10
+        self.right = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
+        self.left  = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
+        self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
+        self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
         
     def setbcs(self):
-        pass
+        self.loaddofs = dm_PtVec.Get_List(self.top)[1::2]
+        self.dirrdofs = np.array([
+            self.dm_PtVec.Get_List(self.right)[0::2],
+            self.dm_PtVec.Get_List(self.left)[0::2],
+            self.dm_PtVec.Get_List(self.bottom)[1::2]]).flatten()
+        Nbc = len(self.dirrdofs)
+        self.ubc = np.zeros(Nbc)
     
     def solve(self, method, weight):
         K,R = cf.Assemble(hp.kernel_silling_const,self.HAdj,
@@ -47,7 +59,12 @@ class PeriBlock():
                   {'R':(self.dm_PtVec,),
                    'K':(self.dm_PtVec,)},
                   gdim*self.NPart) 
-        cf.Apply_BC(dirrdofs,ubc, K,R)
-        R[loaddofs]-= 1.0
+        cf.Apply_BC(self.dirrdofs,self.ubc, K,R)
+        R[self.loaddofs]-= 1.0
         u = splin.spsolve(K,R)
         return u
+
+    def output(self, fname, u=None):
+        cf.GraphIO.write_graph(fname,self.HPair,self.x,
+                       [('x',self.x)] + ([('u',u.reshape((-1,2)))] if not u is None else [])
+                       )
