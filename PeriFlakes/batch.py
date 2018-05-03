@@ -8,10 +8,16 @@ def sim(met,wei,RF,N):
     onum += 1
     return PB.solve(met,wei),
 
+NS = [25]
+RFS = [1.5,2.5]
+methods = ['silling','Oterkus2','Fbased']
+weights = ['const','inv','linear','quadr','cubic','quarticA']
+
+
 for N in [25]:
     for RF in [1.5]:
         PB = PeriBlock(1.0,25, RF*2.0/25.0)
         PB.setbcs()
-        for met in ['silling','Oterkus2','Fbased']:
-            for wei in ['const','inv','linear','quadr','cubic','quarticA']:
+        for met in methods:
+            for wei in weights:
                 sim(met,wei,RF,N)
