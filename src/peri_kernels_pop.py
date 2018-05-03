@@ -233,7 +233,7 @@ weight_funcs = {
 
 for n,c in formulations.iteritems():
     for w,f in weight_funcs.iteritems():
-       c(n+"_"+w,weight_funcs['cubic']).kernel()
+       c(n+"_"+w,f).kernel()
 
 
 Husk('peridynamics')
