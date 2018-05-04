@@ -1,7 +1,15 @@
+from SimDataDB import *
+
 from PeriBlock import PeriBlock
 
 onum = 0
+
+sdb = SimDataDB('results.db')
+@sdb.Decorate('uniaxial',
+              [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
+              [('u','array')])
 def sim(met,wei,RF,N):
+    print "Solving", met," ",wei," ",RF," ",N
     global onum
     u=PB.solve(met,wei)
     PB.output('./outs/poo_{0}.vtk'.format(onum),u)
@@ -12,7 +20,6 @@ NS = [25]
 RFS = [1.5,2.5]
 methods = ['silling','Oterkus2','Fbased']
 weights = ['const','inv','linear','quadr','cubic','quarticA']
-
 
 for N in [25]:
     for RF in [1.5]:
