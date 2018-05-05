@@ -36,6 +36,7 @@ i_delta = Input("delta", Param)
 i_E = Input("p_E", Param)
 i_nu = Input("p_nu", Param)
 i_Vol = Input("p_Vol", Param)
+i_stab = Input("p_stab",Param)
 # Outputs
 o_R  = Output("R",  [PointVec], 1)
 o_K  = Output("K",  [PointVec], 2 )
@@ -210,11 +211,19 @@ class Fbased(StateBased):
         ]
         return Kernel(self.name, listing=prgm)
 
+class Fstab_Littlewood(Fbased):
+    def force(self):
+        P = self.stress()
+        F = mN * mKi
+        Tstab = i_stab[0] * rxI * ( ryabs  - norm(F*rxI) )/rxabs
+        return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
+    
         
 formulations = {
-    'silling' : StateBased,
+    'Silling' : StateBased,
     'Oterkus2': Oterkus,
-    'Fbased':Fbased
+    'Fbased':Fbased,
+    'Fstab_Littlewood':Fstab_Littlewood,
 }
 delta = i_delta[0]
 weight_funcs = {
