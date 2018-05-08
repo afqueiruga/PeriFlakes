@@ -218,12 +218,20 @@ class Fstab_Littlewood(Fbased):
         Tstab = i_stab[0] * rxI * ( ryabs  - norm(F*rxI) )/rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
     
+class Fstab_Silling(Fbased):
+    def force(self):
+        P = self.stress()
+        F = mN * mKi
+        Tstab = i_stab[0] * ( ryI  - F*rxI ) # * C / w0
+        return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
+
         
 formulations = {
     'Silling' : StateBased,
     'Oterkus2': Oterkus,
     'Fbased':Fbased,
     'Fstab_Littlewood':Fstab_Littlewood,
+    'Fstab_Silling':Fstab_Silling,
 }
 delta = i_delta[0]
 weight_funcs = {

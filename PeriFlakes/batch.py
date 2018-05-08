@@ -18,7 +18,7 @@ def sim(met,wei,RF,N):
 
 NS = [25]
 RFS = [1.5,2.5]
-methods = ['silling','Oterkus2','Fbased']
+methods = ['silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
 weights = ['const','inv','linear','quadr','cubic','quarticA']
 
 for N in [25]:
