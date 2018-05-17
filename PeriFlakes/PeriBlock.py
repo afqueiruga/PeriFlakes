@@ -45,13 +45,21 @@ class PeriBlock():
         self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
         self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
         
-    def setbcs(self):
-        self.loaddofs = self.dm_PtVec.Get_List(self.top)[1::2]
-        self.dirrdofs = np.array([
-            self.dm_PtVec.Get_List(self.right)[0::2],
-            self.dm_PtVec.Get_List(self.left)[0::2],
-            self.dm_PtVec.Get_List(self.bottom)[1::2]]).flatten()
-        Nbc = len(self.dirrdofs)
+    def setbcs(self, diri=None,neum=None):
+        if neum is None:
+            self.loaddofs = self.dm_PtVec.Get_List(self.top)[1::2]
+        else:
+            self.loaddofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
+                                      for A,B in neum]).flatten()
+        if diri is None:
+            self.diridofs = np.array([
+                self.dm_PtVec.Get_List(self.right)[0::2],
+                self.dm_PtVec.Get_List(self.left)[0::2],
+                self.dm_PtVec.Get_List(self.bottom)[1::2]]).flatten()
+        else:
+            self.diridofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
+                                      for A,B in diri]).flatten()
+        Nbc = len(self.diridofs)
         self.ubc = np.zeros(Nbc)
     
     def solve(self, method, weight):
@@ -60,7 +68,7 @@ class PeriBlock():
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
-        cf.Apply_BC(self.dirrdofs,self.ubc, K,R)
+        cf.Apply_BC(self.diridofs,self.ubc, K,R)
         R[self.loaddofs]-= 1.0
         u = splin.spsolve(K,R)
         return u
