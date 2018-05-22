@@ -51,6 +51,4 @@ Plugin(Crack).Run ;
 
 Physical Line(4) = { 10 };
 
-//Mesh 2;
-
 Save "crack2.msh";
