@@ -1,8 +1,15 @@
 from fenics import *
+import os
 
-mesh = Mesh("crack.xml")
-cellids = MeshFunctionSizet(mesh,"crack_physical_region.xml")
-facetids = MeshFunctionSizet(mesh,"crack_facet_region.xml")
+clscale = 0.5
+
+os.system("~/Documents/gmsh-3.0.4-Linux/bin/gmsh crack.geo -clscale {0} - ".format(clscale))
+os.system("dolfin-convert crack2.msh crack2.xml".format(clscale))
+
+
+mesh = Mesh("crack2.xml".format(clscale))
+cellids = MeshFunctionSizet(mesh,"crack2_physical_region.xml".format(clscale))
+facetids = MeshFunctionSizet(mesh,"crack2_facet_region.xml".format(clscale))
 
 dx = dx(subdomain_data=cellids)
 ds = ds(subdomain_data=facetids)
