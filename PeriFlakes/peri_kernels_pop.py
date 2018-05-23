@@ -245,7 +245,6 @@ weight_funcs = {
     #    (4.0/3.0 - 4.0*r + 4.0*r**2 - 4.0/3.0*r**3, Lt(r,1.0)),
     #    (0.0,True) ),
     'quarticA':lambda r: Piecewise( (1.0 - 6.0*(r/delta)**2 + 8.0*(r/delta)**3 - 3.0*(r/delta)**4, Le(r,delta)), (0.0,True))
-
 }
 
 for n,c in formulations.iteritems():

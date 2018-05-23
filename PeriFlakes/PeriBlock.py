@@ -4,7 +4,7 @@ import scipy.sparse.linalg as splin
 
 import util
 import husk_peridynamics as hp
-
+import husk_bonds as hb
 gdim = 2
 
 class PeriBlock():
@@ -61,7 +61,17 @@ class PeriBlock():
                                       for A,B in diri]).flatten()
         Nbc = len(self.diridofs)
         self.ubc = np.zeros(Nbc)
-    
+
+    def cutbonds(self, x0,y0,x1,y1):
+        damage, = cf.Assemble(hb.kernel_line_intersection,
+                              self.HBond,
+                              [self.data,
+                               {'pts':(np.array([x0,y0,x1,y1]),
+                                       cf.Dofmap_Strided(4,stride=0))}],
+                              {'test':(self.dm_PtSca,)},
+                              ndof=self.NBond)
+        return damage
+                              
     def solve(self, method, weight):
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                           self.HAdj, self.data,
