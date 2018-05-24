@@ -15,9 +15,15 @@ class PeriBlock():
         """
         Initialize a square domain of half-side-length L with Nside 
         particles along its side. cutoff is the support of the influence
-        function. The cutoff is the only hyperparamter that needs to be set
+        function. 
+        A Peridynamics scheme has 3 hyperparameters:
+        1. method: The force law
+        2. weight: The form of the influence function
+        3. cutoff: The scaling of the support radius
+        
+        The cutoff is the only hyperparamter that needs to be set
         at first; the same data and graph can be applied to many schemes in 
-        solve().
+        solve(). The cutoff radius is used to build the neighbor list.
         """
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
         particle_Vol = L**2/float(Nside**2)
@@ -89,6 +95,11 @@ class PeriBlock():
         self.HCut = hcut
                               
     def solve(self, method, weight):
+        """
+        Solves the deformation of the block matrix given the method name and influence 
+        function. The influence support is decided at initialization of the PeriBlock
+        object.
+        """
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                           self.HAdj, self.data,
                           {'R':(self.dm_PtVec,),
@@ -106,6 +117,9 @@ class PeriBlock():
         return u
 
     def output(self, fname, u=None):
+        """
+        Writes a vtk file with the bond states and, optionally, the displacement solution.
+        """
         cf.GraphIO.write_graph(fname,self.HPair,self.x,
                        [('x',self.x)] +
                        ([('u',u.reshape((-1,2)))] if not u is None else []),
