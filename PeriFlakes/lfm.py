@@ -12,9 +12,9 @@ onum = 0
 
 a = 0.1
 
-@sdb.Decorate('uniaxial',
-              [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
-              [('u','array')])
+#@sdb.Decorate('uniaxial',
+#              [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
+#              [('u','array')])
 def sim(met,wei,RF,N):
     print "Solving", met," ",wei," ",RF," ",N
     global onum
@@ -22,11 +22,13 @@ def sim(met,wei,RF,N):
     PB.output('./outs/poo_{0}.vtk'.format(onum),u)
     onum += 1
     return PB.solve(met,wei),
-for N in [25]:
+for N in [24]:
     for RF in [1.5]:
-        PB = PeriBlock(1.0,25, RF*2.0/float(N))
-        PB.setbcs([(PB.right,0),(PB.left,0),(PB.bottom,1)], [(PB.top,1)])
+        PB = PeriBlock(1.0, N, RF*2.0/float(N))
+        PB.setbcs([(PB.right,0),(PB.left,0),(PB.bottom,1),(PB.top,1)], [])
         PB.cutbonds(-a,0,a,0)
+        PB.output('./outs/alpha.vtk')
+        # from IPython import embed ; embed()
         for met in methods:
             for wei in weights:
                 sim(met,wei,RF,N)

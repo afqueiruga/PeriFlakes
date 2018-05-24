@@ -12,6 +12,13 @@ class PeriBlock():
     This is a base class for making a square peridynamics domain
     """
     def __init__(self, L,Nside, cutoff):
+        """
+        Initialize a square domain of half-side-length L with Nside 
+        particles along its side. cutoff is the support of the influence
+        function. The cutoff is the only hyperparamter that needs to be set
+        at first; the same data and graph can be applied to many schemes in 
+        solve().
+        """
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
         particle_Vol = L**2/float(Nside**2)
         self.NPart = self.x.shape[0]
@@ -46,11 +53,14 @@ class PeriBlock():
         self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
         
     def setbcs(self, diri=None,neum=None):
+        """
+        Set the boundary conditions that will be applied by solve()
+        """
         if neum is None:
             self.loaddofs = self.dm_PtVec.Get_List(self.top)[1::2]
         else:
             self.loaddofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
-                                      for A,B in neum]).flatten()
+                                      for A,B in neum],dtype=np.int).flatten()
         if diri is None:
             self.diridofs = np.array([
                 self.dm_PtVec.Get_List(self.right)[0::2],
@@ -63,14 +73,20 @@ class PeriBlock():
         self.ubc = np.zeros(Nbc)
 
     def cutbonds(self, x0,y0,x1,y1):
-        damage, = cf.Assemble(hb.kernel_line_intersection,
-                              self.HBond,
-                              [self.data,
-                               {'pts':(np.array([x0,y0,x1,y1]),
-                                       cf.Dofmap_Strided(4,stride=0))}],
-                              {'test':(self.dm_PtSca,)},
-                              ndof=self.NBond)
-        return damage
+        """
+        Cut all of the bonds manually. 
+
+        PeriFlakes does not actually implement the damage evolution, as
+        it is meant to illustrate the properties that affect it.
+        """
+        hcut,hintact = cf.Filter(hb.kernel_line_intersection,
+                                 self.HBond,
+                                [self.data,
+                                {'pts':(np.array([x0,y0,x1,y1]),
+                                        cf.Dofmap_Strided(4,stride=0))}] )
+        dofs = self.dm_BondSca.Get_List([e[2] for e in hcut])
+        self.data['alpha'][0][dofs] = 0.0
+        self.HCut = hcut
                               
     def solve(self, method, weight):
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
@@ -78,6 +94,12 @@ class PeriBlock():
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
+        Rp, = cf.Assemble(hb.kernel_bond_pressure,
+                          self.HCut,
+                          [self.data,{'p':(np.array([1.0]),self.dm_GlobalSca)}],
+                          {'R':(self.dm_PtVec,),},
+                          gdim*self.NPart)
+        R += Rp
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
         R[self.loaddofs]-= 1.0
         u = splin.spsolve(K,R)
@@ -86,5 +108,6 @@ class PeriBlock():
     def output(self, fname, u=None):
         cf.GraphIO.write_graph(fname,self.HPair,self.x,
                        [('x',self.x)] +
-                       ([('u',u.reshape((-1,2)))] if not u is None else [])
+                       ([('u',u.reshape((-1,2)))] if not u is None else []),
+                       [('alpha', self.data['alpha'][0])]     
                        )
