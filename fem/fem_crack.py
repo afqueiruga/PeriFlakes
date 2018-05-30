@@ -29,20 +29,22 @@ class LFM_Anal(Expression):
     def eval(self, value, x):
         Zhat = lambda z : np.sqrt( -a**2 + z**2.0 ) - z - C *z
         Z = lambda z : z/np.sqrt(-a**2 + z**2.0 ) - 1.0 - C
-        ux = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+        # What I coded
+        ux = lambda z : P/(2.0*E/(2.0*(1.0+nu))) * (
             (2.0-4.0*nu)/2.0 * np.real(Zhat(z)) - np.imag(z) * np.imag(Z(z)))
-        uy = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+        uy = lambda z : P/(2.0*E/(2.0*(1.0+nu))) * (
             (4.0-4.0*nu)/2.0 * np.imag(Zhat(z)) - np.imag(z) * np.real(Z(z)))
-        #ux = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+        # What I wrote in the paper
+        # ux = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
         #    (2.0-4.0*nu)/2.0 * np.imag(Zhat(z)) - np.imag(z) * np.real(Z(z)))
-        #uy = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+        # uy = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
         #    (4.0-4.0*nu)/2.0 * np.real(Zhat(z)) - np.imag(z) * np.imag(Z(z)))
-        value[0] = np.sign(x[0])*ux( np.abs(x[0])+1.0e-12 + 1j*(np.abs(x[1])+1.0e-12) )
-        value[1] = np.sign(x[1])*uy( np.abs(x[0])+1.0e-12 + 1j*(np.abs(x[1])+1.0e-12) )
+        value[0] = np.sign(x[0])*ux( np.abs(x[0]) + 1j*(np.abs(x[1])+0.0e-12) )
+        value[1] = np.sign(x[1])*uy( np.abs(x[0]) + 1j*(np.abs(x[1])+0.0e-12) )
 
     def value_shape(self):
         return (2,)
-expr_lfm_anal = LFM_Anal(degree=0)
+expr_lfm_anal = LFM_Anal(degree=1)
 
 @sdb.Decorate("lfm",
               [("clscale","FLOAT"),("poly","INT")],

@@ -93,7 +93,7 @@ class PeriBlock():
         dofs = self.dm_BondSca.Get_List([e[2] for e in hcut])
         self.data['alpha'][0][dofs] = 0.0
         self.HCut = hcut
-                              
+
     def solve(self, method, weight):
         """
         Solves the deformation of the block matrix given the method name and influence 
