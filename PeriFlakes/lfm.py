@@ -12,34 +12,36 @@ onum = 0
 
 P = 1.0
 a = 0.1
+E = 1.0
+nu= 0.25
+
 def analytical(X):
-    E = 1.0
-    nu= 0.25
-    H = 1.0
     C = 0.0
     Zhat = lambda z : np.sqrt( -a**2 + z**2.0 ) - z - C *z
     Z = lambda z : z/np.sqrt(-a**2 + z**2.0 ) - 1 - C
-    
-    ux = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+    ux = lambda z : P/(2.0*E/(2.0*(1.0+nu))) * (
         (2.0-4.0*nu)/2.0 * np.real(Zhat(z)) - np.imag(z) * np.imag(Z(z)))
-    uy = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+    uy = lambda z : P/(2.0*E/(2.0*(1.0+nu))) * (
         (4.0-4.0*nu)/2.0 * np.imag(Zhat(z)) - np.imag(z) * np.real(Z(z)))
-    
-    y = np.empty(X.shape)
-    y[:,0] = 0*X[:,0] + np.sign(X[:,0]-H)*ux( np.abs(X[:,0]-H) + 1j*np.abs(X[:,1]-H))
-    y[:,1] = 0*X[:,1] + np.sign(X[:,1]-H)*uy( np.abs(X[:,0]-H) + 1j*np.abs(X[:,1]-H))
-    return y
+    u = np.empty(X.shape)
+    u[:,0] = np.sign(X[:,0])*ux( np.abs(X[:,0]) + 1j*np.abs(X[:,1]) )
+    u[:,1] = np.sign(X[:,1])*uy( np.abs(X[:,0]) + 1j*np.abs(X[:,1]) )
+    return u
 
 @sdb.Decorate('uniaxial',
               [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
               [('u','array')])
 def sim(met,wei,RF,N):
-    print "Solving", met," ",wei," ",RF," ",N
     global onum
+    print "Solving", met," ",wei," ",RF," ",N
+
     u=PB.solve(met,wei)
-    PB.output('./outs/poo_{0}.vtk'.format(onum),u)
-    onum += 1
-    return PB.solve(met,wei),
+    if False:
+        PB.output('./outs/poo_{0}.vtk'.format(onum),u)
+        onum += 1
+    
+    return u,
+
 for N in [24,50,74,100,]:
     for RF in [1.5]:
         PB = PeriBlock(1.0, N, RF*2.0/float(N))
