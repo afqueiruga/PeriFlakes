@@ -11,7 +11,7 @@ class PeriBlock():
     """
     This is a base class for making a square peridynamics domain
     """
-    def __init__(self, L,Nside, cutoff):
+    def __init__(self, L,Nside, cutoff, E=1.0, nu=0.25):
         """
         Initialize a square domain of half-side-length L with Nside 
         particles along its side. cutoff is the support of the influence
@@ -46,8 +46,8 @@ class PeriBlock():
             'y':(y, self.dm_PtVec),
             'alpha':(alpha,self.dm_BondSca),
             'delta':(delta,self.dm_PtSca),
-            'p_E':(np.array([1.0]),self.dm_GlobalSca),
-            'p_nu':(np.array([0.25]),self.dm_GlobalSca),
+            'p_E':(np.array([E]),self.dm_GlobalSca),
+            'p_nu':(np.array([nu]),self.dm_GlobalSca),
             'p_Vol':(np.array([particle_Vol]),self.dm_GlobalSca),
             'p_stab':(np.array([1.0]),self.dm_GlobalSca),
         }
@@ -94,7 +94,7 @@ class PeriBlock():
         self.data['alpha'][0][dofs] = 0.0
         self.HCut = hcut
 
-    def solve(self, method, weight):
+    def solve(self, method, weight, P=1.0):
         """
         Solves the deformation of the block matrix given the method name and influence 
         function. The influence support is decided at initialization of the PeriBlock
@@ -107,7 +107,7 @@ class PeriBlock():
                           gdim*self.NPart)
         Rp, = cf.Assemble(hb.kernel_bond_pressure,
                           self.HCut,
-                          [self.data,{'p':(np.array([1.0]),self.dm_GlobalSca)}],
+                          [self.data,{'p':(np.array([P]),self.dm_GlobalSca)}],
                           {'R':(self.dm_PtVec,),},
                           gdim*self.NPart)
         R += Rp

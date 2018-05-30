@@ -12,7 +12,7 @@ sdb = SimDataDB('lfm_data.db')
 
 onum = 0
 
-P = 1.0
+P = 0.1
 a = 0.1
 E = 1.0
 nu= 0.25
@@ -38,7 +38,7 @@ def sim(met,wei,RF,N):
     print "Solving", met," ",wei," ",RF," ",N
 
     def work():
-        work.u=PB.solve(met,wei)
+        work.u=PB.solve(met,wei, P=P)
     runtime = timeit.timeit(work,number=10)
     if False:
         PB.output('./outs/poo_{0}.vtk'.format(onum),work.u)
@@ -50,7 +50,7 @@ def sim(met,wei,RF,N):
 
 for N in [24,50,74,100,]:
     for RF in [1.5]:
-        PB = PeriBlock(1.0, N, RF*2.0/float(N))
+        PB = PeriBlock(1.0, N, RF*2.0/float(N), E=E,nu=nu)
         # Make far-field bcs by evaluating the analytical solution
         farfieldidx = np.array([A
                                 for A in [PB.right,PB.left,PB.bottom,PB.top]
