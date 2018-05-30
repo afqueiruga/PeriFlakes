@@ -2,10 +2,12 @@ from SimDataDB import *
 
 from PeriBlock import PeriBlock
 import numpy as np
+import timeit
+
 NS = [25]
 RFS = [1.5,2.5]
 methods = ['Silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
-weights = ['const','inv','linear','quadr','cubic','quarticA']
+weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
 
 onum = 0
@@ -28,19 +30,23 @@ def analytical(X):
     u[:,1] = np.sign(X[:,1])*uy( np.abs(X[:,0]) + 1j*np.abs(X[:,1]) )
     return u
 
-@sdb.Decorate('uniaxial',
+@sdb.Decorate('lfm',
               [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
-              [('u','array')])
+              [("error","FLOAT"),("time","FLOAT"),('u','array')])
 def sim(met,wei,RF,N):
     global onum
     print "Solving", met," ",wei," ",RF," ",N
 
-    u=PB.solve(met,wei)
+    def work():
+        work.u=PB.solve(met,wei)
+    runtime = timeit.timeit(work,number=10)
     if False:
-        PB.output('./outs/poo_{0}.vtk'.format(onum),u)
+        PB.output('./outs/poo_{0}.vtk'.format(onum),work.u)
         onum += 1
-    
-    return u,
+    ua = analytical(PB.x)
+    en=work.u-ua.ravel()
+    error = np.linalg.norm(en) / np.linalg.norm(ua.flatten())
+    return error,runtime,work.u,
 
 for N in [24,50,74,100,]:
     for RF in [1.5]:
