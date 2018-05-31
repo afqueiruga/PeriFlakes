@@ -32,7 +32,7 @@ Kernel("line_intersection",
        listing=prgm)
 
 o_f = Output("R",[PtVec],1)
-pforce = i_p[0] * (x2-x1)/( sqrt(((x2-x1).T*(x2-x1))[0]) )
+pforce = i_p[0] * (x2-x1)/( (((x2-x1).T*(x2-x1))[0]) ) 
 Kernel("bond_pressure",
        listing=[
            Asgn(o_f,Matrix([pforce,-pforce]),'=')

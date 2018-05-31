@@ -73,7 +73,8 @@ class PeriBlock():
                 self.dm_PtVec.Get_List(self.left)[0::2],
                 self.dm_PtVec.Get_List(self.bottom)[1::2]]).flatten()
         else:
-            self.diridofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
+            self.diridofs = np.array([ (self.dm_PtVec.Get_List(A)[B::2] if B>=0
+                                          else self.dm_PtVec.Get_List(A))
                                       for A,B in diri]).flatten()
         Nbc = len(self.diridofs)
         self.ubc = np.zeros(Nbc)

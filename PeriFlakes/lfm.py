@@ -5,7 +5,7 @@ import numpy as np
 import timeit
 
 NS = [25]
-RFS = [1.5,2.5]
+RFS = [1.5]
 methods = ['Silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
@@ -36,7 +36,6 @@ def analytical(X):
 def sim(met,wei,RF,N):
     global onum
     print "Solving", met," ",wei," ",RF," ",N
-
     def work():
         work.u=PB.solve(met,wei, P=P)
     runtime = timeit.timeit(work,number=10)
@@ -48,20 +47,21 @@ def sim(met,wei,RF,N):
     error = np.linalg.norm(en) / np.linalg.norm(ua.flatten())
     return error,runtime,work.u,
 
-for N in [24,50,74,100,]:
+for N in [24,38,50,62,74,86,100,112,124,150,162,174]:
     for RF in [1.5]:
         PB = PeriBlock(1.0, N, RF*2.0/float(N), E=E,nu=nu)
         # Make far-field bcs by evaluating the analytical solution
         farfieldidx = np.array([A
                                 for A in [PB.right,PB.left,PB.bottom,PB.top]
                                ],dtype=np.intc).flatten()
-        X = PB.x[A,:]
+        X = PB.x[farfieldidx,:]
         U = analytical(X)
+        # from IPython import embed ; embed()
         PB.setbcs([(farfieldidx,-1)], [])
         PB.ubc = U.ravel()
         PB.cutbonds(-a,0,a,0)
         PB.output('./outs/alpha.vtk')
-        # from IPython import embed ; embed()
+
         for met in methods:
             for wei in weights:
                 sim(met,wei,RF,N)
