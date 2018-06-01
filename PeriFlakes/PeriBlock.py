@@ -11,7 +11,7 @@ class PeriBlock():
     """
     This is a base class for making a square peridynamics domain
     """
-    def __init__(self, L,Nside, cutoff, E=1.0, nu=0.25):
+    def __init__(self, L,Nside, cutoff, E=1.0, nu=0.0):
         """
         Initialize a square domain of half-side-length L with Nside 
         particles along its side. cutoff is the support of the influence
@@ -26,7 +26,7 @@ class PeriBlock():
         solve(). The cutoff radius is used to build the neighbor list.
         """
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
-        particle_Vol = L**2/float(Nside**2)
+        particle_Vol = (2.0*L)**2/float(Nside**2)
         self.NPart = self.x.shape[0]
         self.HPair = cf.Graphers.Build_Pair_Graph(self.x, cutoff*1.1)
         self.NBond = len(self.HPair)
@@ -53,8 +53,8 @@ class PeriBlock():
         }
         # Mark boundaries
         eps = 1.0e-10
-        self.right = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
-        self.left  = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
+        self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
+        self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
         self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
         self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
         
@@ -106,14 +106,17 @@ class PeriBlock():
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
-        Rp, = cf.Assemble(hb.kernel_bond_pressure,
-                          self.HCut,
-                          [self.data,{'p':(np.array([P]),self.dm_GlobalSca)}],
-                          {'R':(self.dm_PtVec,),},
-                          gdim*self.NPart)
-        R += Rp
+        try:
+            Rp, = cf.Assemble(hb.kernel_bond_pressure,
+                              self.HCut,
+                              [self.data,{'p':(np.array([P]),self.dm_GlobalSca)}],
+                              {'R':(self.dm_PtVec,),},
+                              gdim*self.NPart)
+            R += Rp
+        except AttributeError:
+            pass
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
-        R[self.loaddofs]-= 1.0
+        R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
         u = splin.spsolve(K,R)
         return u
 
