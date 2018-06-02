@@ -1,0 +1,613 @@
+#+OPTIONS: tags:nil
+#+EXCLUDE_TAGS: startup codeblocks badresults hide
+
+* Startup :startup:
+#+begin_src elisp :exports none
+(org-babel-do-load-languages 
+ 'org-babel-load-languages
+ '((python t)))
+(require 'ob-ipython)
+(setq org-src-fontify-natively t)
+(setq org-confirm-babel-evaluate nil)   ;don't prompt me to confirm everytime I want to evaluate a block
+(setq ob-ipython-command "ipython-2.7")
+(setq org-latex-default-figure-position "!tb")
+(setq org-latex-default-table-position "!tb")
+;;; display/update images in the buffer after I evaluate
+;;; (add-hook 'org-babel-after-execute-hook 'org-display-inline-images
+;;; 'append)
+#+end_src
+
+#+RESULTS:
+: !tb
+
+#+BEGIN_SRC ipython :session mysession :exports none
+  # %matplotlib inline
+  # %config InlineBackend.figure_format = 'png'
+  import matplotlib
+  matplotlib.rcParams['font.size'] = 8
+  matplotlib.rcParams['legend.fontsize'] = 8
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  from collections import defaultdict
+  from itertools import cycle
+
+  colors = cycle("rgbyc")
+  markers = cycle("+x*^d")
+  colorkey = defaultdict(lambda :colors.next())
+  markerkey = defaultdict(lambda :markers.next())
+
+  from SimDataDB import *
+
+  # Parameters from the simulation
+  domW = 10.0
+  domH = 10.0
+  # print "Uniaxial compression test: "
+  Load = 0.001
+  young = 1000.0
+  nu = 0.0 #3333333
+  loc = 1.0
+
+  x_anal = ( Load * ( 1.0 - nu - 2.0 * nu**2.0 ) \
+            / ( young * (nu-1) ) ) * domH*loc
+  shear_anal = -( Load * 2.0 / young ) * domH
+  problems = { 'Uniaxial':('weight_uni',x_anal,'disp'),
+               'Isotropic':('weight_iso',x_anal,'dispx'),
+               'Shear':('weight_shear',shear_anal,'disp') }
+  anals = {
+      'weight_uni': x_anal,
+      'weight_iso': x_anal,
+      'weight_shear': shear_anal,
+      'compress_biaxial': 1.0e-5/3.0
+      }
+  anal_cols = {
+      'weight_uni': 'disp',
+      'weight_iso': 'dispx',
+      'weight_shear': 'disp',
+      'compress_biaxial':'dispy'
+      }
+  # Load the DB
+  sdb = SimDataDB("../coupled/uniaxial.db")
+  conn = sdb.Get_Connection()
+  c = conn.cursor()
+
+  # Want all of them to be sorted the same way
+  weights = [ "const", "inv", "linear", "quadr", "cubic" ]
+  RFs = [ 1.5, 2.0, 2.5, 3.0, 3.5 ]
+#+END_SRC
+
+#+RESULTS:
+
+* Methods :codeblocks:
+#+BEGIN_SRC ipython :session mysession :exports both
+  def Query(string):
+        c.execute(string)
+        res = c.fetchall()
+        res.sort()
+        return [ list(k) for k in res ] 
+  #[ [ k[i] for k in res ] for i in xrange(len(res[0])) ]
+  def Make_Plot(string,label, anal=x_anal):
+        res = sdb.Query(string)
+        plt.plot(  [ domW/k[0] for k in res ],
+                   [ ((anal-k[1])/anal) for k in res], label=label,
+                   marker=markerkey[label], color=colorkey[label])
+  def Make_Log_Plot(string,label, anal=x_anal, ax=None):
+        c.execute(string)
+        res = c.fetchall()
+        res.sort()
+        if ax==None: ax=plt.gca()
+        ax.loglog( [ domW/k[0] for k in res ],
+                    [ np.abs((anal-k[1])/anal) for k in res], label=label,
+                    marker=markerkey[label], color=colorkey[label] )
+        ax.set_ylim(1.0e-4,1.0e1)
+  def plot_radii(method, PLOT=Make_Log_Plot,table='weight_uni'):
+      c.execute("SELECT DISTINCT RF FROM {1} WHERE method='{0}'".format(method,table))
+      RFs = [x[0] for x in c.fetchall()]
+      for w in weights:
+          plt.figure()
+          for RF in RFs:
+              PLOT("SELECT NP,disp FROM weight_uni WHERE nu=0.0 AND RF={0} AND method='{1}' AND weight='{2}'"\
+                        .format(RF,method,w), "{0},{1}".format(w,RF))
+          #plt.hlines( x_anal, plt.xlim()[0],plt.xlim()[1])
+          plt.xlabel('Normalized Particle Radius')
+          plt.ylabel('displacement error (mm)')
+          plt.legend(loc=2)
+          
+  def plot_radii_2(method, ptype='Cart', fname = '/tmp/img.png',
+                   db='weight_uni',nu='0.0'):
+      anal = anals[db]
+      if ptype=='Log':
+            PLOT = Make_Log_Plot
+      else:
+            PLOT = Make_Plot
+      plt.close('all')
+      from matplotlib import gridspec
+      c.execute("SELECT DISTINCT RF FROM {1} WHERE method='{0}'".format(method,db))
+      RFs = [x[0] for x in c.fetchall()]
+      ax = []
+      fig = plt.figure(figsize=(8.5, 11))
+      cols = 2
+      gs = gridspec.GridSpec(len(weights) // cols + 1, cols)
+      for i,w in enumerate(weights):
+          row = (i // cols)
+          col = i % cols
+          ax.append(fig.add_subplot(gs[row, col]))
+          for R in RFs:
+              PLOT("SELECT NP,{5} FROM {3} WHERE nu={4} AND RF={1} AND method='{2}' AND weight='{0}'".format(w,R,method ,db,nu, anal_cols[db])
+                   ,str(R),anal=anal)
+          ax[-1].set_xlabel(('Logarithm of ' if ptype=='Log' else '') + 'Particle Radius (mm)')
+          ax[-1].set_ylabel(('Logarithm of ' if ptype=='Log' else '') + 'displacement error (mm)')
+          if ptype != 'Log':
+                ax[-1].set_ylim((-0.1,0.1))
+          ax[-1].set_title('Convergence for weight={0}'.format(w))
+          ax[-1].legend(loc=2)
+      fig.tight_layout()
+      plt.savefig(fname)
+      return '[[{0}]]'.format(fname)
+
+  def plot_radii_3(method, ptype='Log', fname = '/tmp/img.png',
+                   db='weight_uni', nu=0.0):
+        from matplotlib import gridspec
+        anal = anals[db]
+        if ptype=='Log':
+              PLOT = Make_Log_Plot
+        else:
+              PLOT = Make_Plot
+              plt.close('all')
+        fig,axarr = plt.subplots( len(weights), len(problems),
+                                 figsize=(6,8), sharex='col', sharey='row')
+        # gs = gridspec.GridSpec(len(weights), len(problems))
+        for i,w in enumerate(weights):
+              for j,(pname,(db,anal,col)) in enumerate(problems.iteritems()):
+                    # ax = fig.add_subplot(gs[i,j])
+                    ax = axarr[i,j]
+                    for R in RFs:
+                          PLOT("SELECT NP,{col} FROM {db} \
+                               WHERE nu={nu} AND RF={R} AND method='{method}' AND weight='{w}'".format(**locals()),
+                               str(R), anal=anal, ax=ax)
+                    if j==0:
+                          ax.set_ylabel('w='+w)
+                    if i==0:
+                          ax.set_title(pname)
+
+        fig.subplots_adjust(hspace=0.1,wspace=0.1)
+        
+        handles, labels = ax.get_legend_handles_labels()
+        lgd = axarr[4,1].legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5,-0.3),ncol=5)
+        ly = fig.text(0.02,0.5,('Logarithm of ' if ptype=='Log' else '') + 'displacement error (mm)',
+                 rotation='vertical', verticalalignment='center',horizontalalignment='center')
+        #lx = axarr[4,1].text(0.5,-0.1,('Logarithm of ' if ptype=='Log' else '') + 'Particle Radius (mm)',
+        #         rotation='horizontal', verticalalignment='center',horizontalalignment='center')
+        axarr[4,1].set_xlabel(('Logarithm of ' if ptype=='Log' else '') + 'Particle Radius (mm)')
+        # plt.legend(bbox_to_anchor=(-2.3, -0.302, 3.4, .02),
+                   # ncol=5, mode="expand")
+        # plt.tight_layout()
+        plt.savefig(fname,bbox_extra_artists=(lgd,ly), bbox_inches='tight')
+        return '[[{0}]]'.format(fname)
+
+                    
+  import scipy.stats
+  def order(method,RF,weight,db='weight_uni'):
+        res = zip(*Query("SELECT NP,{0} FROM {db} WHERE nu=0.0 AND RF={RF} AND method='{method}' AND NP>99 AND weight='{weight}'".format(anal_cols[db],method=method,RF=RF,weight=weight,db=db)))
+        
+        anal = anals[db]
+        hs = [ domW/float(x) for x in res[0] ]
+        es = [ np.abs( ( anal - y) /anal ) for y in res[1] ]
+        return scipy.stats.linregress([np.log(h) for h in hs],
+                                      [np.log(e) for e in es])[0]
+#+END_SRC
+
+#+RESULTS:
+in
+* Linear Compression Tests
+<<sec:uniaxial>>
+** Problem Description
+The peridynamic models are first tested on a set of the simplest problems in static
+analysis: 1) uniaxial compression, 2)
+isotropic compression (or, rather, biaxial compression because to the plane strain
+condition), and 3) simple shear. 
+#+BEGIN_COMMENT
+These sets of tests are in essence the patch test employed in the
+Finite
+Element Method, broken up into three linear modes [cite armero?]. 
+#+END_COMMENT
+
+The traction $T$ is translated into a force density to be applied to
+the peridynamic particles along the top edge by
+\begin{equation}
+\rho \bm{b}_{2,B} = \frac{T W}{N_{edge} V_{pB}}
+\end{equation}
+where $W$ is the width of the domain, $N_{edge}$ is the number of
+particles along the edge, and $V_p$ is the 2D particle area. 
+
+
+#+NAME: tbl:comp_param
+#+LABEL: tbl:comp_param
+#+CAPTION: Problem Parameters for Linear Compression Tests
+#+ATTR_LATEX: 
+| Parameter                      | Value         |
+|--------------------------------+---------------|
+| Domain dimensions, $H$ and $W$ | 10.0mm        |
+| Young's Modulus, $E$           | 1000GPa       |
+| Poisson ratio, $\nu$           | 0             |
+| Load, $T$                      | $10^{-3}$ GPa |
+
+\begin{figure}[!tb]
+\centering
+\includegraphics[width=5in]{./figures/blocks.pdf}
+\caption{\label{fig:blocks}Boundary condition schematics of the three linear test
+problems.}
+\end{figure}
+The three test problems are illustrated in Figure \ref{fig:blocks}. In the uniaxial compression problem, the bottom edge is clamped, both sides have vertical roller
+boundary conditions, and the top edge is subjected to an applied traction
+$T$ oriented in the vertical direction. In the isotropic/biaxial problem, the
+bottom and left edge have roller boundary conditions, and the top and
+right edges are subjected to applied tractions
+$T$ in the normal direction. In the simple shear problem, the bottom
+edge is clamped, the left and right sides are attached to horizontal
+rollers (allowing motion to the left and right, but not up or down), and the
+top edge has an applied tangential traction of $T$. The analytical
+solution for these problems are: 
+| Test      | Solution                                         |
+|-----------+--------------------------------------------------|
+| Uniaxial  | $u_{y,anal} = T H \frac{ 2 \nu^2 + \nu -1 }{E(\nu-1)}$ |
+| Isotropic | $u_{y,anal} = T H \frac{ 1 - \nu - 2 \nu^2 }{E}$ |
+| Shear     | $u_{x,anal} = 2 T H \frac{ 1+\nu}{E}$            |
+The values of the parameters used in for the three simulations are listed in Table \ref{tbl:comp_param}.
+
+
+The value of the x- or y- displacement along the top edge of the domain is used to judge to numerical solutions. The displacement fields are probed by averaging the x- or y-displacement of the set
+of particles near the middle of the edge in the region defined by $y=H$ and $0.4H\leq x \leq 0.6H$, with the averaging equation 
+\begin{equation}
+u_{y,num} = \left< u_y(x) \right>_{ 0.4H\leq x \leq 0.6H  \mathrm{and}  y=H } .
+\end{equation}
+The same averaging calculation with appropriate exchanges between x- and y- components is used to
+probe the solutions for the x-displacement along the right edge for
+the biaxial deformation, and the x-displacement along the top
+edge for the shear deformation. The error between the analytical solution and the numerical solutions is calculated by
+\begin{equation}
+e_{num} = \left|\frac{u_{anal}-u_{num}}{u_{anal}}\right|.
+\end{equation}
+The order of convergence $O(h^m)$ can be calculated from a series of errors $e_{num}(h)$
+computed from the solutions $u_{num}$ at different grid spacings $h$ by
+performing the logarithmically scaled linear regression,
+\begin{equation}
+\log e_{num} = m \log h + b,
+\end{equation}
+where $m$ corresponds to the rate of convergence. The regression
+package in Scipy is used to determine $m$.
+
+** Results
+
+We tested all three methods in the solution of the three test problems, using the five influence functions shown in Table \ref{tbl:weights}.
+All the influence functions vanish outside of
+the horizon ($w(r)=0$ for $r>\delta$). The support radius and the
+number of material points in the discretization are varied to test the
+methods' convergence properties.
+
+#+CAPTION: Influence functions and their labels.
+#+LABEL: tbl:weights
+#+ATTR_LATEX: 
+| Name   | $w(r)$ in $\mathcal{H}(x)$          |
+|--------+-------------------------------------|
+| Const  | 1                                   |
+| Inv    | $\delta/r$                          |
+| Linear | $1-\frac{r}{\delta}$                |
+| Quadr  | $\left(1-\frac{r}{\delta}\right)^2$ |
+| Cubic  | $\left(1-\frac{r}{\delta}\right)^3$ |
+ 
+
+\begin{figure}[!tb]
+\centering
+\import{figures/}{./figures/influencerefinement.pdf_tex}
+\caption{\label{fig:influencerefinement} Refinement of the influence function support radius to remain proportional to the grid spacing.}
+\end{figure}
+
+The spacing between particles,
+which decreases as more particles are added, is denoted by $h$. 
+ It is often discussed that $\delta$ is held constant as $h \rightarrow
+0$ is a convergence criterion. However, performing this type of
+refinement, the number of
+particles within each particle's horizon increases quadratically, increasing baseline memory
+and computation requirements cubically. Such a refinement strategy is
+thus impractical. Instead, we opt for a refinement approach in which 
+the ratio of the peridynamic horizon to the particle size is held constant as
+the particle size decreases, i.e.
+\begin{equation}
+ RF = \frac{\delta}{h}.
+\end{equation}
+This process is consistent with refinement approaches used in studying other numerical methods. This refinement procedure is illustrated in Figure
+\ref{fig:influencerefinement}. Note how the number of particles
+covered by the support of the influence function remains constant as
+the grid is refined so that baseline memory and computation costs are
+linear with the number of points in the discretization. 
+
+
+The analytical results along the center vertical axis of the block are shown in Figure \ref{fig:strain_all_anal}. (F is used as shorthand for displacement gradient in the plot labels.) The plots are scaled by the maximum displacement in the analytical
+solution such that the true solution is a line from the origin to 1.0 at the position of 10mm. The results are obtained by using 200-by-200 material points in the discretization using a cubic influence function with a relative support radius of 3.5 for the dilation-based models, and both 3.5 and 1.5 for the deformation gradient-based. 
+The plots are zoomed in to the top of the block where the maximum displacement is achieved.
+The dilation based models are only close to the analytical solutions in one case each. Silling's dilation based model is correct when applied the isotropic deformation problem, and Oterkus's dilation-based model is correct when applied to the shear deformation problem.
+While the deformation gradient based model gives the correct result, there is a significant instability with $RF=3.5$, and a very slight instability with $RF=1.5$.
+However, the deformation gradient based model also exhibits an incorrect result in the y displacement on the shear problem where there should be no deformation. The large support radius $RF=3.5$ has spurious oscillations at a maximum of 4% the magnitude of the x-displacement solution, and the compact support radius has a nonphysical displacement of approximately 0.5%. Both dilation-based models give the correct 0 y-displacement for the shear problem. While the dilation-based models are not accurate in most cases, they do at least give smooth, linear displacement solutions with no spurious features.
+
+#+NAME: fig:strain_all_anal
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+  def Plot_Sol(problem,comp,scale,anal, ax,title='',xlim=None,ylim=None):
+        x = np.linspace(0,domH,200)
+        for RF,met,label in [(3.5,'Fbased_strain','F-based, 3.5'),
+                             (1.5,'Fbased_strain','F-based, 1.5'),
+                             (3.5,'ouchi','Silling, 3.5'),
+                             (3.5,'Oterkus2_strain','Oterkus, 3.5')]:
+            u, = sdb.Query("select u from {problem} where method='{met}' and NP=200 and RF={RF}".format(**locals()))[0]
+            uy = u[:,comp].reshape((200,200))
+            ax.plot(x,-uy[:,100]/scale,color=colorkey[label])
+            ax.plot(x[::9],-uy[::9,100]/scale,label=label,color=colorkey[label],marker=markerkey[label],linestyle='')
+        ax.plot([0.0,10.0],[0.0,anal/scale],label="Analytical",color='k',marker='',linestyle='--')
+        ax.legend(loc=2)
+        ax.set_xlabel('y Position (mm)')
+        ax.set_ylabel('Normalized Displacement (mm/mm)')
+        if ylim: ax.set_ylim(ylim)
+        if xlim: ax.set_xlim(xlim)
+        ax.set_title(title)
+
+  plt.close('all')
+  fig = plt.figure(figsize=(6,6))
+  Plot_Sol('fieldplots',      1,1e-5,1e-5, ax=fig.add_subplot(221), title='Uniaxial, y', ylim=(0.8,1.3), xlim=(8,10) )
+  Plot_Sol('fieldplots_iso',  1,1e-5,1e-5, ax=fig.add_subplot(222), title='Isotropic, y', ylim=(0.8,1.3), xlim=(8,10)  )
+  Plot_Sol('fieldplots_shear',0,2e-5,2e-5, ax=fig.add_subplot(223), title='Shear, x', ylim=(0.8,1.3), xlim=(8,10)  )
+  Plot_Sol('fieldplots_shear',1,2e-5, 0.0, ax=fig.add_subplot(224), title='Shear, y',ylim=(-0.05,0.05) )
+  fig.tight_layout()
+  problem='iso'
+  comp=1
+  plt.savefig('./plots/u_sol_{0}_{1}.pdf'.format(problem,comp))
+  print '[[{0}]]'.format('./plots/u_sol_{0}_{1}.pdf'.format(problem,comp))
+
+#+END_SRC
+#+LABEL: fig:strain_all_anal
+#+CAPTION: Displacement field solutions along the vertical center axis for the methods using 200-by-200 points, the cubic influence function, and the listed relative horizon size. Displacements are normalized by the analytical solution at the top of the block, where the y-displacement of the shear problem is normalized by the x-displacement solution. Plot markers are only applied to a subset of the data points to improve legibility.
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:strain_all_anal
+[[./plots/u_sol_iso_1.pdf]]
+
+\afterpage{\clearpage}
+
+The results are grouped by the force density laws in Figures
+\ref{fig:Fbased_all_weights}, \ref{fig:ouchi_all_weights}, and
+\ref{fig:oterkus_all}. 
+In each figure, the columns denote the problems, and
+the rows indicate the influence functions. Each subplot shows the
+logarithmic error with respect to the analytical solutions for five
+different relative support radii (i.e. varying the relative
+size of the horizon) as the particle radius decreases. 
+
+#+NAME: fig:Fbased_all_weights
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+print plot_radii_3("Fbased_strain",ptype='Log',fname="./plots/Fbased_weights_all.pdf")
+#+END_SRC
+#+CAPTION: Logarithmic error plots for the deformation gradient based model. Columns show test problem, rows show influence function, and legend key shows relative support radius.
+#+LABEL: fig:Fbased_all_weights
+#+ATTR_LATEX: :placement [!p]
+#+RESULTS: fig:Fbased_all_weights
+[[./plots/Fbased_weights_all.pdf]]
+
+#+NAME: fig:ouchi_all_weights
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+print plot_radii_3('ouchi',ptype='Log',fname="./plots/ouchi_all.pdf",nu=0.0)
+#+END_SRC
+#+CAPTION: Logarithmic error plots for Silling's dilation state-based model. Columns show test problem, rows show influence function, and legend key shows relative support radius.
+#+LABEL: fig:ouchi_all_weights
+#+ATTR_LATEX: :placement [!p]
+#+RESULTS: fig:ouchi_all_weights
+[[./plots/ouchi_all.pdf]]
+
+#+NAME: fig:oterkus_all
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+  print plot_radii_3('Oterkus_strain', ptype='Log',fname='./plots/oterkus_all.pdf')
+#+END_SRC
+#+CAPTION: Logarithmic error plots for Oterkus's dilation state-based model. Columns show test problem, rows show influence function, and legend key shows relative support radius.
+#+LABEL: fig:oterkus_all
+#+ATTR_LATEX: :placement [!p]
+#+RESULTS: fig:oterkus_all
+[[./plots/oterkus_all.pdf]]
+
+#+NAME: fig:oterkus2_all
+#+BEGIN_SRC ipython :session mysession :results output raw :exports none
+  print plot_radii_3('Oterkus2_strain', ptype='Log',fname='./plots/oterkus2_all.pdf')
+#+END_SRC
+#+CAPTION: Logarithmic error plots for Oterkus's dilation state-based model. Columns show test problem, rows show influence function, and legend key shows relative support radius.
+#+LABEL: fig:oterkus2_all
+#+ATTR_LATEX: 
+#+RESULTS: fig:oterkus2_all
+[[./plots/oterkus2_all.pdf]]
+
+First, let us consider the results associated with the deformation gradient-based force
+density with results plotted in Figure
+\ref{fig:Fbased_all_weights}. The method performs similarly on all
+three test deformations. The relative support radius $\delta/R=1.5$,
+which corresponds to the eight nearest points, converges for every
+choice of influence function. The order of convergence
+calculated for each influence function (listed in Table \ref{tbl:fbased_conv}) indicates that the method achieves
+$O(h)$ linear convergence in each problem. For large support radii, only the cubic
+weight function guarantees convergence. Calculating the order
+of convergence for this function with the different support radii 
+(listed in Table \ref{tbl:fbased_rf_conv}), we again observe $O(h)$
+convergence for all of the support radii.
+
+
+#+NAME: tbl:fbased_conv
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+    print "|$w(r)$|",
+    for n in problems: print n,"|",
+    print '\n|-|'
+    for w in weights:    
+        print "| "+w+" | ",
+        for n,db in problems.iteritems():
+          print "{0:1.4f}|".format(order('Fbased_strain',1.5,w,db[0])),
+        print ''
+#+END_SRC
+#+LABEL: tbl:fbased_conv 
+#+CAPTION: Order of convergence for the deformation gradient based model with $RF=1.5$ using each influence function.
+#+ATTR_LATEX: 
+#+RESULTS: tbl:fbased_conv
+| $w(r)$ | Uniaxial |  Shear | Isotropic |
+|--------+----------+--------+-----------|
+| const  |   0.9860 | 0.9704 |    1.0005 |
+| inv    |   0.9939 | 0.9247 |    0.9999 |
+| linear |   0.9991 | 1.0370 |    0.9996 |
+| quadr  |   0.9999 | 1.0192 |    0.9999 |
+| cubic  |   0.9999 | 1.0166 |    0.9999 |
+
+#+NAME: tbl:fbased_rf_conv
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+  print "|RF|",
+  for n in problems: print n,"|",
+  print '\n|-|'
+  for R in RFs:
+      print "| ",R," | ",
+      for n,db in problems.iteritems():
+          print  "{0:1.4f}|".format(order('Fbased_strain',R,'cubic',db[0])),
+      print ''
+#+END_SRC
+#+LABEL: tbl:fbased_rf_conv 
+#+CAPTION: Order of convergence of the cubic weighted deformation gradient based model as the support radius is varied for each problem.
+#+ATTR_LATEX: 
+#+RESULTS: tbl:fbased_rf_conv
+|  RF | Uniaxial |  Shear | Isotropic |
+|-----+----------+--------+-----------|
+| 1.5 |   0.9999 | 1.0166 |    0.9999 |
+| 2.0 |   0.9988 | 1.0423 |    0.9996 |
+| 2.5 |   0.9930 | 1.0423 |    0.9960 |
+| 3.0 |   0.9760 | 1.0222 |    0.9875 |
+| 3.5 |   0.9922 | 1.0080 |    1.0027 |
+
+
+The dilation-based force densities exhibit interesting behavior. The model of
+Silling only converges in an $h \rightarrow 0$ sense for the isotropic
+compression problem, and the model of Oterkus only converges for the
+simple shear deformation problem. Only the linear, quadratic, and cubic
+influence functions guarantee smooth convergence in the two dilation-based methods.
+The order of convergences for these two methods on the respective isotropic and shear problems is shown in Table
+\ref{tbl:dilation_conv}. In these tests, the two
+methods achieve linear convergence for all support radii. However,
+comparison to the other tests leads to the conclusion that these two force density
+formulations cannot correctly represent every possible constant-strain deformation. That is, the
+dilation-based methods do not
+fully span the space of possible independent linear deformations.
+
+#+NAME: tbl:dilation_conv
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+  print '|RF|Silling Iso|Oterkus Shear|\n|-|-|-|'
+  for RF in RFs:
+      print '|{0}|{1:1.4f}|{2:1.4f}|'.format(RF,
+                                   order('ouchi',RF,'cubic','weight_iso'),
+                                   order('Oterkus_strain',RF,'cubic','weight_shear') )
+      
+#+END_SRC
+#+LABEL: tbl:dilation_conv
+#+CAPTION: Order of convergence for the dilation based force density models with the cubic influence function for their respective convergent test problems.
+#+RESULTS: tbl:dilation_conv
+|  RF | Silling, Isotropic | Oterkus, Shear |
+|-----+--------------------+----------------|
+| 1.5 |             1.0227 |         0.9255 |
+| 2.0 |             1.0037 |         0.9966 |
+| 2.5 |             0.9992 |         1.0075 |
+| 3.0 |             0.9976 |         1.0099 |
+| 3.5 |             0.9980 |         1.0150 |
+
+\afterpage{\clearpage}
+
+** Dirrichlet-Only Test :hide:
+
+In the previous section, applied load boundary conditions were
+used. To see if the boundary condition application restricts the order
+of convergence, it is possible to construct a similar test using only
+Dirrichlet BCs. A block with a non-zero poisson ratio is compressed
+along the top edge with roller BCs on all but the right edge. The
+displacement is then probed on the right edge. The material parameters
+are the same as before.
+
+#+NAME: fig:Fbased_dirrichlet
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+#print x_anal/3.0
+print plot_radii_2('Fbased_strain',ptype='Log', fname='./plots/Fbased_dirrichlet.pdf',db='compress_biaxial',nu='0.25')
+#print plot_radii_2('ouchi',ptype='Log', fname='./plots/ouchi_dirrichlet.pdf',db='compress_biaxial',nu='0.25')
+#print plot_radii_2('Oterkus_strain',ptype='Log', fname='./plots/Oterkus_dirrichlet.pdf',db='compress_biaxial',nu='0.25')
+#print sdb.Query("select NP,dispy from compress_biaxial where method='Fbased_strain' and nu=0.25")
+#+END_SRC
+
+#+RESULTS: fig:Fbased_dirrichlet
+[[./plots/Fbased_dirrichlet.pdf]]
+
+
+
+* trash :badresults:
+#+BEGIN_COMMENT:
+#+NAME: fig:oterkus_radius15
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+plt.close('all')
+for w in weights:
+    Make_Plot("SELECT NP,disp FROM weight_uni WHERE nu=0.0 AND RF=1.5 AND method='Oterkus_strain' AND weight='{0}'".format(w),w)
+plt.xlabel('Logarithm of Particle Radius log(mm)')
+plt.ylabel('Logarithm of displacement error log(mm)')
+plt.legend(loc=2)
+plt.savefig("./plots/oterkus_radius15.pdf")
+print "[[./plots/oterkus_radius15.pdf]]"
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions with a support radius of $1.5R$
+#+LABEL: fig:oterkus_radius15
+#+ATTR_LATEX: :width 0.9\textwidth
+#+RESULTS: fig:oterkus_radius15
+[[./plots/oterkus_radius15.pdf]]
+#+END_COMMENT
+
+
+#+BEGIN_COMMENT
+** Plane stress :badresults:
+
+Just for the sake of leaving no stone unturned, we also try out the
+un-modified 3D model in plane stress. This case should be identical to
+the 3D case, since the effective 3D material is simply very thin so
+all of the integrals reduce to 2D naturally.
+
+#+NAME: fig:plane_stress_all_weights
+asdf#+BEGIN_SRC ipython :session mysession :file ./plots/plane_stress_all.png :exports none
+plot_radii_2('plane_stress',ptype='Cart',fname="./plots/plane_stress_all.png",db='weight_uni_stress')
+plt.show()
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions of all of the support radii for the dilation-state based model.
+#+LABEL: fig:plane_stress_all_weights
+#+ATTR_LATEX: 
+#+RESULTS: fig:plane_stress_all_weights
+[[file:./plots/plane_stress_all.png]]
+
+
+*** Mine :badresults:
+#+NAME: fig:plane_strain_all_weights
+asdf#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+print plot_radii_2('plane_strain',ptype='Cart',fname="./plots/plane_strain_all.pdf",nu=0.0)
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions of all of the support radii for my plane-strain dilation-state based model.
+#+LABEL: fig:plane_strain_all_weights
+#+ATTR_LATEX: 
+#+RESULTS: fig:plane_strain_all_weights
+[[file:./plots/plane_strain_all.png]]
+
+#+END_COMMENT
+
+
+#+NAME: fig:Fbasedradius15
+#+BEGIN_SRC ipython :session mysession :results output raw :exports results
+plt.close('all')
+for w in weights:
+    Make_Log_Plot("SELECT NP,disp FROM weight_uni WHERE nu=0.0 AND RF=1.5 AND method='Fbased_strain' AND weight='{0}'".format(w),w)
+plt.xlabel('Logarithm of Particle Radius log(mm)')
+plt.ylabel('Logarithm of displacement error log(mm)')
+plt.legend(loc=2)
+plt.savefig('./plots/Fbasedradius15.pdf')
+print "[[./plots/Fbasedradius15.pdf]]"
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions with a support radius of $1.5R$
+#+LABEL: fig:Fbasedradius15
+#+ATTR_LATEX: :width 0.9\textwidth
+#+RESULTS: fig:Fbasedradius15
+[[./plots/Fbasedradius15.pdf]]

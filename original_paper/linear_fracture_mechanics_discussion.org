@@ -1,0 +1,836 @@
+#+OPTIONS: tags:nil
+#+EXCLUDE_TAGS: startup codeblocks trash hide
+
+* Startup :startup:
+#+begin_src elisp :exports none
+(org-babel-do-load-languages 
+ 'org-babel-load-languages
+ '((python t) (sh t)))
+(require 'ob-ipython)
+(setq org-confirm-babel-evaluate nil)   ;don't prompt me to confirm everytime I want to evaluate a block
+(setq ob-ipython-command "ipython-2.7")
+
+;;; display/update images in the buffer after I evaluate
+;; (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
+(setq org-latex-default-figure-position "!tb")
+(setq org-latex-default-table-position "!tb")
+
+;; (defun shk-fix-inline-images ()
+;;  (when org-inline-image-overlays
+;;    (org-redisplay-inline-images)))
+;; (add-hook 'org-babel-after-execute-hook 'shk-fix-inline-images)
+#+end_src
+
+#+RESULTS:
+: !tb
+
+#+BEGIN_SRC ipython :session lfm :exports none
+  %matplotlib inline
+  %config InlineBackend.figure_format = 'png'
+  import matplotlib
+  matplotlib.rcParams['font.size'] = 8
+  matplotlib.rcParams['legend.fontsize'] = 8
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  from SimDataDB import *
+
+
+  from collections import defaultdict
+  from itertools import cycle
+
+  colors = cycle("rgbycmk")
+  markers = cycle("+x*d")
+  colorkey = defaultdict(lambda :colors.next())
+  markerkey = defaultdict(lambda :markers.next())
+
+
+  # Domain Parameters
+  domW = 16.0e3 # mm
+  domH = 16.0e3 # mm
+  young = 60.0 # kg / mm ms^2
+  nu = 0.0
+  fracture_pressure = 0.1
+  fracture_length = 0.7e3
+
+  def analytical(X):
+      P = fracture_pressure
+      E = young
+      H = domH/2.0
+      a = fracture_length/2.0
+      a2 = a**2
+      C = 0.0
+      Zhat = lambda z : np.sqrt( -a2 + z**2.0 ) - z - C *z
+      Z = lambda z : z/np.sqrt(-a2 + z**2.0 ) - 1 - C
+
+      ux = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+          (2.0-4.0*nu)/2.0 * np.real(Zhat(z)) - np.imag(z) * np.imag(Z(z)))
+      uy = lambda z : P/(2.0*E/(2.0*(1.0-nu))) * (
+          (4.0-4.0*nu)/2.0 * np.imag(Zhat(z)) - np.imag(z) * np.real(Z(z)))
+
+      y = np.empty(X.shape)
+      y[:,0] = X[:,0] + np.sign(X[:,0]-H)*ux( np.abs(X[:,0]-H) + 1j*np.abs(X[:,1]-H))
+      y[:,1] = X[:,1] + np.sign(X[:,1]-H)*uy( np.abs(X[:,0]-H) + 1j*np.abs(X[:,1]-H))
+      return y
+
+  def vert_slice(x):
+      NP = int(x.shape[0]**0.5)
+      base = NP/2
+      return x[base:(base+NP*(NP-1))+1:NP ,1]
+  def horz_slice(x):
+      NP = int(x.shape[0]**0.5)
+      base = NP*NP/2
+      return x[ base:base+NP ,0]
+  # Load the DB
+  sdb = SimDataDB("/Users/afq/Google Drive/ResultDatabases/lfm.db")
+  conn = sdb.Get_Connection()
+  c = conn.cursor()
+  def Query(string):
+        c.execute(string)
+        res = c.fetchall()
+        res.sort()
+        return [ list(k) for k in res ] 
+#+END_SRC
+
+#+RESULTS:
+
+* Methods :codeblocks:
+#+BEGIN_SRC ipython :session lfm :exports none
+  def Query(string):
+        c.execute(string)
+        res = c.fetchall()
+        res.sort()
+        return [ list(k) for k in res ] 
+  def SFIG(fname='/tmp/plot.png'):
+      plt.savefig(fname)
+      print "[["+fname+"]]"
+
+  def smooth(u):
+        # us = u.copy()
+        NP = u.shape[0]**0.5
+        U,V = zip(*u)
+        U=np.array(U).reshape([NP,NP])
+        V=np.array(V).reshape([NP,NP])
+        U2 = U.copy()
+        V2 = V.copy()
+        smooth1 = lambda U,i,j:0.5*U[i,j] + 0.125*( U[i-1,j]+U[i+1,j]+U[i,j-1]+U[i,j+1])
+        laplace = lambda U,i,j: 0.2*(U[i,j] + U[i-1,j]+U[i+1,j]+U[i,j-1]+U[i,j+1])
+        for i in xrange(1,U.shape[0]-1):
+            for j in xrange(1,U.shape[1]-1):
+                U2[i,j] = laplace(U,i,j)
+                V2[i,j] = laplace(V,i,j)
+        return np.array(zip(U2.ravel(),V2.ravel()))
+  xlim = (domW/2.0-fracture_length, domW/2.0+fracture_length)
+  ylim = (domH/2.0-fracture_length, domH/2.0+fracture_length)
+  def CutWindow(x,u):
+      x2 = np.empty(x.shape)
+      u2 = np.empty(u.shape)
+      itr=0
+      for i,(a,b) in enumerate(zip(x,u)):
+            if xlim[0] < a[0] and a[0] < xlim[1] and ylim[0] < a[1] and a[1]<ylim[1]:
+                  x2[itr,:] = a
+                  u2[itr,:] = b
+                  itr+=1
+      x2 = x2[:itr,:]
+      u2 = u2[:itr,:]
+      return x2,u2
+  def VectorPlot(x,u, ax=None):
+      x2,u2 = CutWindow(x,u)
+      X,Y = zip(*x2)
+      U,V = zip(*u2)
+      if ax==None:
+            plt.figure()
+            ax = plt.gca()
+      ax.plot([ domW/2.0-fracture_length/2.0, domW/2.0+fracture_length/2.0 ],
+              [domH/2.0,domH/2.0] )
+      ax.set_xlim(xlim)
+      ax.set_ylim(ylim)
+      ax.quiver(X,Y,U,V,angles='xy',scale_units='xy',scale=1)
+      ax.set_xlabel('X (mm)')
+      ax.set_ylabel('Y (mm)')
+      ax.set_aspect('equal', 'datalim')
+      plt.draw()
+
+  def All_Vector_Plots(method, db='strain_lfm',field='u'):
+    from matplotlib import gridspec
+    fig = plt.figure(figsize=(6,8))
+    cols = 2
+    gs = gridspec.GridSpec(5 // cols + 1, cols)
+    for i,RF in enumerate([1.5,2.0,2.5,3.0,3.5]):
+        row = (i//cols)
+        col = i % cols
+        ax = fig.add_subplot(gs[row,col])
+        x,u = sdb.Query("SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP=200 \
+                         AND method='{method}' AND RF={RF} AND weight='cubic'".format(**locals()))[0]
+
+        VectorPlot(x,75.0*u, ax=ax)
+        ax.set_title("RF={0}".format(RF))
+    fig.tight_layout()
+
+  def All_Smooth_Vector_Plots(method):
+    from matplotlib import gridspec
+    fig = plt.figure(figsize=(8.5,10))
+    cols = 2
+    gs = gridspec.GridSpec(5 // cols + 1, cols)
+    for i,RF in enumerate([1.5,2.0,2.5,3.0,3.5]):
+        row = (i//cols)
+        col = i % cols
+        ax = fig.add_subplot(gs[row,col])
+        x,u = sdb.Query("SELECT x,u FROM strain_lfm WHERE nu=0.0 AND NP=200 AND method='{1}' AND RF={0} AND weight='cubic'".format(RF,method))[0]
+        u = smooth(u)
+        VectorPlot(x,75.0*u, ax=ax)
+        ax.set_title("RF={0}".format(RF))
+    fig.tight_layout()
+
+    
+  def Plot_Vert_RF(method,weight='cubic',RF=1.5):
+    res = sdb.Query("SELECT NP,x,u FROM strain_lfm WHERE nu=0.0 AND RF={RF} AND method='{method}' AND weight='{weight}'".format(**locals()))
+    for NP,x,u in res:
+          x,u = vert_slice(x),vert_slice(u)
+          plt.plot(x,u,label="NP="+str(NP))
+    plt.xlabel('y (mm)')
+    plt.ylabel('u_y (mm)')
+    plt.legend()
+
+  def Plot_Vert_RFs(method,weight='cubic'):
+    res = sdb.Query("SELECT RF,x,u FROM strain_lfm WHERE nu=0.0 AND NP=200 AND method='{method}' AND weight='{weight}'".format(**locals()))
+    for RF,x,u in res:
+          x,u = vert_slice(x),vert_slice(u)
+          plt.plot(x,u,label="RF="+str(RF))
+    plt.xlabel('y (mm)')
+    plt.ylabel('u_y (mm)')
+    plt.legend()
+
+
+  def error(rf=1.5,method='Fbased_strain',NP=50,weight='cubic'):
+        x,u,us = sdb.Query("SELECT x,u FROM smoother_lfm WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(NP=NP,rf=rf,method=method,weight=weight))
+        ua = analytical(x) - x
+        eu = u[:,1]-ua[:,1]
+        us = smooth(u)
+        eus = us[:,1]-ua[:,1]
+        return np.linalg.norm(eu) / np.linalg.norm(ua.flatten())
+
+  def error2(rf=1.5,method='Fbased_strain',NP=200,db='strain_lfm',weight='cubic',field='u'):
+        x,u = sdb.Query(
+              "SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(**locals()) )[0]
+        ua = analytical(x)-x
+        eu = u - ua
+        return np.linalg.norm(eu) / np.linalg.norm(ua.flatten())
+
+  def error3(rf=1.5,method='Fbased_strain',
+             NP=200,db='strain_lfm',weight='cubic',field='u'):
+        x,u = sdb.Query(
+              "SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(**locals()) )[0]
+        ua = analytical(x)-x
+        eu = ((u - ua)/(ua))
+        return np.linalg.norm(eu)/eu.size
+
+  def error4(rf=1.5,method='Fbased_strain',
+             NP=200,db='strain_lfm',weight='cubic',field='u'):
+        x,u = sdb.Query(
+              "SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(**locals()) )[0]
+        NP = int(x.shape[0]**0.5)
+        probeloc = NP*NP/2+NP/2
+        xp = x[probeloc,:]
+        print xp
+        ua = analytical(x)[probeloc,:]-xp
+        eu = ((u[probeloc,1] - ua[1])/(ua[1]))
+        return np.linalg.norm(eu)
+
+
+  def error5(rf=1.5,method='Fbased_strain',
+             NP=200,db='strain_lfm',weight='cubic',field='u'):
+        x,u = sdb.Query(
+              "SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(**locals()) )[0]
+        x,u = CutWindow(x,u)
+        ua = analytical(x)-x
+        eu = (((u - ua)/(ua)))
+        return np.abs(eu).flatten().mean() #np.linalg.norm(eu)/eu.size
+
+  def error6(rf=1.5,method='Fbased_strain',
+               NP=200,db='strain_lfm',weight='cubic',field='u'):
+          x,u = sdb.Query(
+                "SELECT x,{field} FROM {db} WHERE nu=0.0 AND NP={NP} AND RF={rf} AND method='{method}' AND weight='{weight}'".format(**locals()) )[0]
+          x,u = CutWindow(x,u)
+          ua = analytical(x)-x
+          eu = ((u - ua))
+          return np.linalg.norm(eu) / np.linalg.norm(ua)
+#+END_SRC
+
+#+RESULTS:
+
+* Linear Fracture Mechanics Results
+<<sec:lfm>>
+** Problem set up
+
+#+CAPTION: A finite material with a crack with an interfacial pressure. The sides of the finite domain are set to have the displacement field solution matching the infinite domain analytical solution.
+#+ATTR_LATEX: :width 3in
+#+LABEL: fig:crack_diagram
+[[./plots/crack_diagram.pdf]]
+
+Consider an infinite domain with a horizontal crack of length $L$
+located at the origin, with a finite equivalent illustrated in Figure \ref{fig:crack_diagram}. The crack has an internal pressure $P$ acting on the two
+horizontal faces due to the presence of a pressurized fluid. 
+The idealized domain is infinite with zero displacement towards
+infinity in all directions, 
+\begin{equation}
+u_{x}=u_{y}=0 \quad\textrm{as}\quad x^{2}+y^{2}\rightarrow\infty.
+\end{equation}
+Likewise, the stress vanishes towards infinity in all directions,
+\begin{equation}
+\sigma_{xx}=\sigma_{yy}=\sigma_{xy}=0 \quad\textrm{as}\quad x^{2}+y^{2}\rightarrow\infty.
+\end{equation}
+On the surface of the crack, the stress field has the boundary
+condition on the normal and shear planes 
+\begin{equation}
+\sigma_{yy}=P,\,\sigma_{xy}=0 \quad \textrm{on}\quad y=0^{+} \quad\textrm{and}\quad y=0^{-} \quad \textrm{within}\quad x\in\left(-a,a\right).
+\end{equation}
+
+Using Westergaard's solution method \cite{westergaard1939bearing}, the
+complex valued potential function $\hat{Z}$ with the form
+\begin{equation}
+\hat{Z}\left(z\right)=P\left(\sqrt{z^{2}-L^{2}}-z\right)
+\end{equation}
+with argument $z=x+yi$ satisfies the boundary conditions \cite{sneddon1946distribution}. This problem has the same solution as if the crack
+had no internal pressure and instead the material had a far-field tension stress equal to $P$ along the $\sigma_{yy}$ direction. The stress field solution and near-tip
+displacement solution appears in Sneddon, 1946 \cite{sneddon1946distribution}. Where $Z=\frac{d}{dz}\hat{Z}$
+and $Z'=\frac{d}{dz}Z$, the stress field solutions are obtained from the potential
+function by
+\begin{eqnarray}
+\sigma_{xx} & = & \mathrm{Re}\left[Z\right]-y\mathrm{Im}\left[Z'\right]\\
+\sigma_{yy} & = & \mathrm{Re}\left[Z\right]+y\mathrm{Im}\left[Z'\right]\\
+\sigma_{xy} & = & -\mathrm{Re}\left[Z'\right]
+\end{eqnarray}
+and the displacement field solutions are obtained by
+\begin{eqnarray}
+u_{x} & = & \frac{1}{2G}\left(\frac{2-4\nu}{2}\mathrm{Im}\left[\hat{Z}\right]-y\mathrm{Re}\left[Z\right]\right)\\
+u_{y} & = & \frac{1}{2G}\left(\frac{4-4\nu}{2}\mathrm{Re}\left[\hat{Z}\right]-y\mathrm{Im}\left[Z\right]\right).
+\end{eqnarray}
+The analytical solution around the crack is plotted in Figure
+\ref{fig:analytical_solution}.
+
+#+NAME: fig:analytical_solution
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  X,Y = np.meshgrid(np.linspace(domW/2.0-fracture_length,domW/2.0+fracture_length,20),
+                    np.linspace(domH/2.0-fracture_length,domH/2.0+fracture_length,20) )
+  xa = np.array(zip(X.ravel(),Y.ravel()))
+  ua = (analytical(xa) - xa)*75.0
+  fig = plt.figure(figsize=(4,3))
+  VectorPlot(xa,ua,ax=fig.add_subplot(111))
+  fig.tight_layout()
+  SFIG("./plots/lfm_anal.pdf")
+#+END_SRC
+#+CAPTION: The analytical solution for the displacement in the immediate vicinity around the crack. The crack is draw as a solid line. The displacement vectors are drawn at a 75x scale to the axes.
+#+LABEL: fig:analytical_solution
+#+ATTR_LATEX: :width 4in
+#+RESULTS: fig:analytical_solution
+[[./plots/lfm_anal.pdf]]
+
+
+The infinite domain is approximated by a large computational domain
+satisfying $W\gg L$ and $H\gg L$. To compensate for the finite domain
+and enable comparison with the analytical solution, Dirichlet boundary
+conditions are enforced on the $x$ and $y$ displacements matching
+the analytical solution at the finite distance, as illustrated in Figure \ref{fig:crack_diagram}. The simulation parameters
+are listed in Table [[tbl:lfm_parameters]].
+
+#+NAME: tbl:lfm_parameters
+#+CAPTION: Parameters for fracture simulation.
+#+ATTR_LATEX:
+| Parameter                 | Value                |
+|---------------------------+----------------------|
+| Size $H$ and $W$          | $160.0\times10^3$ mm |
+| Young's Modulus $E$       | 60 GPa               |
+| Poisson's ratio $\nu$     | 0                    |
+| Fracture pressure $P$     | 0.1 GPa              |
+| Fracture length $L$       | 700 mm               |
+
+The crack is included into the peridynamic model by breaking the bonds
+that intersect the crack, as illustrated in Figure
+\ref{fig:Treatment-of-bonds}. The damage factor is set to zero at the
+broken bonds, $\alpha=0$. The bond-pressure is set to the fracture
+pressure for only bonds that are immediately adjacent. Only an
+even-number of particles is used to ensure that the crack is always
+between particles and never exactly on top of a particle. 
+
+
+The integral of the square of the displacement error over
+the entire domain is used as the error metric, normalized by the
+magnitude of the integral of the displacement. Approximating this metric as a
+summation over the discrete material points, the formula is
+\begin{equation}
+e = \sqrt{\frac{
+\sum_A \left| \mathbf{u}_{anal}\left(x_A\right) - \mathbf{u}_{num}\left(x_A\right) \right|^2
+}{
+\sum_A \left| \mathbf{u}_{anal}\left(x_A\right) \right|^2
+}}
+\end{equation}
+where $A$ is the index of the discrete material points, $\mathbf{u}_{anal}$ is the analytical
+solution, $x_A$ are the positions of the material points, and
+$\mathbf{u}_{num}$ is the numerical solution. The volume of the
+particles cancels out in the above equation because only uniform grids
+are used. 
+
+
+** Results
+
+#+NAME: fig:lfm_Fbased_vector
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  All_Vector_Plots('Fbased_strain', db='smoother_lfm',field='u')
+  SFIG('./plots/lfm_Fbased_vector.pdf')
+#+END_SRC
+#+CAPTION: Displacement fields for the deformation gradient based solution as the support radius increases near the crack. The scale on the displacement vectors is 75x the scale on the axes.
+#+ATTR_LATEX: :placement [!p]
+#+LABEL: fig:lfm_Fbased_vector
+#+RESULTS: fig:lfm_Fbased_vector
+[[./plots/lfm_Fbased_vector.pdf]]
+
+
+#+NAME: fig:lfm_Fbased_smooth_vector
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  All_Vector_Plots('Fbased_strain', db='smoother_lfm',field='us_linear')
+  SFIG('./plots/lfm_Fbased_smooth_vector.pdf')
+#+END_SRC
+#+CAPTION: Displacement fields for the deformation gradient based solution after a smoothing operation. The scale on the displacement vectors is 75x the scale on the axes.
+#+ATTR_LATEX:  :placement [!p]
+#+LABEL: fig:lfm_Fbased_smooth_vector
+#+RESULTS: fig:lfm_Fbased_smooth_vector
+[[./plots/lfm_Fbased_smooth_vector.pdf]]
+
+
+
+
+#+NAME: fig:lfm_Fbased_rf_comp
+#+BEGIN_SRC ipython :session lfm :results output raw :exports none
+  for rf in [1.5,2.0,2.5,3.0,3.5]:
+      x,u = sdb.Query(
+          "SELECT x,u FROM smoother_lfm WHERE nu=0.0 AND NP=200 AND RF={rf} AND method='Fbased_strain' AND weight='cubic'".format(rf=rf))[0]
+      
+      xy = vert_slice(x)
+      uy = vert_slice(u)
+      plt.plot(xy,uy,label=rf)
+
+  xcol = x[x.shape[0]**0.5/2,0]
+  xa = np.vstack([np.ones(2000)*xcol,np.linspace(0.0,domH,2000)]).T
+  ua = analytical(xa) - xa
+  plt.plot(xa[:,1],ua[:,1],label="Analytical")
+
+  plt.xlabel('y (mm)')
+  plt.ylabel('u_y (mm)')
+  plt.xlim(domW*0.45,domW)
+  plt.ylim(-0.1,1.5)
+  plt.legend()
+  SFIG('./plots/lfm_Fbased_rf_comp.pdf')
+#+END_SRC
+#+CAPTION: The LFM solutions of the deformation gradient based method for uy along the column of particles immediately adjacent to the vertical center axis
+#+LABEL: fig:lfm_Fbased_rf_comp
+#+ATTR_LATEX:  :width 3in
+#+RESULTS: fig:lfm_Fbased_rf_comp
+[[./plots/lfm_Fbased_rf_comp.pdf]]
+
+
+*** Instability of deformation gradient model
+The deformation gradient force density was solved using the cubic
+spline influence function. Figure
+\ref{fig:lfm_Fbased_vector} shows the solved displacement field using this
+model with 200 by 200 material points in the vicinity of the crack for the various support radius sizes. The displacement vectors oscillate in
+both the x and y components for each of the radius sizes. As the radius increases, the method becomes
+increasingly unstable. 
+#+BEGIN_COMMENT
+To show the magnitude of the instability, Figure \ref{fig:lfm_Fbased_rf_comp} plots the y-displacement along a
+vertical cross section near the center of the crack for the most
+refined case for each support size.
+(Note that the probe location moves with each simulation. The particle
+locations get closer to the crack and to the vertical axis as the
+discretization is refined. The cross-sectional results are presented by
+plotting the analytical solution evaluated at the $x$ or $y$ position of
+the particle row or column closest to the center line.)
+#+END_COMMENT
+Without any post processing of the solution,
+the error increases greatly with increasing support radius, as seen in
+Table \ref{tbl:lfm_fbased_rf_conv}. As an ad hoc
+fix, we experiment by smoothing the solution using the peridynamic
+influence functions described by the following equation:
+\begin{equation}
+\mathbf{u}_{s}\left(\mathbf{x}\right) = \frac{
+\int_{\mathcal{H}\left(\mathbf{x}\right)} w\left(\mathbf{x}-\mathbf{x}'\right)
+\mathbf{u}\left(\mathbf{x}'\right) \mathrm{d}^2x'
+}{
+\int_{\mathcal{H}\left(\mathbf{x}\right)} w\left(\mathbf{x}-\mathbf{x}'\right) \mathrm{d}^2x'
+}.
+\end{equation}
+Table \ref{tbl:lfm_fbased_rf_conv} indicates that the linear
+influence function gives the smallest error. The displacement fields
+after smoothing by the linear influence function are plotted in Figure
+\ref{fig:lfm_Fbased_smooth_vector}, which confirms qualitatively that the
+instability is alleviated. 
+
+#+NAME: tbl:lfm_fbased_rf_conv
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  RFs = zip(*Query("SELECT DISTINCT RF FROM strain_lfm WHERE method='Fbased_strain'"))[0]
+  print "|RF|unsmoothed|const|linear|cubic|\n|-|-|"
+  e = lambda r,f : error6(db='smoother_lfm',rf=r,NP=200,field=f)
+  for RF in RFs:
+      print "|",RF,"|","|".join(["{0:1.4f}".format(e(RF,x)) for x in ['u','us_const','us_linear','us_cubic'] ])
+#+END_SRC
+#+LABEL: tbl:lfm_fbased_rf_conv
+#+CAPTION: Error for different support radii for NP=200 for the deformation gradient based model for the original solved field and after applying different smoothing operations.
+#+RESULTS: tbl:lfm_fbased_rf_conv
+|  RF | unsmoothed |  const | linear |  cubic |
+|-----+------------+--------+--------+--------|
+| 1.5 |     0.2105 | 0.0836 | 0.0708 | 0.1810 |
+| 2.0 |     0.3022 | 0.0868 | 0.0429 | 0.1697 |
+| 2.5 |     0.5409 | 0.1080 | 0.0670 | 0.1628 |
+| 3.0 |     1.0375 | 0.1604 | 0.1004 | 0.1965 |
+| 3.5 |     2.6741 | 0.2684 | 0.1452 | 0.3302 |
+
+*** Convergence as particle size decreases
+
+The two dilation state based models were solved with RF=3.5 and using the cubic
+spline influence function. The corresponding displacement fields in the vicinity of the
+crack for $N=200$ are plotted in Figure
+\ref{fig:lfm_oterkus_silling_vector} for both cases.
+The dilation state based methods do not exhibit the instability
+problem and qualitatively match the analytical solution. 
+
+
+#+NAME: fig:lfm_oterkus_silling_vector
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  All_Vector_Plots('Fbased_strain', db='smoother_lfm',field='us_linear')
+  fig = plt.figure(figsize=(6,3))
+  ax = fig.add_subplot(121)
+  ax.set_title("Silling's")
+  x,u = sdb.Query("SELECT x,u FROM smoother_lfm WHERE nu=0.0 AND NP=200 \
+                   AND method='ouchi' AND RF=3.5 AND weight='cubic'")[0]
+  VectorPlot(x,75.0*u, ax=ax)
+  ax = fig.add_subplot(122)
+  ax.set_title("Oterkus's")
+  x,u = sdb.Query("SELECT x,u FROM smoother_lfm WHERE nu=0.0 AND NP=200 \
+                   AND method='ouchi' AND RF=3.5 AND weight='cubic'")[0]
+  VectorPlot(x,75.0*u, ax=ax)
+  fig.tight_layout()
+  SFIG('./plots/oterkus_silling_vector.pdf')
+#+END_SRC
+#+LABEL: fig:lfm_oterkus_silling_vector
+#+CAPTION: Displacement fields for the two dilation state based models. The scale on the displacement vectors is 75x the scale on the axes.
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:lfm_oterkus_silling_vector
+[[./plots/oterkus_silling_vector.pdf]]
+
+
+We examined the following four solutions: the unsmoothed and smoothed deformation
+gradient based model using a support radius of $RF=1.5$ and the two
+dilation state based models using a support radius of $RF=3.5$. We
+compared the four sets of solutions to the analytical solution using
+the error metric we discussed earlier, and we monitored the error
+the discretization is refined using the same procedure followed in the
+previous problems. The refinement is capped at
+400-by-400 particles. We note that the dilation state-based models
+required significantly more computational effort to solve than the
+deformation gradient-based model with many particles because the support radius RF=3.5
+corresponded to approximately 60 nonzeros per row in the matrix,
+resulting in a much wider matrix bandwidth. As a result, the
+400-by-400 data point is missing for the dilation-based models since
+the linear system did not converge. 
+
+#+NAME: fig:lfm_fbased_np_conv
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  fig = plt.figure(figsize=(4,3))
+  ax = fig.add_subplot(111)
+
+  of_F = 21
+  of_ou = 10
+  of_Ot = 10
+  keys = [
+      # ('Silling','ouchi','u',1.5,of_ou),
+      #('Silling','ouchi','u',3.5,of_ou, 'smoother_lfm'),
+      # ('Oterkus','Oterkus2_strain','u',1.5,of_Ot),
+      #('Oterkus','Oterkus2_strain','u',3.5,of_Ot, 'smoother_lfm'),
+      ('Silling','ouchi','u',3.5,of_ou, 'smoother_lfm_doublecheck'),
+      ('Oterkus','Oterkus2_strain','u',3.5,of_Ot, 'smoother_lfm_doublecheck'),
+      ('F, Unsmoothed','Fbased_strain','u',1.5,of_F, 'smoother_lfm'),
+      ('F, Smoothed','Fbased_strain','us_linear',1.5,of_F, 'smoother_lfm')
+      ]
+
+  def add_plot(label, method,field,RF, of, db='smoother_lfm'):
+      NPs = zip(*Query("SELECT DISTINCT NP FROM {db} WHERE method='{method}' AND RF={RF}".format(**locals() ) ))[0]
+      # print NPs
+      Hs = [domH/float(n) for n in NPs]
+      eraw = [error2(rf=RF,NP=n,db=db,field=field,method=method) for n in NPs]
+      Hs,eraw = zip(*[ (h,e) for h,e in zip(Hs,eraw) if e<1 ])
+      ax.loglog(Hs, eraw, color=colorkey[label])
+      ax.loglog(Hs[-of:], eraw[-of:],
+                marker=markerkey[label], color=colorkey[label], label=label)
+      return Hs[-of:], eraw[-of:]
+
+  errors = [ (p[0], add_plot(*p)) for p in keys ]
+
+  ax.legend(loc=4)
+  ax.set_xlabel("Logarithm of particle size log(mm)")
+  ax.set_ylabel("Logarithm of error in displacement field")
+  #ax.set_ylim(1e-2,10)
+  ax.set_xlim(30,500)
+  from matplotlib import ticker
+  subs = [1.0, 2.0, 3.0, 5.0]  # ticks to show per decade
+  ax.xaxis.set_minor_locator(ticker.LogLocator(subs=subs)) #set the ticks position
+  ax.xaxis.set_major_formatter(ticker.LogFormatter(base=10.0, labelOnlyBase=False))
+  ax.xaxis.set_minor_formatter(ticker.LogFormatter(base=10.0, labelOnlyBase=False))
+  SFIG('./plots/lfm_fbased_np_conv.pdf')
+#+END_SRC
+#+LABEL: fig:lfm_fbased_np_conv
+#+CAPTION: Error in the linear fracture mechanics problem as the particle size decreases for each of the models, including after smoothing the deformation gradient based solution. 
+#+ATTR_LATEX:  :width 4in
+#+RESULTS: fig:lfm_fbased_np_conv
+[[./plots/lfm_fbased_np_conv.pdf]]
+
+#+NAME: tbl:lfm_np_conv
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  import scipy.stats
+  def order(hs,es):
+      return scipy.stats.linregress([np.log(h) for h in hs],
+                                    [np.log(e) for e in es])[0]
+  print "|Method|Order|Min. error|\n|-|-|"
+  for n,(hs,es) in errors:
+      print "|{0}|{1:1.4f}|{2:2.1f}%|".format(n,order(hs,es),100.0*np.array(es).min())
+#+END_SRC
+#+LABEL:  tbl:lfm_np_conv
+#+CAPTION: Rough order of convergence estimation in the linear fracture mechanics problem as the particle size decreases for each of the models, including after smoothing the deformation gradient based solution. 
+#+RESULTS: tbl:lfm_np_conv
+| Method        |  Order | Min. error |
+|---------------+--------+------------|
+| Silling       | 1.8022 |       2.2% |
+| Oterkus       | 0.4622 |       5.7% |
+| F, Unsmoothed | 1.0200 |      11.7% |
+| F, Smoothed   | 1.0836 |       4.1% |
+
+The errors for all four solutions are plotted in Figure
+\ref{fig:lfm_fbased_np_conv}. (F is used as shorthand for deformation
+gradient in Table \ref{tbl:lfm_np_conv} and Figure \ref{fig:lfm_fbased_np_conv}.) The jagged trend in the error is due to
+the geometric discretization of the crack mismatching the "true" crack
+geometry. The discrete material points are placed in a
+regular grid irrespective 
+of the location of the crack endpoints. As the grid is refined,
+additional material points cross the crack tip. The error changes
+sharply when
+an additional set of material points pass the crack tip, causing a
+jump in the geometric error of the crack representation. This could be
+avoided by placing material points in a way to exactly match the
+endpoints of the crack.
+However, this cannot be applied in crack growth problems where the
+position of the crack is unknown, so this trend should
+be included in the consideration of the error. Even though the errors are not observed
+to be decreasing smoothly, the convergence orders are estimated in
+Table \ref{tbl:lfm_np_conv} using the same regression procedure
+described in the previous section. Due to the non-smooth error trend, only
+the data after the regular jagged trend begins are used in the
+calculation, shown with markers on the line plots in Figure
+\ref{fig:lfm_fbased_np_conv}. The obtained convergence orders are
+roughly linear for the deformation gradient-based model, but the data is not smooth enough to make any
+conclusion about the order of accuracy of the methods. It is, however, shown to be feasible to obtain an error that is
+less than 5% using the broken-bond representation of the thin pressurized crack. 
+
+
+\afterpage{\clearpage}
+
+** Ouchi's method :hide:
+
+#+NAME: fig:lfm_ouchi_vector
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  All_Vector_Plots('ouchi')
+  SFIG('./plots/lfm_ouchi_vector.pdf')
+#+END_SRC
+#+CAPTION: Displacement fields for the deformation gradient based solution as the support radius increases near the crack. The scale on the displacement vectors is 75x the scale on the axes.
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:lfm_ouchi_vector
+[[./plots/lfm_ouchi_vector.pdf]]
+
+#+NAME: tbl:lfm_ouchi_np_conv
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  NPs = zip(*Query("SELECT DISTINCT NP FROM strain_lfm WHERE method='ouchi' AND RF=1.5"))[0]
+  eraw = [error2(rf=3.5,NP=n,method='ouchi') for n in NPs]
+  print "|NP|error|\n|-|-|"
+  for NP,er in zip(NPs,eraw):
+      print "|",NP,"|", er
+  plt.loglog([domH/float(n) for n in NPs],eraw)
+  SFIG('./plots/lfm_ouchi_np_conv.pdf')
+  
+#+END_SRC
+#+LABEL: tbl:lfm_ouchi_np_conv
+#+CAPTION: Error for different support radii for NP=200 for the dilation state-based model.
+#+ATTR_LATEX:
+#+RESULTS: tbl:lfm_ouchi_np_conv
+|  NP |           error |
+|-----+-----------------|
+|  24 |   2.80160078014 |
+|  50 |  0.378710102247 |
+|  76 |  0.351699874218 |
+| 100 | 0.0873576559829 |
+| 124 |  0.147489583691 |
+| 150 | 0.0400036327362 |
+| 176 | 0.0824329805022 |
+| 200 | 0.0303554385851 |
+[[./plots/lfm_ouchi_np_conv.pdf]]
+
+  
+** Oterkus's method :hide:
+
+#+NAME: fig:lfm_oterkus_vector
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  All_Vector_Plots('Oterkus2_strain')
+  SFIG('./plots/lfm_oterkus_vector.pdf')
+#+END_SRC
+#+CAPTION: Displacement fields for the deformation gradient based solution as the support radius increases near the crack. The scale on the displacement vectors is 75x the scale on the axes.
+#+ATTR_LATEX:
+#+RESULTS: fig:lfm_oterkus_vector
+[[./plots/lfm_oterkus_vector.pdf]]
+
+
+#+NAME: tbl:lfm_oterkus_np_conv
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  NPs = zip(*Query("SELECT DISTINCT NP FROM strain_lfm WHERE method='Oterkus2_strain' AND RF=1.5"))[0]
+  eraw = [error2(rf=3.5,NP=n,method='Oterkus2_strain') for n in NPs]
+  print "|NP|error|\n|-|-|"
+  for NP,er in zip(NPs,eraw):
+      print "|",NP,"|", er, '|'
+  plt.loglog([domH/float(n) for n in NPs],eraw)
+  SFIG('./plots/lfm_oterkus_np_conv.pdf')
+
+#+END_SRC
+#+LABEL: tbl:lfm_oterkus_np_conv
+#+CAPTION: Error for different support radii for NP=200 for the dilation state-based model.
+#+RESULTS: tbl:lfm_oterkus_np_conv
+|  NP |           error |
+|-----+-----------------|
+|  24 |   2.65952498901 |
+|  50 |  0.316043118218 |
+|  76 |  0.320925094657 |
+| 100 | 0.0740054141647 |
+| 124 |  0.139373290538 |
+| 150 | 0.0538151460118 |
+| 176 | 0.0914111691647 |
+| 200 | 0.0608568071914 |
+[[./plots/lfm_oterkus_np_conv.pdf]]
+[[./plots/lfm_oterkus_np_conv.pdf]]
+
+
+* trash :trash:
+
+#+BEGIN_SRC ipython :session lfm :results output raw :exports none
+fig = plt.figure(figsize=(6,3))
+
+ax = fig.add_subplot(121)
+x,u = sdb.Query(
+          "SELECT x,u FROM smoother_lfm WHERE nu=0.0 AND NP=200 AND RF={rf} AND method='Fbased_strain' AND weight='cubic'".format(rf=2.5))[0]
+VectorPlot(x,75.0*u, ax=ax)
+
+ax = fig.add_subplot(122)
+ua = (analytical(x) - x)
+VectorPlot(x,75.0*ua, ax=ax)
+fig.tight_layout()
+SFIG('/tmp/plot.pdf')
+#+END_SRC
+
+#+RESULTS:
+[[/tmp/plot.pdf]]
+
+#+NAME: fig:lfm_ouchi_vert
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  plt.close('all')  
+  Plot_Vert_RFs('ouchi')
+  SFIG('./plots/lfm_ouchi_vert_rfs.pdf')
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions of all of the support radii for the deformation-gradient based model.
+#+LABEL: fig:lfm_ouchi_vert
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:lfm_ouchi_vert
+[[/tmp/plot.png]]
+
+
+
+#+NAME: fig:lfm_oterkus_vert
+#+BEGIN_SRC ipython :session lfm :results output raw :exports results
+  plt.close('all')  
+  Plot_Vert_RFs('Oterkus_strain')
+  SFIG('./plots/lfm_oterkus_vert_rfs.pdf')
+#+END_SRC
+#+CAPTION: Errors of all of the weight functions of all of the support radii for the deformation-gradient based model.
+#+LABEL: fig:lfm_oterkus_vert
+#+ATTR_LATEX: 
+#+RESULTS: fig:lfm_oterkus_vert
+[[./plots/lfm_oterkus_vert_rfs.pdf]]
+
+
+
+#+NAME: fig:lfm_Fbased_200
+#+BEGIN_SRC ipython :session lfm :results output raw :exports none
+  x,u,us_const,us_linear,us_cubic = sdb.Query(
+      "SELECT x,u,us_const,us_linear,us_cubic FROM smoother_lfm WHERE nu=0.0 AND NP=200 AND RF=3.5 AND method='Fbased_strain' AND weight='cubic'")[0]
+  xy = vert_slice(x)
+  for uu,n in zip([u,us_const,us_linear,us_cubic ],['u','const','linear','cubic']):
+      uy = vert_slice(uu)
+      plt.plot(xy,uy,label=n)
+
+  xcol = x[x.shape[0]**0.5/2,0]
+  xa = np.vstack([np.ones(2000)*xcol,np.linspace(0.0,domH,2000)]).T
+  ua = analytical(xa) - xa
+  plt.plot(xa[:,1],ua[:,1],label="Analytical")
+
+  plt.xlabel('y (mm)')
+  plt.ylabel('u_y (mm)')
+  plt.xlim(domW*0.45,domW)
+  plt.ylim(-0.1,1.5)
+  plt.legend()
+  SFIG('./plots/lfm_Fbased_comp.pdf')
+
+#+END_SRC
+#+CAPTION: The LFM solutions of the deformation gradient based method for uy along the column of particles immediately adjacent to the vertical center axis
+#+LABEL: fig:lfm_Fbased_200
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:lfm_Fbased_200
+[[./plots/lfm_Fbased_comp.pdf]]
+
+
+#+NAME: fig:lfm_slice_200
+#+BEGIN_SRC ipython :session lfm :results output raw :exports none
+  def plot_slice(label,method,field,RF,NP=200):
+      x,u = sdb.Query("""
+        SELECT x,{field} FROM smoother_lfm 
+        WHERE nu=0.0 AND NP={NP} AND RF={RF} and method='{method}' AND weight='cubic'
+      """.format(**locals()))[0]
+      xy = vert_slice(x)
+      uy = vert_slice(u)
+      plt.plot(xy,uy,'-+',label=label)
+
+  data = [
+      ("F, Unsmoothed","Fbased_strain","u",1.5),
+      ("F, Smoothed","Fbased_strain","us_linear",1.5),
+      ("Silling","ouchi","u",3.5),
+      ("Oterkus","Oterkus2_strain","u",3.5)
+      ]
+  for p in data:
+      plot_slice(*p)
+  
+  x = sdb.Query("""
+        SELECT x FROM smoother_lfm 
+        WHERE nu=0.0 AND NP={NP} AND RF={RF} and method='{method}' AND weight='cubic'
+      """.format(NP=262,method="Fbased_strain",RF=1.5))[0][0]
+
+  xcol = x[x.shape[0]**0.5/2,0]
+  xa = np.vstack([np.ones(2000)*xcol,np.linspace(0.0,domH,2000)]).T
+  ua = analytical(xa) - xa
+  plt.plot(xa[:,1],ua[:,1],label="Analytical")
+
+  plt.xlabel('y (mm)')
+  plt.ylabel('u_y (mm)')
+  plt.xlim(domW*0.49,domW)
+  plt.ylim(-0.1,1.5)
+  plt.legend()
+  SFIG('./plots/lfm_slice_200.pdf')
+
+#+END_SRC
+#+CAPTION: The LFM solutions of the four methods based method for uy along the column of particles immediately adjacent to the vertical center axis with NP=200
+#+LABEL: fig:lfm_slice_200
+#+ATTR_LATEX: :width \textwidth
+#+RESULTS: fig:lfm_slice_200
+[[./plots/lfm_slice_200.pdf]]
+
