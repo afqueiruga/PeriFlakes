@@ -64,6 +64,6 @@ for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]
 
         for met in methods:
             for wei in weights:
-                sim(met,wei,RF,N,"")
+                sim(met,wei,"",RF,N)
         for wei in weights:
-            sim('Fbased',wei,RF,N,wei)
+            sim('Fbased',wei,wei,RF,N)
