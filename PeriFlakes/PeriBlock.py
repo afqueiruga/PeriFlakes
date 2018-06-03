@@ -100,12 +100,21 @@ class PeriBlock():
         Solves the deformation of the block matrix given the method name and influence 
         function. The influence support is decided at initialization of the PeriBlock
         object.
+
+        The method and weight strings key directly into the peridynamics kernels in the 
+        husk. There is an additional smoothing argument, which, if not false-valued, will
+        call the smoothing kernel after assembling and solving the system.
+
+        If there are cut bonds present, self.HCut, the P argument will be used to apply
+        the fluid-filled pressure force on the bonds.
         """
+        # Assemble the matrix and load for the given peridynamics law
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                           self.HAdj, self.data,
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
+        # Assemble the fluid pressure on bonds if present
         try:
             Rp, = cf.Assemble(hb.kernel_bond_pressure,
                               self.HCut,
@@ -115,16 +124,18 @@ class PeriBlock():
             R += Rp
         except AttributeError:
             pass
+        # Apply boundary conditions and then solve the matrix system
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
         R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
         u = splin.spsolve(K,R)
-
+        # If we specified a smoothing function, post process the solution
         if smoothing:
             us, = cf.Assemble(hp.__dict__['kernel_smooth_{0}'.format(weight)],
                               self.HAdj, [self.data,{'y':(u,self.dm_PtVec)}],
                               {'ys':(self.dm_PtVec,)},
                               gdim*self.NPart)
             u = us
+        # The PeriBlock object is stateless w.r.t. solution, so we return the result
         return u
 
     def output(self, fname, u=None):
