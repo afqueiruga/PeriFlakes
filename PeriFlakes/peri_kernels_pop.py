@@ -219,13 +219,49 @@ class Fstab_Littlewood(Fbased):
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
     
 class Fstab_Silling(Fbased):
+    def w0(self):
+        return w0 * i_Vol[0]
     def force(self):
         P = self.stress()
         F = mN * mKi
         Tstab = i_stab[0] * ( ryI  - F*rxI ) # * C / w0
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
 
-        
+
+#
+# Kernels for smoothing
+#
+# A dofspace only at the center particle
+CenterVec = DofSpace(gdim, 0,1)
+o_ys = Output("ys", [CenterVec],1)
+
+# Generator function
+def Smoothing_Kernel(name,w):
+    w0I = w(rxabs)
+    # Some of kernels can't be evaluated at r=0
+    w0 = w(0)
+    try:
+        if not w0.subs(delta,1).is_bounded:
+            w0 = 10
+    except AttributeError:
+        pass
+    prgm = [
+        m,
+        Asgn(m,Matrix([w0]),"="),
+        Loop(II,1,Npart,[
+            Asgn(m, Matrix([w0I*alpha_I]),"+=")
+        ]),
+        Asgn(o_ys, w0*y0/m[0], "="),
+        Loop(II,1,Npart,[
+            Asgn(o_ys, w0I*alpha_I/m[0] * yI,"+=")
+        ])
+    ]
+    return Kernel(name,listing=prgm)
+
+
+#
+# Now make everything
+#
 formulations = {
     'Silling' : StateBased,
     'Oterkus2': Oterkus,
@@ -247,9 +283,12 @@ weight_funcs = {
     'quarticA':lambda r: Piecewise( (1.0 - 6.0*(r/delta)**2 + 8.0*(r/delta)**3 - 3.0*(r/delta)**4, Le(r,delta)), (0.0,True))
 }
 
+# Generate the peridynamics kernels
 for n,c in formulations.iteritems():
     for w,f in weight_funcs.iteritems():
        c(n+"_"+w,f).kernel()
-
+# Generate the smoothing kernels
+for w,f in weight_funcs.iteritems():
+    Smoothing_Kernel(w,f)
 
 Husk('peridynamics')
