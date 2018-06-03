@@ -240,11 +240,8 @@ def Smoothing_Kernel(name,w):
     w0I = w(rxabs)
     # Some of kernels can't be evaluated at r=0
     w0 = w(0)
-    try:
-        if not w0.subs(delta,1).is_bounded:
-            w0 = 10
-    except AttributeError:
-        pass
+    if not ask(Q.finite(w0.subs(delta,1))):
+        w0 = 10
     prgm = [
         m,
         Asgn(m,Matrix([w0]),"="),
@@ -256,7 +253,7 @@ def Smoothing_Kernel(name,w):
             Asgn(o_ys, w0I*alpha_I/m[0] * yI,"+=")
         ])
     ]
-    return Kernel(name,listing=prgm)
+    return Kernel("smooth_"+name,listing=prgm)
 
 
 #

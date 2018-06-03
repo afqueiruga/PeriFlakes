@@ -31,14 +31,14 @@ def analytical(X):
     return u
 
 @sdb.Decorate('lfm',
-              [('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
+              [('method','TEXT'),('weight','TEXT'),('smoothing','TEXT'),('RF','FLOAT'),('N','INT')],
               [("error","FLOAT"),("time","FLOAT"),('u','array')])
-def sim(met,wei,RF,N):
+def sim(met,wei,smo,RF,N):
     global onum
     print "Solving", met," ",wei," ",RF," ",N
     def work():
-        work.u=PB.solve(met,wei, P=P)
-    runtime = timeit.timeit(work,number=10)
+        work.u=PB.solve(met,wei, P=P, smoothing=smo)
+    runtime = timeit.timeit(work,number=1)
     if False:
         PB.output('./outs/poo_{0}.vtk'.format(onum),work.u)
         onum += 1
@@ -47,7 +47,7 @@ def sim(met,wei,RF,N):
     error = np.linalg.norm(en) / np.linalg.norm(ua.flatten())
     return error,runtime,work.u,
 
-for N in [24,38,50,62,74,86,100,112,124,150,162,174]:
+for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]:
     for RF in [1.5]:
         PB = PeriBlock(1.0, N, RF*2.0/float(N), E=E,nu=nu)
         # Make far-field bcs by evaluating the analytical solution
@@ -64,4 +64,6 @@ for N in [24,38,50,62,74,86,100,112,124,150,162,174]:
 
         for met in methods:
             for wei in weights:
-                sim(met,wei,RF,N)
+                sim(met,wei,RF,N,"")
+        for wei in weights:
+            sim('Fbased',wei,RF,N,wei)

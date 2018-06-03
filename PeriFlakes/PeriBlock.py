@@ -95,7 +95,7 @@ class PeriBlock():
         self.data['alpha'][0][dofs] = 0.0
         self.HCut = hcut
 
-    def solve(self, method, weight, P=1.0):
+    def solve(self, method, weight, P=1.0, smoothing=""):
         """
         Solves the deformation of the block matrix given the method name and influence 
         function. The influence support is decided at initialization of the PeriBlock
@@ -118,6 +118,13 @@ class PeriBlock():
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
         R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
         u = splin.spsolve(K,R)
+
+        if smoothing:
+            us, = cf.Assemble(hp.__dict__['kernel_smooth_{0}'.format(weight)],
+                              self.HAdj, [self.data,{'y':(u,self.dm_PtVec)}],
+                              {'ys':(self.dm_PtVec,)},
+                              gdim*self.NPart)
+            u = us
         return u
 
     def output(self, fname, u=None):
