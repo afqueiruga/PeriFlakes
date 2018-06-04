@@ -95,7 +95,7 @@ class PeriBlock():
         self.data['alpha'][0][dofs] = 0.0
         self.HCut = hcut
 
-    def solve(self, method, weight, P=1.0, smoothing=""):
+    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0):
         """
         Solves the deformation of the block matrix given the method name and influence 
         function. The influence support is decided at initialization of the PeriBlock
@@ -110,7 +110,7 @@ class PeriBlock():
         """
         # Assemble the matrix and load for the given peridynamics law
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
-                          self.HAdj, self.data,
+                          self.HAdj, [self.data,{'p_stab':stab}],
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)

@@ -6,10 +6,12 @@ import timeit
 
 NS = [25]
 RFS = [1.5]
+stabs = np.linspace(0.1,2.0,10)
 methods = ['Silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
-
+smooth_methods = ['Fbased']
+stab_methods = ['Fstab_Littlewood','Fstab_Silling']
 onum = 0
 
 P = 0.1
@@ -31,13 +33,14 @@ def analytical(X):
     return u
 
 @sdb.Decorate('lfm',
-              [('method','TEXT'),('weight','TEXT'),('smoothing','TEXT'),('RF','FLOAT'),('N','INT')],
+              [('method','TEXT'),('weight','TEXT'),('smoothing','TEXT'),
+               ('stab','FLOAT'),('RF','FLOAT'),('N','INT')],
               [("error","FLOAT"),("time","FLOAT"),('u','array')])
-def sim(met,wei,smo,RF,N):
+def sim(met,wei,smo,stab,RF,N):
     global onum
-    print "Solving", met," ",wei," ",RF," ",N
+    print "Solving", met," ",wei," ",smo," ",stab," ",RF," ",N
     def work():
-        work.u=PB.solve(met,wei, P=P, smoothing=smo)
+        work.u=PB.solve(met,wei, P=P, smoothing=smo, stab=stab)
     runtime = timeit.timeit(work,number=1)
     if False:
         PB.output('./outs/poo_{0}.vtk'.format(onum),work.u)
@@ -64,6 +67,13 @@ for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]
 
         for met in methods:
             for wei in weights:
-                sim(met,wei,"",RF,N)
+                sim(met,wei,"",0.0,RF,N)
         for wei in weights:
-            sim('Fbased',wei,wei,RF,N)
+            sim('Fbased',wei,wei,0.0,RF,N)
+        for met in stab_methods:
+            for s in stabs:
+                sim(met,wei,"",s,RF,N)
+
+#
+# In these experiments we do a hyperparameter sweep through the stabilized methods
+#

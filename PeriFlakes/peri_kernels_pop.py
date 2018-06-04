@@ -90,6 +90,8 @@ class StateBased():
         return [(theta,self.theta_expr())]
     def list_moments(self):
         return [(m, Matrix([self.m_expr()]) )]
+    def extra_prgm(self):
+        return []
     def kernel(self):
         theta_expr = self.theta_expr()
         tA = self.force()
@@ -187,10 +189,7 @@ class Fbased(StateBased):
                   for i in xrange(gdim) for j in xrange(gdim) ])
         # The final program
         prgm = []
-        try:
-            prgm += self.extra_prgm()
-        except AttributeError:
-            pass
+        prgm += self.extra_prgm()
         prgm += self._sum_prgm(mK,self.K_expr()) + \
                [ mKi, Asgn(mKi,mK.inv()) ] + \
                self._sum_prgm(mN, N_expr) + \
@@ -226,14 +225,14 @@ class Fstab_Littlewood(Fbased):
 pv_w0 = PopcornVariable('w0integ',1,1)
 class Fstab_Silling(Fbased):
     def w0_expr(self):
-        return self.w0 * alpha_I * i_Vol[0]
+        return self.w0I * alpha_I * i_Vol[0]
     def force(self):
         P = self.stress()
         F = mN * mKi
         Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi * pv_w0[0]) * ( ryI  - F*rxI )
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
     def extra_prgm(self):
-        return  self._sum_prgm(pv_w0, self.w0_expr())
+        return  self._sum_prgm(pv_w0, Matrix([self.w0_expr()]))
 
 #
 # Kernels for smoothing
