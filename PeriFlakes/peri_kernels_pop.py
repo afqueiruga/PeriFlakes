@@ -186,7 +186,12 @@ class Fbased(StateBased):
                 [ tI_DN[i][j]*N_dyJ_expr[i][j].T
                   for i in xrange(gdim) for j in xrange(gdim) ])
         # The final program
-        prgm = self._sum_prgm(mK,self.K_expr()) + \
+        prgm = []
+        try:
+            prgm += self.extra_prgm()
+        except AttributeError:
+            pass
+        prgm += self._sum_prgm(mK,self.K_expr()) + \
                [ mKi, Asgn(mKi,mK.inv()) ] + \
                self._sum_prgm(mN, N_expr) + \
                reduce(operator.add,[
@@ -215,18 +220,20 @@ class Fstab_Littlewood(Fbased):
     def force(self):
         P = self.stress()
         F = mN * mKi
-        Tstab = i_stab[0] * rxI * ( ryabs  - norm(F*rxI) )/rxabs
+        Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * rxI * ( ryabs  - norm(F*rxI) )/rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
-    
+
+pv_w0 = PopcornVariable('w0integ',1,1)
 class Fstab_Silling(Fbased):
-    def w0(self):
-        return w0 * i_Vol[0]
+    def w0_expr(self):
+        return self.w0 * alpha_I * i_Vol[0]
     def force(self):
         P = self.stress()
         F = mN * mKi
-        Tstab = i_stab[0] * ( ryI  - F*rxI ) # * C / w0
+        Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi * pv_w0[0]) * ( ryI  - F*rxI )
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
-
+    def extra_prgm(self):
+        return  self._sum_prgm(pv_w0, self.w0_expr())
 
 #
 # Kernels for smoothing
