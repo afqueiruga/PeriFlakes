@@ -6,9 +6,10 @@ import timeit
 
 NS = [25]
 RFS = [1.5]
-stabs = np.linspace(0.1,2.0,10)
+stabs = np.linspace(2.0,10.0,10)
 methods = ['Silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
+smoothing_weights = ['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
 smooth_methods = ['Fbased']
 stab_methods = ['Fstab_Littlewood','Fstab_Silling']
@@ -65,15 +66,15 @@ for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]
         PB.cutbonds(-a,0,a,0)
         PB.output('./outs/alpha.vtk')
 
+        # The big grid search
         for met in methods:
             for wei in weights:
                 sim(met,wei,"",0.0,RF,N)
-        for wei in weights:
-            sim('Fbased',wei,wei,0.0,RF,N)
+        # Only try smoothing methods on one method
+        for met in smooth_methods:
+            for smo in smoothing_weights:
+                sim(met,wei,smo,0.0,RF,N)
+        # And only two of the methods use the stabilizer parameter
         for met in stab_methods:
             for s in stabs:
                 sim(met,wei,"",s,RF,N)
-
-#
-# In these experiments we do a hyperparameter sweep through the stabilized methods
-#

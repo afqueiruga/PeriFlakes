@@ -110,7 +110,8 @@ class PeriBlock():
         """
         # Assemble the matrix and load for the given peridynamics law
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
-                          self.HAdj, [self.data,{'p_stab':stab}],
+                          self.HAdj,
+                          [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
                           {'R':(self.dm_PtVec,),
                            'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
