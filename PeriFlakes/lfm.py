@@ -6,8 +6,8 @@ import timeit
 
 NS = [25]
 RFS = [1.5]
-stabs = np.linspace(2.0,10.0,10)
-methods = ['Silling','Oterkus2','Fbased','Fstab_Littlewood','Fstab_Silling']
+stabs = np.linspace(0.1,10.0,10)
+methods = ['Silling','Oterkus2','Fbased'] #,'Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
 smoothing_weights = ['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
@@ -51,7 +51,7 @@ def sim(met,wei,smo,stab,RF,N):
     error = np.linalg.norm(en) / np.linalg.norm(ua.flatten())
     return error,runtime,work.u,
 
-for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]:
+for N in [24,38,50,62,74,86,100,112,124,150,162,174,186,200,212,224,238,250]:
     for RF in [1.5]:
         PB = PeriBlock(1.0, N, RF*2.0/float(N), E=E,nu=nu)
         # Make far-field bcs by evaluating the analytical solution
@@ -73,8 +73,8 @@ for N in [24,38,50,62,74]: #,86,100,112,124,150,162,174,186,200,212,224,238,250]
         # Only try smoothing methods on one method
         for met in smooth_methods:
             for smo in smoothing_weights:
-                sim(met,wei,smo,0.0,RF,N)
+                sim(met,"cubic",smo,0.0,RF,N)
         # And only two of the methods use the stabilizer parameter
         for met in stab_methods:
             for s in stabs:
-                sim(met,wei,"",s,RF,N)
+                sim(met,"cubic","",s,RF,N)
