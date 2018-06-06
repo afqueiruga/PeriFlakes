@@ -37,7 +37,7 @@ class LFM_Anal(Expression):
     def value_shape(self):
         return (2,)
 
-@sdb.Decorate("lfm",
+@sdb.Decorate("lfm_nonuniform",
               [("clscale","FLOAT"),("poly","INT")],
               [("h","FLOAT"),("error","FLOAT"),("time","FLOAT"),("x","array"),("u","array")])
 def sim(clscale,poly):
@@ -71,8 +71,8 @@ def sim(clscale,poly):
     def work():
         solve(a==L, u, bcs=bcs)
     runtime = timeit.timeit(work, number=10)
-    # We need to nudge of the crack nodes so that the analytical solution can be evaluated
-    # on the crack exactly.
+    # We need to nudge some of the crack nodes so that the analytical solution
+    # can be evaluated on the crack exactly.
     for l in facets(mesh):
         if facetids[l.index()]==2:
             mesh.coordinates()[l.entities(0),:] -= 1.0e-8
@@ -94,7 +94,7 @@ def sim(clscale,poly):
 
 import multiprocessing as multi
 import itertools
-resolutions = np.linspace(0.25,2.0,10)
+resolutions = np.linspace(0.25,4.0,10)
 orders = [1,2,3]
 def f(t):
     print t

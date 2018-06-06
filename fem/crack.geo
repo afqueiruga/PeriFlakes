@@ -2,6 +2,10 @@
 
 a = 0.1;
 clcrack = a/5.0;
+// By changing this we can make it nonuniform
+// We keep it uniform to be fair to peridynamics, which doesn't
+// work on non uniform grid!
+//clbig = clcrack;
 clbig = 0.5;
 
 // Rectangle(1) = {-1, -1, 0, 1, 1, 0};
