@@ -215,13 +215,22 @@ class Fbased(StateBased):
         ]
         return Kernel(self.name, listing=prgm)
 
-class Fstab_Littlewood(Fbased):
+class Fstab_Littlewood2010(Fbased):
     def force(self):
         P = self.stress()
         F = mN * mKi
         Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * rxI * ( ryabs  - norm(F*rxI) )/rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
-
+    
+class Fstab_Littlewood2011(Fbased):
+    def force(self):
+        P = self.stress()
+        F = mN * mKi
+        h = F*rxI - ryI
+        hproj = h.dot(rxI)
+        Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * hproj/rxabs * rxI /rxabs
+        return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
+    
 pv_w0 = PopcornVariable('w0integ',1,1)
 class Fstab_Silling(Fbased):
     def w0_expr(self):
@@ -269,7 +278,8 @@ formulations = {
     'Silling' : StateBased,
     'Oterkus2': Oterkus,
     'Fbased':Fbased,
-    'Fstab_Littlewood':Fstab_Littlewood,
+    'Fstab_Littlewood':Fstab_Littlewood2010,
+    'Fstab_Littlewood2011':Fstab_Littlewood2011,
     'Fstab_Silling':Fstab_Silling,
 }
 delta = i_delta[0]
