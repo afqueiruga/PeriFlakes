@@ -19,9 +19,38 @@ This is an updated version of the code used to perform the study in
 
 in which the algorithms and formulations are described in detail.
 
+## Running
+
+The easiest way to run this code yourself is to pull the cornflakes image:
+```python
+docker pull afqu/cornflakes
+```
+and then find this code in `/opt_cornflakes/PeriFlakes`.
+
+## Datasets
+
+The databases that the scripts will generate are published on Zenodo
+at:
+
+> Alejandro Francisco Queiruga. (2018). 2D Peridynamic Displacement
+> Fields [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1284634
+
+They are simple sqlite3 databases, and the Jupyter notebook
+[analysis.ipynb](analysis.ipynb) illustrates their structure and how to query them.
+
 ## Conclusions 
 
-The purpose of this repository is to illustrate the limitations of Peridynamic theory. 
+The purpose of this repository is to illustrate the limitations of
+the Peridynamics family of numerical methods.
+The popcorn file
+[PeriFlakes/peri_kernels_pop.py](PeriFlakes/peri_kernels_pop.py)
+performs extensive Ahead-Of-Time code generation to allow us to
+exhaustively search the hyperparameter space of possible Peridynamics programs.
+The simulation object was only designed to quickly graph the
+unit square domain and sweep through different configurations of the
+Peridynamics approximation.
+The analysis of the results can be viewed and run in the Jupyter
+notebook [analysis.ipynb](analysis.ipynb).
 
 ## License
 
