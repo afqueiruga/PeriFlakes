@@ -12,7 +12,7 @@ weights = ['cubic'] #['const','inv','linear','quadr','cubic','quarticA']
 smoothing_weights = ['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('lfm_data.db')
 smooth_methods = ['Fbased']
-stab_methods = ['Fstab_Littlewood2011'] #,'Fstab_Littlewood','Fstab_Silling']
+stab_methods = ['Fstab_Littlewood2011','Fstab_Littlewood2011minus'] #,'Fstab_Littlewood','Fstab_Silling']
 onum = 0
 
 P = 0.1

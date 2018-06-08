@@ -226,7 +226,15 @@ class Fstab_Littlewood2011(Fbased):
     def force(self):
         P = self.stress()
         F = mN * mKi
-        h = F*rxI - ryI
+        h = (F*rxI - ryI)
+        hproj = h.dot(rxI)
+        Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * hproj/rxabs * rxI /rxabs
+        return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
+class Fstab_Littlewood2011minus(Fbased):
+    def force(self):
+        P = self.stress()
+        F = mN * mKi
+        h = -(F*rxI - ryI)
         hproj = h.dot(rxI)
         Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * hproj/rxabs * rxI /rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
@@ -280,6 +288,7 @@ formulations = {
     'Fbased':Fbased,
     'Fstab_Littlewood':Fstab_Littlewood2010,
     'Fstab_Littlewood2011':Fstab_Littlewood2011,
+    'Fstab_Littlewood2011minus':Fstab_Littlewood2011minus,
     'Fstab_Silling':Fstab_Silling,
 }
 delta = i_delta[0]
