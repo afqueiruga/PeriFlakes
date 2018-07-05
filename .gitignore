@@ -5,3 +5,7 @@
 
 *.o
 *.so
+
+*.db
+.ipynb_checkpoints
+.DS_Store
