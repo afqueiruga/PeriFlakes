@@ -95,6 +95,14 @@ class PeriBlock():
         self.data['alpha'][0][dofs] = 0.0
         self.HCut = hcut
 
+    def _assemble_KR(self, method, weight, stab=0.0):
+        K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+                          self.HAdj,
+                          [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
+                          {'R':(self.dm_PtVec,),
+                           'K':(self.dm_PtVec,)},
+                          gdim*self.NPart)
+        return K,R
     def solve(self, method, weight, P=1.0, smoothing="", stab=0.0):
         """
         Solves the deformation of the block matrix given the method name and influence 
@@ -109,12 +117,7 @@ class PeriBlock():
         the fluid-filled pressure force on the bonds.
         """
         # Assemble the matrix and load for the given peridynamics law
-        K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
-                          self.HAdj,
-                          [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
-                          {'R':(self.dm_PtVec,),
-                           'K':(self.dm_PtVec,)},
-                          gdim*self.NPart)
+        K,R = self._assemble_KR(method,weight,stab)
         # Assemble the fluid pressure on bonds if present
         try:
             Rp, = cf.Assemble(hb.kernel_bond_pressure,
