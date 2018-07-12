@@ -11,26 +11,26 @@ class PeriBlock():
     """
     This is a base class for making a square peridynamics domain
     """
-    def __init__(self, L,Nside, cutoff, E=1.0, nu=0.0):
+    def __init__(self, L,Nside, delta, ficticious=False, E=1.0, nu=0.0):
         """
-        Initialize a square domain of half-side-length L with Nside 
-        particles along its side. cutoff is the support of the influence
-        function. 
+        Initialize a square domain of half-side-length L with Nside
+        particles along its side. delta is the support of the influence
+        function.
         A Peridynamics scheme has 3 hyperparameters:
         1. method: The force law
         2. weight: The form of the influence function
-        3. cutoff: The scaling of the support radius
-        
-        The cutoff is the only hyperparamter that needs to be set
-        at first; the same data and graph can be applied to many schemes in 
-        solve(). The cutoff radius is used to build the neighbor list.
+        3. delta: The scaling of the support radius
+
+        The delta is the only hyperparamter that needs to be set
+        at first; the same data and graph can be applied to many schemes in
+        solve(). The delta radius is used to build the neighbor list.
         """
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
         particle_Vol = (2.0*L)**2/float(Nside**2)
         self.NPart = self.x.shape[0]
-        self.HPair = cf.Graphers.Build_Pair_Graph(self.x, cutoff*1.1)
+        self.HPair = cf.Graphers.Build_Pair_Graph(self.x, delta*1.1)
         self.NBond = len(self.HPair)
-        self.HBond = cf.Graphers.Build_Pair_Graph(self.x, cutoff*1.1)
+        self.HBond = cf.Graphers.Build_Pair_Graph(self.x, delta*1.1)
         self.HBond.Add_Edge_Vertex(self.NPart)
         self.HAdj = util.Make_Bond_Adjacency(self.HBond)
 
@@ -57,7 +57,7 @@ class PeriBlock():
         self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
         self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
         self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
-        
+
     def setbcs(self, diri=None,neum=None):
         """
         Set the boundary conditions that will be applied by solve()
@@ -81,7 +81,7 @@ class PeriBlock():
 
     def cutbonds(self, x0,y0,x1,y1):
         """
-        Cut all of the bonds manually. 
+        Cut all of the bonds manually.
 
         PeriFlakes does not actually implement the damage evolution, as
         it is meant to illustrate the properties that affect it.
@@ -105,11 +105,11 @@ class PeriBlock():
         return K,R
     def solve(self, method, weight, P=1.0, smoothing="", stab=0.0):
         """
-        Solves the deformation of the block matrix given the method name and influence 
+        Solves the deformation of the block matrix given the method name and influence
         function. The influence support is decided at initialization of the PeriBlock
         object.
 
-        The method and weight strings key directly into the peridynamics kernels in the 
+        The method and weight strings key directly into the peridynamics kernels in the
         husk. There is an additional smoothing argument, which, if not false-valued, will
         call the smoothing kernel after assembling and solving the system.
 
@@ -149,5 +149,5 @@ class PeriBlock():
         cf.GraphIO.write_graph(fname,self.HPair,self.x,
                        [('x',self.x)] +
                        ([('u',u.reshape((-1,2)))] if not u is None else []),
-                       [('alpha', self.data['alpha'][0])]     
+                       [('alpha', self.data['alpha'][0])]
                        )
