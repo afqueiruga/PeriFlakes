@@ -25,6 +25,13 @@ class PeriBlock():
         at first; the same data and graph can be applied to many schemes in
         solve(). The delta radius is used to build the neighbor list.
         """
+        if ficticious:
+            Ltot = L+delta
+        else:
+            Ltot = L
+        self.ficticious = ficticious
+
+        # Make a grid and the graphs
         self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
         particle_Vol = (2.0*L)**2/float(Nside**2)
         self.NPart = self.x.shape[0]
@@ -34,6 +41,20 @@ class PeriBlock():
         self.HBond.Add_Edge_Vertex(self.NPart)
         self.HAdj = util.Make_Bond_Adjacency(self.HBond)
 
+        # The ficticious nodes are set aside in a different graph, because
+        # they will apply a different operator than the PD stencil
+        if ficticious:
+            self.HFict = cf.Hypergraph()
+            Hnew = cf.Hypergraph()
+            for e in self.HAdj:
+                xi = self.x[e[0],:]
+                if xi[0]>L or xi[0]<-L or xi[1]>L or xi[1]<L:
+                    self.HFict.Push_Edge(e)
+                else:
+                    Hnew.Push_Edge(e)
+            self.HAdj = Hnew
+
+        # Make the data arrays, vertex-to-data mappings, and the data dictionary
         y = self.x.copy()
         alpha = np.ones(self.NBond,dtype=np.double)
         delta = np.ones(self.NPart,dtype=np.double)
@@ -51,6 +72,7 @@ class PeriBlock():
             'p_Vol':(np.array([particle_Vol]),self.dm_GlobalSca),
             'p_stab':(np.array([1.0]),self.dm_GlobalSca),
         }
+
         # Mark boundaries
         eps = 1.0e-10
         self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
