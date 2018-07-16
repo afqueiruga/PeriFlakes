@@ -6,6 +6,7 @@ import util
 import husk_peridynamics as hp
 import husk_bonds as hb
 gdim = 2
+eps = 1.0e-12
 
 class PeriBlock():
     """
@@ -55,7 +56,7 @@ class PeriBlock():
             Hnew = cf.Hypergraph()
             for e in self.HAdj:
                 xi = self.x[e[0],:]
-                if xi[0]<L and xi[0]>-L and xi[1]>-L and xi[1]<L:
+                if xi[0]<L+eps and xi[0]>-L-eps and xi[1]>-L-eps and xi[1]<L+eps:
                     Hnew.Push_Edge(e)
                 else:
                     self.HFict.Push_Edge(e)
@@ -81,7 +82,6 @@ class PeriBlock():
         }
 
         # Mark boundaries
-        eps = 1.0e-10
         self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
         self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
         self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
