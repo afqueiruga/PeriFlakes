@@ -11,7 +11,7 @@ class PeriBlock():
     """
     This is a base class for making a square peridynamics domain
     """
-    def __init__(self, L,Nside, delta, ficticious=False, E=1.0, nu=0.0):
+    def __init__(self, L,Nside, delta, E=1.0, nu=0.0, ficticious=False):
         """
         Initialize a square domain of half-side-length L with Nside
         particles along its side. delta is the support of the influence
@@ -26,13 +26,20 @@ class PeriBlock():
         solve(). The delta radius is used to build the neighbor list.
         """
         if ficticious:
-            Ltot = L+delta
+            # The band shouldn't mess up the gridding
+            h = 2.0*L/float(Nside-1)
+            Ndel = int(np.ceil(delta/h))
+            band = Ndel * h
+            print delta
+            print band
+            Ltot = L+band
+            Nside = Nside + Ndel*2
         else:
             Ltot = L
         self.ficticious = ficticious
 
         # Make a grid and the graphs
-        self.x = cf.PP.init_grid(Nside,Nside, [-L,-L], [2*L,0.0], [0.0,2*L])
+        self.x = cf.PP.init_grid(Nside,Nside, [-Ltot,-Ltot], [2*Ltot,0.0], [0.0,2*Ltot])
         particle_Vol = (2.0*L)**2/float(Nside**2)
         self.NPart = self.x.shape[0]
         self.HPair = cf.Graphers.Build_Pair_Graph(self.x, delta*1.1)
@@ -48,10 +55,10 @@ class PeriBlock():
             Hnew = cf.Hypergraph()
             for e in self.HAdj:
                 xi = self.x[e[0],:]
-                if xi[0]>L or xi[0]<-L or xi[1]>L or xi[1]<L:
-                    self.HFict.Push_Edge(e)
-                else:
+                if xi[0]<L and xi[0]>-L and xi[1]>-L and xi[1]<L:
                     Hnew.Push_Edge(e)
+                else:
+                    self.HFict.Push_Edge(e)
             self.HAdj = Hnew
 
         # Make the data arrays, vertex-to-data mappings, and the data dictionary
@@ -121,22 +128,22 @@ class PeriBlock():
         K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                           self.HAdj,
                           [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
-                          {'R':(self.dm_PtVec,),
-                           'K':(self.dm_PtVec,)},
+                          {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
         return K,R
     def solve(self, method, weight, P=1.0, smoothing="", stab=0.0):
         """
-        Solves the deformation of the block matrix given the method name and influence
-        function. The influence support is decided at initialization of the PeriBlock
-        object.
+        Solves the deformation of the block matrix given the method name and
+        influence function. The influence support is decided at initialization
+        of the PeriBlock object.
 
-        The method and weight strings key directly into the peridynamics kernels in the
-        husk. There is an additional smoothing argument, which, if not false-valued, will
-        call the smoothing kernel after assembling and solving the system.
+        The method and weight strings key directly into the peridynamics kernels
+        in the husk. There is an additional smoothing argument, which, if not
+        false-valued, will call the smoothing kernel after assembling and
+        solving the system.
 
-        If there are cut bonds present, self.HCut, the P argument will be used to apply
-        the fluid-filled pressure force on the bonds.
+        If there are cut bonds present, self.HCut, the P argument will be used
+        to apply the fluid-filled pressure force on the bonds.
         """
         # Assemble the matrix and load for the given peridynamics law
         K,R = self._assemble_KR(method,weight,stab)
@@ -161,12 +168,13 @@ class PeriBlock():
                               {'ys':(self.dm_PtVec,)},
                               gdim*self.NPart)
             u = us
-        # The PeriBlock object is stateless w.r.t. solution, so we return the result
+        # The PeriBlock object is stateless w.r.t. solution, so
         return u
 
     def output(self, fname, u=None):
         """
-        Writes a vtk file with the bond states and, optionally, the displacement solution.
+        Writes a vtk file with the bond states and, optionally, the displacement
+        solution.
         """
         cf.GraphIO.write_graph(fname,self.HPair,self.x,
                        [('x',self.x)] +
