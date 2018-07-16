@@ -5,6 +5,13 @@ import scipy.sparse.linalg as splin
 import util
 import husk_peridynamics as hp
 
+#
+# This file was my prototyping the peridynamics computation in cornflakes,
+# to help test out and investigate all of the little pieces
+# The file PeriBlock is an object-oriented approach to building a computation
+# that can be batched out.
+#
+
 # Params
 gdim = 2
 Nside = 25
@@ -56,11 +63,11 @@ Nbc = len(dirrdofs)
 ubc = np.zeros(Nbc)
 
 # Make the linear system
-K,R = cf.Assemble(hp.kernel_silling_cubic,HAdj,
+K,R = cf.Assemble(hp.kernel_Silling_cubic,HAdj,
                   data,
                   {'R':(cf.Dofmap_Strided(gdim),),
                    'K':(cf.Dofmap_Strided(gdim),)},
-                  gdim*NPart) 
+                  gdim*NPart)
 cf.Apply_BC(dirrdofs,ubc, K,R)
 R[loaddofs]-= 1.0
 u = splin.spsolve(K,R)
