@@ -31,8 +31,6 @@ class PeriBlock():
             h = 2.0*L/float(Nside-1)
             Ndel = int(np.ceil(delta/h))
             band = Ndel * h
-            print delta
-            print band
             Ltot = L+band
             Nside = Nside + Ndel*2
         else:
@@ -131,7 +129,14 @@ class PeriBlock():
                           {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
         return K,R
-    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0):
+    def _assemble_KR_fict(self, fictmet, method, weight, stab=0.0):
+        K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+                          self.HFict,
+                          [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
+                          {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                          gdim*self.NPart)
+        return K,R
+    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="standard"):
         """
         Solves the deformation of the block matrix given the method name and
         influence function. The influence support is decided at initialization
@@ -157,9 +162,17 @@ class PeriBlock():
             R += Rp
         except AttributeError:
             pass
+        # Add the ficticious domain component
+        if self.ficticious:
+            Kf,Rf = self._assemble_KR_fict(fictmet,method,weight,stab)
+            K=K+Kf
+            R += Rf
+        else:
+            R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]            
+
         # Apply boundary conditions and then solve the matrix system
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
-        R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
+
         u = splin.spsolve(K,R)
         # If we specified a smoothing function, post process the solution
         if smoothing:
