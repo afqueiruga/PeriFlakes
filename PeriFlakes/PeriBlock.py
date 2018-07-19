@@ -29,7 +29,9 @@ class PeriBlock():
         if ficticious:
             # The band shouldn't mess up the gridding
             h = 2.0*L/float(Nside-1)
-            Ndel = int(np.ceil(delta/h))
+            # ceil would give us one more, but it wouldn't be inside
+            # any particles' support. Then it's BC wouldn't be obvious
+            Ndel = int(np.floor(delta/h)) 
             band = Ndel * h
             Ltot = L+band
             Nside = Nside + Ndel*2
@@ -59,7 +61,9 @@ class PeriBlock():
                 else:
                     self.HFict.Push_Edge(e)
             self.HAdj = Hnew
-
+            for e in self.HFict:
+                xi = self.x[e[0],:]
+                
         # Make the data arrays, vertex-to-data mappings, and the data dictionary
         y = self.x.copy()
         alpha = np.ones(self.NBond,dtype=np.double)
