@@ -24,8 +24,8 @@ class construct(ut.TestCase):
         h = 2.0*L/float(N)
         self.assertTrue(PB.x[:,0].max() >  L + delta - h)
         self.assertTrue(PB.x[:,0].min() < -L - delta + h)
-        self.assertTrue(PB.x[:,1].max() >  L + delta + h)
-        self.assertTrue(PB.x[:,1].min() < -L - delta - h)
+        self.assertTrue(PB.x[:,1].max() >  L + delta - h)
+        self.assertTrue(PB.x[:,1].min() < -L - delta + h)
 
         # Verify some of the nodes are exactly on the boundary
 
@@ -51,14 +51,16 @@ class assemble(ut.TestCase):
 
 class stencil(ut.TestCase):
     def test_y_aligned(self):
+        print
+        print "-- Testing y version: --"
         import numpy as np
         import husk_ficticious
         import cornflakes as cf
         ke = husk_ficticious.kernel_ficticious_bobaru_y
         # No load
         dat = np.array([0,0, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         out = cf.cornflakes_library.call_kernel(ke,4,dat)
         R = out[0:8]
         K = out[8:72].reshape(8,8)
@@ -66,8 +68,8 @@ class stencil(ut.TestCase):
 
         print "Normal Load:"
         dat = np.array([0,1, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         out = cf.cornflakes_library.call_kernel(ke,4,dat)
         K = out[0:64].reshape(8,8)
         R = out[64:72]
@@ -76,8 +78,8 @@ class stencil(ut.TestCase):
 
         print "Shear Load:"
         dat = np.array([1,0, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         out = cf.cornflakes_library.call_kernel(ke,4,dat)
         K = out[0:64].reshape(8,8)
         R = out[64:72]
@@ -85,15 +87,17 @@ class stencil(ut.TestCase):
         print R
         print K
     def test_n_version(self):
+        print
+        print "-- Testing n version: --"
         import numpy as np
         import husk_ficticious
         import cornflakes as cf
         ken = husk_ficticious.kernel_ficticious_bobaru_n
-        key = husk_ficticious.kernel_ficticious_bobaru_n
+        key = husk_ficticious.kernel_ficticious_bobaru_y
         # No load
         dat = np.array([0,0, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         out = cf.cornflakes_library.call_kernel(ken,4,dat)
         R = out[0:8]
         K = out[8:72].reshape(8,8)
@@ -101,8 +105,8 @@ class stencil(ut.TestCase):
 
         print "Normal Load:"
         dat = np.array([0,1, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         outy = cf.cornflakes_library.call_kernel(key,4,dat)
         self.assertTrue( np.linalg.norm(outn-outy) < 1.0e-12 )
@@ -113,8 +117,8 @@ class stencil(ut.TestCase):
 
         print "Shear Load:"
         dat = np.array([1,0, 1,0.25,
-                        0,1, -1,0, 0,0, 1,0 ,
-                        0,1, -1,0, 0,0, 1,0 ])
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         outy = cf.cornflakes_library.call_kernel(key,4,dat)
         self.assertTrue( np.linalg.norm(outn-outy) < 1.0e-12 )
@@ -125,15 +129,58 @@ class stencil(ut.TestCase):
 
         print "Shear Load along x:"
         dat = np.array([0,1, 1,0.25,
-                        1,0, 0,-1, 0,0, 0,1 ,
-                        1,0, 0,-1, 0,0, 0,1 ])
+                        1,0, 0,0, 0,-1, 0,1 ,
+                        1,0, 0,0, 0,-1, 0,1 ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         K = outn[0:64].reshape(8,8)
         R = outn[64:72]
         print R
         print K
+    def test_corner_version(self):
+        print
+        print "-- Testing corner version: --"
+        import numpy as np
+        import husk_ficticious
+        import cornflakes as cf
+        ken = husk_ficticious.kernel_ficticious_bobaru_n3
+        # No load
+        dat = np.array([0,0, 1,0.25,
+                        0,1, -1,0, 0,0 ,
+                        0,1, -1,0, 0,0,])
+        out = cf.cornflakes_library.call_kernel(ken,4,dat)
+        R = out[36:]
+        K = out[:36].reshape(6,6)
+        self.assertTrue(R.sum() == 0.0)
 
-#K,R = PB._assemble_KR('Fbased','cubic')
+        print "Normal Load:"
+        dat = np.array([0,1, 1,0.25,
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
+        outn = cf.cornflakes_library.call_kernel(ken,4,dat)
+        K = outn[0:36].reshape(6,6)
+        R = outn[36:]
+        print R
+        print K
+
+        print "Shear Load:"
+        dat = np.array([1,0, 1,0.25,
+                        0,1, 0,0, -1,0, 1,0 ,
+                        0,1, 0,0, -1,0, 1,0 ])
+        outn = cf.cornflakes_library.call_kernel(ken,4,dat)
+        K = outn[0:36].reshape(6,6)
+        R = outn[36:]
+        print R
+        print K
+
+        print "Shear Load along x:"
+        dat = np.array([0,1, 1,0.25,
+                        1,0,  0,0, 0,-1, 0,1 ,
+                        1,0,  0,0, 0,-1, 0,1 ])
+        outn = cf.cornflakes_library.call_kernel(ken,4,dat)
+        K = outn[0:36].reshape(6,6)
+        R = outn[36:]
+        print R
+        print K
 
 
 if __name__=='__main__':
