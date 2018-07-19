@@ -61,9 +61,32 @@ class PeriBlock():
                 else:
                     self.HFict.Push_Edge(e)
             self.HAdj = Hnew
+
+            # Make the FDM stencils
+            self.HFictStencil4 = cf.Hypergraph()
+            self.HFictStencil3 = cf.Hypergraph()
             for e in self.HFict:
-                xi = self.x[e[0],:]
-                
+                x0 = self.x[e[0],:]
+                bodyvertices = []
+                for i in e[1:(len(e)/2+1)]:
+                    if x0[0] > L:
+                        if self.x[i,0] < L+eps:
+                            bodyvertices.append(i)
+                    elif x0[0] <- L:
+                        if self.x[i,0] > -L-eps:
+                            bodyvertices.append(i)
+                    elif x0[1] > L:
+                        if self.x[i,1] < L+eps:
+                            bodyvertices.append(i)
+                    elif x0[1] <- L:
+                        if self.x[i,1] > -L-eps:
+                            bodyvertices.append(i)
+                bodyvertices.sort( key=lambda i: np.linalg.norm(self.x[i,:]-x0) )
+                if len(bodyvertices)==2:
+                    self.HFictStencil3.Push_Edge([e[0]]+bodyvertices)
+                elif len(bodyvertices)==3:
+                    self.HFictStencil4.Push_Edge([e[0]]+bodyvertices)
+
         # Make the data arrays, vertex-to-data mappings, and the data dictionary
         y = self.x.copy()
         alpha = np.ones(self.NBond,dtype=np.double)
