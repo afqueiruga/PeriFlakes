@@ -53,6 +53,7 @@ class PeriBlock():
         # The ficticious nodes are set aside in a different graph, because
         # they will apply a different operator than the PD stencil
         if ficticious:
+            self.FictNodes = set()
             self.HFict = cf.Hypergraph()
             Hnew = cf.Hypergraph()
             for e in self.HAdj:
@@ -61,6 +62,7 @@ class PeriBlock():
                     Hnew.Push_Edge(e)
                 else:
                     self.HFict.Push_Edge(e)
+                    self.FictNodes.add(e[0])
             self.HAdj = Hnew
 
             # Make the FDM stencils
@@ -70,18 +72,19 @@ class PeriBlock():
                 x0 = self.x[e[0],:]
                 bodyvertices = []
                 for i in e[1:(len(e)/2+1)]:
-                    if x0[0] > L:
-                        if self.x[i,0] < L+eps:
-                            bodyvertices.append(i)
-                    elif x0[0] <- L:
-                        if self.x[i,0] > -L-eps:
-                            bodyvertices.append(i)
-                    elif x0[1] > L:
+                    if x0[1] > L:
                         if self.x[i,1] < L+eps:
                             bodyvertices.append(i)
                     elif x0[1] <- L:
                         if self.x[i,1] > -L-eps:
                             bodyvertices.append(i)
+                    elif x0[0] > L:
+                        if self.x[i,0] < L+eps:
+                            bodyvertices.append(i)
+                    elif x0[0] <- L:
+                        if self.x[i,0] > -L-eps:
+                            bodyvertices.append(i)
+
                 bodyvertices.sort( key=lambda i: np.linalg.norm(self.x[i,:]-x0) )
                 if len(bodyvertices)==2:
                     self.HFictStencil3.Push_Edge([e[0]]+bodyvertices)
@@ -109,10 +112,16 @@ class PeriBlock():
         }
 
         # Mark boundaries
-        self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
-        self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
-        self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
-        self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
+        if self.ficticious:
+            self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L-h+eps )
+            self.right = cf.select_nodes(self.x, lambda a: a[0]> L+h-eps )
+            self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L-h+eps )
+            self.top   = cf.select_nodes(self.x, lambda a: a[1]> L+h-eps )
+        else:
+            self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
+            self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
+            self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
+            self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
 
     def setbcs(self, diri=None,neum=None):
         """
@@ -121,8 +130,16 @@ class PeriBlock():
         if neum is None:
             self.loaddofs = self.dm_PtVec.Get_List(self.top)[1::2]
         else:
-            self.loaddofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
-                                      for A,B in neum],dtype=np.int).flatten()
+            #self.loaddofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
+            #                          for A,B in neum],dtype=np.int).flatten()
+            
+            for A,B in neum:
+                if self.ficticious:
+                    for a in A:
+                        if a in self.FictNodes:
+                            self.data['load'][0][a,:] = B
+                else:
+                    self.data['load'][0][A,:] = B
         if diri is None:
             self.diridofs = np.array([
                 self.dm_PtVec.Get_List(self.right)[0::2],
@@ -170,7 +187,7 @@ class PeriBlock():
                                 self.data,
                                 {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                                 gdim*self.NPart)
-            K4,R4 = cf.Assemble(hf.kernel_bobaru_n, self.HFictStencil3,
+            K4,R4 = cf.Assemble(hf.kernel_bobaru_n, self.HFictStencil4,
                                 self.data,
                                 {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                                 gdim*self.NPart)

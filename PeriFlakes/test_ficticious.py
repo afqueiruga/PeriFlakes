@@ -167,6 +167,7 @@ class stencil(ut.TestCase):
                         0,1, 0,0, -1,0,
                         0,1, 0,0, -1,0, ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
+        print outn
         K = outn[0:36].reshape(6,6)
         R = outn[36:]
         print R

@@ -122,7 +122,7 @@ nt = nt_plus
 #constraint = en*nn + i_nu[0]*et*nt - i_t.multiply_elementwise( KnuE * nn )
 constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-uo)/norm(xp-xo) - t.multiply_elementwise( KnuE * nn )
 
-R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0, 0,0])
+R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0 ])
 K_expr = R_expr.jacobian(i_y)
 
 Kernel("bobaru_n3",
