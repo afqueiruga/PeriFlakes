@@ -5,6 +5,7 @@ import scipy.sparse.linalg as splin
 import util
 import husk_peridynamics as hp
 import husk_bonds as hb
+import husk_ficticious as hf
 gdim = 2
 eps = 1.0e-12
 
@@ -104,6 +105,7 @@ class PeriBlock():
             'p_nu':(np.array([nu]),self.dm_GlobalSca),
             'p_Vol':(np.array([particle_Vol]),self.dm_GlobalSca),
             'p_stab':(np.array([1.0]),self.dm_GlobalSca),
+            'load':(np.zeros(self.x.shape),self.dm_PtVec)
         }
 
         # Mark boundaries
@@ -157,11 +159,23 @@ class PeriBlock():
                           gdim*self.NPart)
         return K,R
     def _assemble_KR_fict(self, fictmet, method, weight, stab=0.0):
-        K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
-                          self.HFict,
-                          [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
-                          {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
-                          gdim*self.NPart)
+        if fictmet == "standard":
+            K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+                              self.HFict,
+                              [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
+                              {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                              gdim*self.NPart)
+        elif fictmet=="bobaru":
+            K3,R3 = cf.Assemble(hf.kernel_bobaru_n3, self.HFictStencil3,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            K4,R4 = cf.Assemble(hf.kernel_bobaru_n, self.HFictStencil3,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            K = K3 + K4
+            R = R3 + R4
         return K,R
     def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="standard"):
         """

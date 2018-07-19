@@ -21,17 +21,20 @@ l_edge = Symbol('l_edge')
 PointSca = DofSpace(1, 0, 4,1)
 PointVec = DofSpace(gdim, 0,4,1)
 Param = DofSpace(1, 0,1)
+ParamVec = DofSpace(gdim, 0,1)
 GlobalVec = DofSpace(gdim, -1)
 
 i_y = Input("y",PointVec)
 i_x = Input("x",PointVec)
 i_E = Input("p_E", Param)
 i_nu = Input("p_nu", Param)
-i_t = Input("load", GlobalVec)
+i_t = Input("load", ParamVec)
 
 o_R = Output("R", [PointVec],1)
 o_K = Output("K", [PointVec],2)
 
+
+t = i_t.Vertex_Handle(0)
 yf, yo,yp, ym = i_y.Vertex_Split()
 xf, xo,xp, xm = i_x.Vertex_Split()
 
@@ -48,7 +51,7 @@ rowy = (uf[1]-uo[1])/Dy + i_nu[0]*(up[0]-um[0])/(TwoDx) - i_t[1]*(1+i_nu[0])/i_E
 R_expr = Matrix([ rowx, rowy, 0,0, 0,0, 0,0])
 K_expr = R_expr.jacobian(i_y)
 
-Kernel("ficticious_bobaru_y",
+Kernel("bobaru_y",
        listing=[
            Asgn(o_R,R_expr,'='),
            Asgn(o_K,K_expr,'=')
@@ -77,12 +80,12 @@ KnuE = 1/i_E[0] * Matrix([[ 1+i_nu[0],    1-i_nu[0]**2],
                           [ 1-i_nu[0]**2, 1+i_nu[0]   ]])
 #constraint = en*nn + i_nu[0]*et*nt - i_t.multiply_elementwise( KnuE * nn )
 
-constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-um)/norm(xp-xm) - i_t.multiply_elementwise( KnuE * nn )
+constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-um)/norm(xp-xm) - t.multiply_elementwise( KnuE * nn )
 
 R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0, 0,0])
 K_expr = R_expr.jacobian(i_y)
 
-Kernel("ficticious_bobaru_n",
+Kernel("bobaru_n",
        listing=[
            Asgn(o_R,R_expr,'='),
            Asgn(o_K,K_expr,'=')   
@@ -102,6 +105,7 @@ i_x = Input("x",PointVec3)
 o_R = Output("R", [PointVec3],1)
 o_K = Output("K", [PointVec3],2)
 
+t = i_t.Vertex_Handle(0)
 yf, yo,yp = i_y.Vertex_Split()
 xf, xo,xp = i_x.Vertex_Split()
 
@@ -116,12 +120,12 @@ et = et_plus
 nt = nt_plus
 
 #constraint = en*nn + i_nu[0]*et*nt - i_t.multiply_elementwise( KnuE * nn )
-constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-uo)/norm(xp-xo) - i_t.multiply_elementwise( KnuE * nn )
+constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-uo)/norm(xp-xo) - t.multiply_elementwise( KnuE * nn )
 
 R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0, 0,0])
 K_expr = R_expr.jacobian(i_y)
 
-Kernel("ficticious_bobaru_n3",
+Kernel("bobaru_n3",
        listing=[
            Asgn(o_R,R_expr,'='),
            Asgn(o_K,K_expr,'=')   

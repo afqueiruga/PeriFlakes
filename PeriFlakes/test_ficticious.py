@@ -56,7 +56,7 @@ class stencil(ut.TestCase):
         import numpy as np
         import husk_ficticious
         import cornflakes as cf
-        ke = husk_ficticious.kernel_ficticious_bobaru_y
+        ke = husk_ficticious.kernel_bobaru_y
         # No load
         dat = np.array([0,0, 1,0.25,
                         0,1, 0,0, -1,0, 1,0 ,
@@ -92,8 +92,8 @@ class stencil(ut.TestCase):
         import numpy as np
         import husk_ficticious
         import cornflakes as cf
-        ken = husk_ficticious.kernel_ficticious_bobaru_n
-        key = husk_ficticious.kernel_ficticious_bobaru_y
+        ken = husk_ficticious.kernel_bobaru_n
+        key = husk_ficticious.kernel_bobaru_y
         # No load
         dat = np.array([0,0, 1,0.25,
                         0,1, 0,0, -1,0, 1,0 ,
@@ -142,7 +142,7 @@ class stencil(ut.TestCase):
         import numpy as np
         import husk_ficticious
         import cornflakes as cf
-        ken = husk_ficticious.kernel_ficticious_bobaru_n3
+        ken = husk_ficticious.kernel_bobaru_n3
         # No load
         dat = np.array([0,0, 1,0.25,
                         0,1, 0,0, -1,0,
