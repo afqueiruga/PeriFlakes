@@ -145,8 +145,8 @@ class stencil(ut.TestCase):
         ken = husk_ficticious.kernel_ficticious_bobaru_n3
         # No load
         dat = np.array([0,0, 1,0.25,
-                        0,1, -1,0, 0,0 ,
-                        0,1, -1,0, 0,0,])
+                        0,1, 0,0, -1,0,
+                        0,1, 0,0, -1,0,])
         out = cf.cornflakes_library.call_kernel(ken,4,dat)
         R = out[36:]
         K = out[:36].reshape(6,6)
@@ -154,8 +154,8 @@ class stencil(ut.TestCase):
 
         print "Normal Load:"
         dat = np.array([0,1, 1,0.25,
-                        0,1, 0,0, -1,0, 1,0 ,
-                        0,1, 0,0, -1,0, 1,0 ])
+                        0,1, 0,0, -1,0,
+                        0,1, 0,0, -1,0, ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         K = outn[0:36].reshape(6,6)
         R = outn[36:]
@@ -164,8 +164,8 @@ class stencil(ut.TestCase):
 
         print "Shear Load:"
         dat = np.array([1,0, 1,0.25,
-                        0,1, 0,0, -1,0, 1,0 ,
-                        0,1, 0,0, -1,0, 1,0 ])
+                        0,1, 0,0, -1,0,
+                        0,1, 0,0, -1,0, ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         K = outn[0:36].reshape(6,6)
         R = outn[36:]
@@ -174,8 +174,8 @@ class stencil(ut.TestCase):
 
         print "Shear Load along x:"
         dat = np.array([0,1, 1,0.25,
-                        1,0,  0,0, 0,-1, 0,1 ,
-                        1,0,  0,0, 0,-1, 0,1 ])
+                        1,0,  0,0, 0,-1,
+                        1,0,  0,0, 0,-1, ])
         outn = cf.cornflakes_library.call_kernel(ken,4,dat)
         K = outn[0:36].reshape(6,6)
         R = outn[36:]
