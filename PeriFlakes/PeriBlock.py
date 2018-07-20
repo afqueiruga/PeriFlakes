@@ -113,15 +113,14 @@ class PeriBlock():
 
         # Mark boundaries
         if self.ficticious:
-            self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L-h+eps )
-            self.right = cf.select_nodes(self.x, lambda a: a[0]> L+h-eps )
-            self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L-h+eps )
-            self.top   = cf.select_nodes(self.x, lambda a: a[1]> L+h-eps )
-        else:
-            self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
-            self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
-            self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
-            self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
+            self.fleft  = cf.select_nodes(self.x, lambda a: a[0]<-L-h+eps )
+            self.fright = cf.select_nodes(self.x, lambda a: a[0]> L+h-eps )
+            self.fbottom= cf.select_nodes(self.x, lambda a: a[1]<-L-h+eps )
+            self.ftop   = cf.select_nodes(self.x, lambda a: a[1]> L+h-eps )
+        self.left  = cf.select_nodes(self.x, lambda a: a[0]<-L+eps )
+        self.right = cf.select_nodes(self.x, lambda a: a[0]> L-eps )
+        self.bottom= cf.select_nodes(self.x, lambda a: a[1]<-L+eps )
+        self.top   = cf.select_nodes(self.x, lambda a: a[1]> L-eps )
 
     def setbcs(self, diri=None,neum=None):
         """

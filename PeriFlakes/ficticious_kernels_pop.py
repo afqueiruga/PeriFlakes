@@ -80,7 +80,7 @@ KnuE = 1/i_E[0] * Matrix([[ 1+i_nu[0],    1-i_nu[0]**2],
                           [ 1-i_nu[0]**2, 1+i_nu[0]   ]])
 #constraint = en*nn + i_nu[0]*et*nt - i_t.multiply_elementwise( KnuE * nn )
 
-constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-um)/norm(xp-xm) - t.multiply_elementwise( KnuE * nn )
+constraint = -(uf-uo)/norm(xf-xo) - i_nu[0]*flip(up-um)/norm(xp-xm) - t.multiply_elementwise( KnuE * nn )
 
 R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0, 0,0])
 K_expr = R_expr.jacobian(i_y)
@@ -120,7 +120,7 @@ et = et_plus
 nt = nt_plus
 
 #constraint = en*nn + i_nu[0]*et*nt - i_t.multiply_elementwise( KnuE * nn )
-constraint = (uf-uo)/norm(xf-xo) + i_nu[0]*flip(up-uo)/norm(xp-xo) - t.multiply_elementwise( KnuE * nn )
+constraint = - (uf-uo)/norm(xf-xo) - i_nu[0]*flip(up-uo)/norm(xp-xo) - t.multiply_elementwise( KnuE * nn )
 
 R_expr = Matrix([ constraint[0], constraint[1], 0,0, 0,0 ])
 K_expr = R_expr.jacobian(i_y)
