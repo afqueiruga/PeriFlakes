@@ -32,7 +32,7 @@ class PeriBlock():
             h = 2.0*L/float(Nside-1)
             # ceil would give us one more, but it wouldn't be inside
             # any particles' support. Then it's BC wouldn't be obvious
-            Ndel = int(np.floor(delta/h)) 
+            Ndel = int(np.floor(delta/h))
             band = Ndel * h
             Ltot = L+band
             Nside = Nside + Ndel*2
@@ -131,7 +131,6 @@ class PeriBlock():
         else:
             #self.loaddofs = np.array([self.dm_PtVec.Get_List(A)[B::2]
             #                          for A,B in neum],dtype=np.int).flatten()
-            
             for A,B in neum:
                 if self.ficticious:
                     for a in A:
@@ -175,7 +174,7 @@ class PeriBlock():
                           gdim*self.NPart)
         return K,R
     def _assemble_KR_fict(self, fictmet, method, weight, stab=0.0):
-        if fictmet == "standard":
+        if fictmet == "trivial":
             K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                               self.HFict,
                               [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
@@ -193,7 +192,7 @@ class PeriBlock():
             K = K3 + K4
             R = R3 + R4
         return K,R
-    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="standard"):
+    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="trivial"):
         """
         Solves the deformation of the block matrix given the method name and
         influence function. The influence support is decided at initialization
@@ -222,12 +221,16 @@ class PeriBlock():
         # Add the ficticious domain component
         if self.ficticious:
             Kf,Rf = self._assemble_KR_fict(fictmet,method,weight,stab)
-            # The rows of K have to be cleared
-            for e in self.FictNodes:
-                K[self.dm_PtVec.Get_List([e]),:]=Kf[self.dm_PtVec.Get_List([e]),:]
-                R[self.dm_PtVec.Get_List([e])] = Rf[self.dm_PtVec.Get_List([e])]
+            if fictmet == 'bobaru':
+                # The rows of K have to be cleared
+                for e in self.FictNodes:
+                    K[self.dm_PtVec.Get_List([e]),:]=Kf[self.dm_PtVec.Get_List([e]),:]
+                    R[self.dm_PtVec.Get_List([e])] = Rf[self.dm_PtVec.Get_List([e])]
+            else:
+                K = K + Kf
+                R += Rf
         else:
-            R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]            
+            R-= self.data['load'][0].ravel() * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
 
         # Apply boundary conditions and then solve the matrix system
         cf.Apply_BC(self.diridofs,self.ubc, K,R)
