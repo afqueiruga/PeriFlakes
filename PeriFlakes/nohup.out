@@ -1,0 +1,1198 @@
+[100%] Built target _peridynamics_lib
+[100%] Built target _bonds_lib
+Solving Fstab_Littlewood   cubic      1.2   1.5   24
+Solving Fstab_Littlewood   cubic      2.3   1.5   24
+Solving Fstab_Littlewood   cubic      3.4   1.5   24
+Solving Fstab_Littlewood   cubic      4.5   1.5   24
+Solving Fstab_Littlewood   cubic      5.6   1.5   24
+Solving Fstab_Littlewood   cubic      6.7   1.5   24
+Solving Fstab_Littlewood   cubic      7.8   1.5   24
+Solving Fstab_Littlewood   cubic      8.9   1.5   24
+Solving Fstab_Silling   cubic      1.2   1.5   24
+Solving Fstab_Silling   cubic      2.3   1.5   24
+Solving Fstab_Silling   cubic      3.4   1.5   24
+Solving Fstab_Silling   cubic      4.5   1.5   24
+Solving Fstab_Silling   cubic      5.6   1.5   24
+Solving Fstab_Silling   cubic      6.7   1.5   24
+Solving Fstab_Silling   cubic      7.8   1.5   24
+Solving Fstab_Silling   cubic      8.9   1.5   24
+Solving Fstab_Littlewood   cubic      1.2   1.5   38
+Solving Fstab_Littlewood   cubic      2.3   1.5   38
+Solving Fstab_Littlewood   cubic      3.4   1.5   38
+Solving Fstab_Littlewood   cubic      4.5   1.5   38
+Solving Fstab_Littlewood   cubic      5.6   1.5   38
+Solving Fstab_Littlewood   cubic      6.7   1.5   38
+Solving Fstab_Littlewood   cubic      7.8   1.5   38
+Solving Fstab_Littlewood   cubic      8.9   1.5   38
+Solving Fstab_Silling   cubic      1.2   1.5   38
+Solving Fstab_Silling   cubic      2.3   1.5   38
+Solving Fstab_Silling   cubic      3.4   1.5   38
+Solving Fstab_Silling   cubic      4.5   1.5   38
+Solving Fstab_Silling   cubic      5.6   1.5   38
+Solving Fstab_Silling   cubic      6.7   1.5   38
+Solving Fstab_Silling   cubic      7.8   1.5   38
+Solving Fstab_Silling   cubic      8.9   1.5   38
+Solving Fstab_Littlewood   cubic      1.2   1.5   50
+Solving Fstab_Littlewood   cubic      2.3   1.5   50
+Solving Fstab_Littlewood   cubic      3.4   1.5   50
+Solving Fstab_Littlewood   cubic      4.5   1.5   50
+Solving Fstab_Littlewood   cubic      5.6   1.5   50
+Solving Fstab_Littlewood   cubic      6.7   1.5   50
+Solving Fstab_Littlewood   cubic      7.8   1.5   50
+Solving Fstab_Littlewood   cubic      8.9   1.5   50
+Solving Fstab_Silling   cubic      1.2   1.5   50
+Solving Fstab_Silling   cubic      2.3   1.5   50
+Solving Fstab_Silling   cubic      3.4   1.5   50
+Solving Fstab_Silling   cubic      4.5   1.5   50
+Solving Fstab_Silling   cubic      5.6   1.5   50
+Solving Fstab_Silling   cubic      6.7   1.5   50
+Solving Fstab_Silling   cubic      7.8   1.5   50
+Solving Fstab_Silling   cubic      8.9   1.5   50
+Solving Fstab_Littlewood   cubic      1.2   1.5   62
+Solving Fstab_Littlewood   cubic      2.3   1.5   62
+Solving Fstab_Littlewood   cubic      3.4   1.5   62
+Solving Fstab_Littlewood   cubic      4.5   1.5   62
+Solving Fstab_Littlewood   cubic      5.6   1.5   62
+Solving Fstab_Littlewood   cubic      6.7   1.5   62
+Solving Fstab_Littlewood   cubic      7.8   1.5   62
+Solving Fstab_Littlewood   cubic      8.9   1.5   62
+Solving Fstab_Silling   cubic      1.2   1.5   62
+Solving Fstab_Silling   cubic      2.3   1.5   62
+Solving Fstab_Silling   cubic      3.4   1.5   62
+Solving Fstab_Silling   cubic      4.5   1.5   62
+Solving Fstab_Silling   cubic      5.6   1.5   62
+Solving Fstab_Silling   cubic      6.7   1.5   62
+Solving Fstab_Silling   cubic      7.8   1.5   62
+Solving Fstab_Silling   cubic      8.9   1.5   62
+Solving Fstab_Littlewood   cubic      1.2   1.5   74
+Solving Fstab_Littlewood   cubic      2.3   1.5   74
+Solving Fstab_Littlewood   cubic      3.4   1.5   74
+Solving Fstab_Littlewood   cubic      4.5   1.5   74
+Solving Fstab_Littlewood   cubic      5.6   1.5   74
+Solving Fstab_Littlewood   cubic      6.7   1.5   74
+Solving Fstab_Littlewood   cubic      7.8   1.5   74
+Solving Fstab_Littlewood   cubic      8.9   1.5   74
+Solving Fstab_Silling   cubic      1.2   1.5   74
+Solving Fstab_Silling   cubic      2.3   1.5   74
+Solving Fstab_Silling   cubic      3.4   1.5   74
+Solving Fstab_Silling   cubic      4.5   1.5   74
+Solving Fstab_Silling   cubic      5.6   1.5   74
+Solving Fstab_Silling   cubic      6.7   1.5   74
+Solving Fstab_Silling   cubic      7.8   1.5   74
+Solving Fstab_Silling   cubic      8.9   1.5   74
+Solving Silling   cubic      0.0   1.5   86
+Solving Oterkus2   cubic      0.0   1.5   86
+Solving Fbased   cubic      0.0   1.5   86
+Solving Fbased   cubic   const   0.0   1.5   86
+Solving Fbased   cubic   inv   0.0   1.5   86
+Solving Fbased   cubic   linear   0.0   1.5   86
+Solving Fbased   cubic   quadr   0.0   1.5   86
+Solving Fbased   cubic   cubic   0.0   1.5   86
+Solving Fbased   cubic   quarticA   0.0   1.5   86
+Solving Fstab_Littlewood   cubic      0.1   1.5   86
+Solving Fstab_Littlewood   cubic      1.2   1.5   86
+Solving Fstab_Littlewood   cubic      2.3   1.5   86
+Solving Fstab_Littlewood   cubic      3.4   1.5   86
+Solving Fstab_Littlewood   cubic      4.5   1.5   86
+Solving Fstab_Littlewood   cubic      5.6   1.5   86
+Solving Fstab_Littlewood   cubic      6.7   1.5   86
+Solving Fstab_Littlewood   cubic      7.8   1.5   86
+Solving Fstab_Littlewood   cubic      8.9   1.5   86
+Solving Fstab_Littlewood   cubic      10.0   1.5   86
+Solving Fstab_Silling   cubic      0.1   1.5   86
+Solving Fstab_Silling   cubic      1.2   1.5   86
+Solving Fstab_Silling   cubic      2.3   1.5   86
+Solving Fstab_Silling   cubic      3.4   1.5   86
+Solving Fstab_Silling   cubic      4.5   1.5   86
+Solving Fstab_Silling   cubic      5.6   1.5   86
+Solving Fstab_Silling   cubic      6.7   1.5   86
+Solving Fstab_Silling   cubic      7.8   1.5   86
+Solving Fstab_Silling   cubic      8.9   1.5   86
+Solving Fstab_Silling   cubic      10.0   1.5   86
+Solving Silling   cubic      0.0   1.5   100
+Solving Oterkus2   cubic      0.0   1.5   100
+Solving Fbased   cubic      0.0   1.5   100
+Solving Fbased   cubic   const   0.0   1.5   100
+Solving Fbased   cubic   inv   0.0   1.5   100
+Solving Fbased   cubic   linear   0.0   1.5   100
+Solving Fbased   cubic   quadr   0.0   1.5   100
+Solving Fbased   cubic   cubic   0.0   1.5   100
+Solving Fbased   cubic   quarticA   0.0   1.5   100
+Solving Fstab_Littlewood   cubic      0.1   1.5   100
+Solving Fstab_Littlewood   cubic      1.2   1.5   100
+Solving Fstab_Littlewood   cubic      2.3   1.5   100
+Solving Fstab_Littlewood   cubic      3.4   1.5   100
+Solving Fstab_Littlewood   cubic      4.5   1.5   100
+Solving Fstab_Littlewood   cubic      5.6   1.5   100
+Solving Fstab_Littlewood   cubic      6.7   1.5   100
+Solving Fstab_Littlewood   cubic      7.8   1.5   100
+Solving Fstab_Littlewood   cubic      8.9   1.5   100
+Solving Fstab_Littlewood   cubic      10.0   1.5   100
+Solving Fstab_Silling   cubic      0.1   1.5   100
+Solving Fstab_Silling   cubic      1.2   1.5   100
+Solving Fstab_Silling   cubic      2.3   1.5   100
+Solving Fstab_Silling   cubic      3.4   1.5   100
+Solving Fstab_Silling   cubic      4.5   1.5   100
+Solving Fstab_Silling   cubic      5.6   1.5   100
+Solving Fstab_Silling   cubic      6.7   1.5   100
+Solving Fstab_Silling   cubic      7.8   1.5   100
+Solving Fstab_Silling   cubic      8.9   1.5   100
+Solving Fstab_Silling   cubic      10.0   1.5   100
+Solving Silling   cubic      0.0   1.5   112
+Solving Oterkus2   cubic      0.0   1.5   112
+Solving Fbased   cubic      0.0   1.5   112
+Solving Fbased   cubic   const   0.0   1.5   112
+Solving Fbased   cubic   inv   0.0   1.5   112
+Solving Fbased   cubic   linear   0.0   1.5   112
+Solving Fbased   cubic   quadr   0.0   1.5   112
+Solving Fbased   cubic   cubic   0.0   1.5   112
+Solving Fbased   cubic   quarticA   0.0   1.5   112
+Solving Fstab_Littlewood   cubic      0.1   1.5   112
+Solving Fstab_Littlewood   cubic      1.2   1.5   112
+Solving Fstab_Littlewood   cubic      2.3   1.5   112
+Solving Fstab_Littlewood   cubic      3.4   1.5   112
+Solving Fstab_Littlewood   cubic      4.5   1.5   112
+Solving Fstab_Littlewood   cubic      5.6   1.5   112
+Solving Fstab_Littlewood   cubic      6.7   1.5   112
+Solving Fstab_Littlewood   cubic      7.8   1.5   112
+Solving Fstab_Littlewood   cubic      8.9   1.5   112
+Solving Fstab_Littlewood   cubic      10.0   1.5   112
+Solving Fstab_Silling   cubic      0.1   1.5   112
+Solving Fstab_Silling   cubic      1.2   1.5   112
+Solving Fstab_Silling   cubic      2.3   1.5   112
+Solving Fstab_Silling   cubic      3.4   1.5   112
+Solving Fstab_Silling   cubic      4.5   1.5   112
+Solving Fstab_Silling   cubic      5.6   1.5   112
+Solving Fstab_Silling   cubic      6.7   1.5   112
+Solving Fstab_Silling   cubic      7.8   1.5   112
+Solving Fstab_Silling   cubic      8.9   1.5   112
+Solving Fstab_Silling   cubic      10.0   1.5   112
+Solving Silling   cubic      0.0   1.5   124
+Solving Oterkus2   cubic      0.0   1.5   124
+Solving Fbased   cubic      0.0   1.5   124
+Solving Fbased   cubic   const   0.0   1.5   124
+Solving Fbased   cubic   inv   0.0   1.5   124
+Solving Fbased   cubic   linear   0.0   1.5   124
+Solving Fbased   cubic   quadr   0.0   1.5   124
+Solving Fbased   cubic   cubic   0.0   1.5   124
+Solving Fbased   cubic   quarticA   0.0   1.5   124
+Solving Fstab_Littlewood   cubic      0.1   1.5   124
+Solving Fstab_Littlewood   cubic      1.2   1.5   124
+Solving Fstab_Littlewood   cubic      2.3   1.5   124
+Solving Fstab_Littlewood   cubic      3.4   1.5   124
+Solving Fstab_Littlewood   cubic      4.5   1.5   124
+Solving Fstab_Littlewood   cubic      5.6   1.5   124
+Solving Fstab_Littlewood   cubic      6.7   1.5   124
+Solving Fstab_Littlewood   cubic      7.8   1.5   124
+Solving Fstab_Littlewood   cubic      8.9   1.5   124
+Solving Fstab_Littlewood   cubic      10.0   1.5   124
+Solving Fstab_Silling   cubic      0.1   1.5   124
+Solving Fstab_Silling   cubic      1.2   1.5   124
+Solving Fstab_Silling   cubic      2.3   1.5   124
+Solving Fstab_Silling   cubic      3.4   1.5   124
+Solving Fstab_Silling   cubic      4.5   1.5   124
+Solving Fstab_Silling   cubic      5.6   1.5   124
+Solving Fstab_Silling   cubic      6.7   1.5   124
+Solving Fstab_Silling   cubic      7.8   1.5   124
+Solving Fstab_Silling   cubic      8.9   1.5   124
+Solving Fstab_Silling   cubic      10.0   1.5   124
+Solving Silling   cubic      0.0   1.5   150
+Solving Oterkus2   cubic      0.0   1.5   150
+Solving Fbased   cubic      0.0   1.5   150
+Solving Fbased   cubic   const   0.0   1.5   150
+Solving Fbased   cubic   inv   0.0   1.5   150
+Solving Fbased   cubic   linear   0.0   1.5   150
+Solving Fbased   cubic   quadr   0.0   1.5   150
+Solving Fbased   cubic   cubic   0.0   1.5   150
+Solving Fbased   cubic   quarticA   0.0   1.5   150
+Solving Fstab_Littlewood   cubic      0.1   1.5   150
+Solving Fstab_Littlewood   cubic      1.2   1.5   150
+Solving Fstab_Littlewood   cubic      2.3   1.5   150
+Solving Fstab_Littlewood   cubic      3.4   1.5   150
+Solving Fstab_Littlewood   cubic      4.5   1.5   150
+Solving Fstab_Littlewood   cubic      5.6   1.5   150
+Solving Fstab_Littlewood   cubic      6.7   1.5   150
+Solving Fstab_Littlewood   cubic      7.8   1.5   150
+Solving Fstab_Littlewood   cubic      8.9   1.5   150
+Solving Fstab_Littlewood   cubic      10.0   1.5   150
+Solving Fstab_Silling   cubic      0.1   1.5   150
+Solving Fstab_Silling   cubic      1.2   1.5   150
+Solving Fstab_Silling   cubic      2.3   1.5   150
+Solving Fstab_Silling   cubic      3.4   1.5   150
+Solving Fstab_Silling   cubic      4.5   1.5   150
+Solving Fstab_Silling   cubic      5.6   1.5   150
+Solving Fstab_Silling   cubic      6.7   1.5   150
+Solving Fstab_Silling   cubic      7.8   1.5   150
+Solving Fstab_Silling   cubic      8.9   1.5   150
+Solving Fstab_Silling   cubic      10.0   1.5   150
+Solving Silling   cubic      0.0   1.5   162
+Solving Oterkus2   cubic      0.0   1.5   162
+Solving Fbased   cubic      0.0   1.5   162
+Solving Fbased   cubic   const   0.0   1.5   162
+Solving Fbased   cubic   inv   0.0   1.5   162
+Solving Fbased   cubic   linear   0.0   1.5   162
+Solving Fbased   cubic   quadr   0.0   1.5   162
+Solving Fbased   cubic   cubic   0.0   1.5   162
+Solving Fbased   cubic   quarticA   0.0   1.5   162
+Solving Fstab_Littlewood   cubic      0.1   1.5   162
+Solving Fstab_Littlewood   cubic      1.2   1.5   162
+Solving Fstab_Littlewood   cubic      2.3   1.5   162
+Solving Fstab_Littlewood   cubic      3.4   1.5   162
+Solving Fstab_Littlewood   cubic      4.5   1.5   162
+Solving Fstab_Littlewood   cubic      5.6   1.5   162
+Solving Fstab_Littlewood   cubic      6.7   1.5   162
+Solving Fstab_Littlewood   cubic      7.8   1.5   162
+Solving Fstab_Littlewood   cubic      8.9   1.5   162
+Solving Fstab_Littlewood   cubic      10.0   1.5   162
+Solving Fstab_Silling   cubic      0.1   1.5   162
+Solving Fstab_Silling   cubic      1.2   1.5   162
+Solving Fstab_Silling   cubic      2.3   1.5   162
+Solving Fstab_Silling   cubic      3.4   1.5   162
+Solving Fstab_Silling   cubic      4.5   1.5   162
+Solving Fstab_Silling   cubic      5.6   1.5   162
+Solving Fstab_Silling   cubic      6.7   1.5   162
+Solving Fstab_Silling   cubic      7.8   1.5   162
+Solving Fstab_Silling   cubic      8.9   1.5   162
+Solving Fstab_Silling   cubic      10.0   1.5   162
+Solving Silling   cubic      0.0   1.5   174
+Solving Oterkus2   cubic      0.0   1.5   174
+Solving Fbased   cubic      0.0   1.5   174
+Solving Fbased   cubic   const   0.0   1.5   174
+Solving Fbased   cubic   inv   0.0   1.5   174
+Solving Fbased   cubic   linear   0.0   1.5   174
+Solving Fbased   cubic   quadr   0.0   1.5   174
+Solving Fbased   cubic   cubic   0.0   1.5   174
+Solving Fbased   cubic   quarticA   0.0   1.5   174
+Solving Fstab_Littlewood   cubic      0.1   1.5   174
+Solving Fstab_Littlewood   cubic      1.2   1.5   174
+Solving Fstab_Littlewood   cubic      2.3   1.5   174
+Solving Fstab_Littlewood   cubic      3.4   1.5   174
+Solving Fstab_Littlewood   cubic      4.5   1.5   174
+Solving Fstab_Littlewood   cubic      5.6   1.5   174
+Solving Fstab_Littlewood   cubic      6.7   1.5   174
+Solving Fstab_Littlewood   cubic      7.8   1.5   174
+Solving Fstab_Littlewood   cubic      8.9   1.5   174
+Solving Fstab_Littlewood   cubic      10.0   1.5   174
+Solving Fstab_Silling   cubic      0.1   1.5   174
+Solving Fstab_Silling   cubic      1.2   1.5   174
+Solving Fstab_Silling   cubic      2.3   1.5   174
+Solving Fstab_Silling   cubic      3.4   1.5   174
+Solving Fstab_Silling   cubic      4.5   1.5   174
+Solving Fstab_Silling   cubic      5.6   1.5   174
+Solving Fstab_Silling   cubic      6.7   1.5   174
+Solving Fstab_Silling   cubic      7.8   1.5   174
+Solving Fstab_Silling   cubic      8.9   1.5   174
+Solving Fstab_Silling   cubic      10.0   1.5   174
+Solving Silling   cubic      0.0   1.5   186
+Solving Oterkus2   cubic      0.0   1.5   186
+Solving Fbased   cubic      0.0   1.5   186
+Solving Fbased   cubic   const   0.0   1.5   186
+Solving Fbased   cubic   inv   0.0   1.5   186
+Solving Fbased   cubic   linear   0.0   1.5   186
+Solving Fbased   cubic   quadr   0.0   1.5   186
+Solving Fbased   cubic   cubic   0.0   1.5   186
+Solving Fbased   cubic   quarticA   0.0   1.5   186
+Solving Fstab_Littlewood   cubic      0.1   1.5   186
+Solving Fstab_Littlewood   cubic      1.2   1.5   186
+Solving Fstab_Littlewood   cubic      2.3   1.5   186
+Solving Fstab_Littlewood   cubic      3.4   1.5   186
+Solving Fstab_Littlewood   cubic      4.5   1.5   186
+Solving Fstab_Littlewood   cubic      5.6   1.5   186
+Solving Fstab_Littlewood   cubic      6.7   1.5   186
+Solving Fstab_Littlewood   cubic      7.8   1.5   186
+Solving Fstab_Littlewood   cubic      8.9   1.5   186
+Solving Fstab_Littlewood   cubic      10.0   1.5   186
+Solving Fstab_Silling   cubic      0.1   1.5   186
+Solving Fstab_Silling   cubic      1.2   1.5   186
+Solving Fstab_Silling   cubic      2.3   1.5   186
+Solving Fstab_Silling   cubic      3.4   1.5   186
+Solving Fstab_Silling   cubic      4.5   1.5   186
+Solving Fstab_Silling   cubic      5.6   1.5   186
+Solving Fstab_Silling   cubic      6.7   1.5   186
+Solving Fstab_Silling   cubic      7.8   1.5   186
+Solving Fstab_Silling   cubic      8.9   1.5   186
+Solving Fstab_Silling   cubic      10.0   1.5   186
+Solving Silling   cubic      0.0   1.5   200
+Solving Oterkus2   cubic      0.0   1.5   200
+Solving Fbased   cubic      0.0   1.5   200
+Solving Fbased   cubic   const   0.0   1.5   200
+Solving Fbased   cubic   inv   0.0   1.5   200
+Solving Fbased   cubic   linear   0.0   1.5   200
+Solving Fbased   cubic   quadr   0.0   1.5   200
+Solving Fbased   cubic   cubic   0.0   1.5   200
+Solving Fbased   cubic   quarticA   0.0   1.5   200
+Solving Fstab_Littlewood   cubic      0.1   1.5   200
+Solving Fstab_Littlewood   cubic      1.2   1.5   200
+Solving Fstab_Littlewood   cubic      2.3   1.5   200
+Solving Fstab_Littlewood   cubic      3.4   1.5   200
+Solving Fstab_Littlewood   cubic      4.5   1.5   200
+Solving Fstab_Littlewood   cubic      5.6   1.5   200
+Solving Fstab_Littlewood   cubic      6.7   1.5   200
+Solving Fstab_Littlewood   cubic      7.8   1.5   200
+Solving Fstab_Littlewood   cubic      8.9   1.5   200
+Solving Fstab_Littlewood   cubic      10.0   1.5   200
+Solving Fstab_Silling   cubic      0.1   1.5   200
+Solving Fstab_Silling   cubic      1.2   1.5   200
+Solving Fstab_Silling   cubic      2.3   1.5   200
+Solving Fstab_Silling   cubic      3.4   1.5   200
+Solving Fstab_Silling   cubic      4.5   1.5   200
+Solving Fstab_Silling   cubic      5.6   1.5   200
+Solving Fstab_Silling   cubic      6.7   1.5   200
+Solving Fstab_Silling   cubic      7.8   1.5   200
+Solving Fstab_Silling   cubic      8.9   1.5   200
+Solving Fstab_Silling   cubic      10.0   1.5   200
+Solving Silling   cubic      0.0   1.5   212
+Solving Oterkus2   cubic      0.0   1.5   212
+Solving Fbased   cubic      0.0   1.5   212
+Solving Fbased   cubic   const   0.0   1.5   212
+Solving Fbased   cubic   inv   0.0   1.5   212
+Solving Fbased   cubic   linear   0.0   1.5   212
+Solving Fbased   cubic   quadr   0.0   1.5   212
+Solving Fbased   cubic   cubic   0.0   1.5   212
+Solving Fbased   cubic   quarticA   0.0   1.5   212
+Solving Fstab_Littlewood   cubic      0.1   1.5   212
+Solving Fstab_Littlewood   cubic      1.2   1.5   212
+Solving Fstab_Littlewood   cubic      2.3   1.5   212
+Solving Fstab_Littlewood   cubic      3.4   1.5   212
+Solving Fstab_Littlewood   cubic      4.5   1.5   212
+Solving Fstab_Littlewood   cubic      5.6   1.5   212
+Solving Fstab_Littlewood   cubic      6.7   1.5   212
+Solving Fstab_Littlewood   cubic      7.8   1.5   212
+Solving Fstab_Littlewood   cubic      8.9   1.5   212
+Solving Fstab_Littlewood   cubic      10.0   1.5   212
+Solving Fstab_Silling   cubic      0.1   1.5   212
+Solving Fstab_Silling   cubic      1.2   1.5   212
+Solving Fstab_Silling   cubic      2.3   1.5   212
+Solving Fstab_Silling   cubic      3.4   1.5   212
+Solving Fstab_Silling   cubic      4.5   1.5   212
+Solving Fstab_Silling   cubic      5.6   1.5   212
+Solving Fstab_Silling   cubic      6.7   1.5   212
+Solving Fstab_Silling   cubic      7.8   1.5   212
+Solving Fstab_Silling   cubic      8.9   1.5   212
+Solving Fstab_Silling   cubic      10.0   1.5   212
+Solving Silling   cubic      0.0   1.5   224
+Solving Oterkus2   cubic      0.0   1.5   224
+Solving Fbased   cubic      0.0   1.5   224
+Solving Fbased   cubic   const   0.0   1.5   224
+Solving Fbased   cubic   inv   0.0   1.5   224
+Solving Fbased   cubic   linear   0.0   1.5   224
+Solving Fbased   cubic   quadr   0.0   1.5   224
+Solving Fbased   cubic   cubic   0.0   1.5   224
+Solving Fbased   cubic   quarticA   0.0   1.5   224
+Solving Fstab_Littlewood   cubic      0.1   1.5   224
+Solving Fstab_Littlewood   cubic      1.2   1.5   224
+Solving Fstab_Littlewood   cubic      2.3   1.5   224
+Solving Fstab_Littlewood   cubic      3.4   1.5   224
+Solving Fstab_Littlewood   cubic      4.5   1.5   224
+Solving Fstab_Littlewood   cubic      5.6   1.5   224
+Solving Fstab_Littlewood   cubic      6.7   1.5   224
+Solving Fstab_Littlewood   cubic      7.8   1.5   224
+Solving Fstab_Littlewood   cubic      8.9   1.5   224
+Solving Fstab_Littlewood   cubic      10.0   1.5   224
+Solving Fstab_Silling   cubic      0.1   1.5   224
+Solving Fstab_Silling   cubic      1.2   1.5   224
+Solving Fstab_Silling   cubic      2.3   1.5   224
+Solving Fstab_Silling   cubic      3.4   1.5   224
+Solving Fstab_Silling   cubic      4.5   1.5   224
+Solving Fstab_Silling   cubic      5.6   1.5   224
+Solving Fstab_Silling   cubic      6.7   1.5   224
+Solving Fstab_Silling   cubic      7.8   1.5   224
+Solving Fstab_Silling   cubic      8.9   1.5   224
+Solving Fstab_Silling   cubic      10.0   1.5   224
+Solving Silling   cubic      0.0   1.5   238
+Solving Oterkus2   cubic      0.0   1.5   238
+Solving Fbased   cubic      0.0   1.5   238
+Solving Fbased   cubic   const   0.0   1.5   238
+Solving Fbased   cubic   inv   0.0   1.5   238
+Solving Fbased   cubic   linear   0.0   1.5   238
+Solving Fbased   cubic   quadr   0.0   1.5   238
+Solving Fbased   cubic   cubic   0.0   1.5   238
+Solving Fbased   cubic   quarticA   0.0   1.5   238
+Solving Fstab_Littlewood   cubic      0.1   1.5   238
+Solving Fstab_Littlewood   cubic      1.2   1.5   238
+Solving Fstab_Littlewood   cubic      2.3   1.5   238
+Solving Fstab_Littlewood   cubic      3.4   1.5   238
+Solving Fstab_Littlewood   cubic      4.5   1.5   238
+Solving Fstab_Littlewood   cubic      5.6   1.5   238
+Solving Fstab_Littlewood   cubic      6.7   1.5   238
+Solving Fstab_Littlewood   cubic      7.8   1.5   238
+Solving Fstab_Littlewood   cubic      8.9   1.5   238
+Solving Fstab_Littlewood   cubic      10.0   1.5   238
+Solving Fstab_Silling   cubic      0.1   1.5   238
+Solving Fstab_Silling   cubic      1.2   1.5   238
+Solving Fstab_Silling   cubic      2.3   1.5   238
+Solving Fstab_Silling   cubic      3.4   1.5   238
+Solving Fstab_Silling   cubic      4.5   1.5   238
+Solving Fstab_Silling   cubic      5.6   1.5   238
+Solving Fstab_Silling   cubic      6.7   1.5   238
+Solving Fstab_Silling   cubic      7.8   1.5   238
+Solving Fstab_Silling   cubic      8.9   1.5   238
+Solving Fstab_Silling   cubic      10.0   1.5   238
+Solving Silling   cubic      0.0   1.5   250
+Solving Oterkus2   cubic      0.0   1.5   250
+Solving Fbased   cubic      0.0   1.5   250
+Solving Fbased   cubic   const   0.0   1.5   250
+Solving Fbased   cubic   inv   0.0   1.5   250
+Solving Fbased   cubic   linear   0.0   1.5   250
+Solving Fbased   cubic   quadr   0.0   1.5   250
+Solving Fbased   cubic   cubic   0.0   1.5   250
+Solving Fbased   cubic   quarticA   0.0   1.5   250
+Solving Fstab_Littlewood   cubic      0.1   1.5   250
+Solving Fstab_Littlewood   cubic      1.2   1.5   250
+Solving Fstab_Littlewood   cubic      2.3   1.5   250
+Solving Fstab_Littlewood   cubic      3.4   1.5   250
+Solving Fstab_Littlewood   cubic      4.5   1.5   250
+Solving Fstab_Littlewood   cubic      5.6   1.5   250
+Solving Fstab_Littlewood   cubic      6.7   1.5   250
+Solving Fstab_Littlewood   cubic      7.8   1.5   250
+Solving Fstab_Littlewood   cubic      8.9   1.5   250
+Solving Fstab_Littlewood   cubic      10.0   1.5   250
+Solving Fstab_Silling   cubic      0.1   1.5   250
+Solving Fstab_Silling   cubic      1.2   1.5   250
+Solving Fstab_Silling   cubic      2.3   1.5   250
+Solving Fstab_Silling   cubic      3.4   1.5   250
+Solving Fstab_Silling   cubic      4.5   1.5   250
+Solving Fstab_Silling   cubic      5.6   1.5   250
+Solving Fstab_Silling   cubic      6.7   1.5   250
+Solving Fstab_Silling   cubic      7.8   1.5   250
+Solving Fstab_Silling   cubic      8.9   1.5   250
+Solving Fstab_Silling   cubic      10.0   1.5   250
+make: *** No targets specified and no makefile found.  Stop.
+rm: cannot remove 'CMakeFiles': No such file or directory
+rm: cannot remove 'CMakeCache.txt': No such file or directory
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Try OpenMP C flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Try OpenMP CXX flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Found OpenMP: -fopenmp  
+OPENMP FOUND
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Found GSL: /usr/include (found version "2.1") 
+-- Found SWIG: /usr/bin/swig3.0 (found version "3.0.8") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.12", minimum required is "2.7") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/afq/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics
+[  2%] Swig source
+Scanning dependencies of target _peridynamics_lib
+[  4%] Building C object CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
+[  6%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+[  8%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
+[ 11%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
+[ 13%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
+[ 15%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
+[ 17%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o
+[ 20%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+[ 22%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
+[ 24%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+[ 26%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+[ 28%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
+[ 31%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
+[ 33%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+[ 35%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
+[ 37%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
+[ 40%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
+[ 42%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+[ 44%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
+[ 46%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+[ 48%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
+[ 51%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+[ 53%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
+[ 55%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+[ 57%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
+[ 60%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+[ 62%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
+[ 64%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+[ 66%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
+[ 68%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
+[ 71%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o
+[ 73%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+[ 75%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
+[ 77%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o
+[ 80%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
+[ 82%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
+[ 84%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
+[ 86%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
+[ 88%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
+[ 91%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
+[ 93%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o
+[ 95%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+[ 97%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+[100%] Linking C shared module _peridynamics_lib.so
+[100%] Built target _peridynamics_lib
+make: *** No targets specified and no makefile found.  Stop.
+rm: cannot remove 'CMakeFiles': No such file or directory
+rm: cannot remove 'CMakeCache.txt': No such file or directory
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Try OpenMP C flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Try OpenMP CXX flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+-- Found OpenMP: -fopenmp  
+OPENMP FOUND
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Found GSL: /usr/include (found version "2.1") 
+-- Found SWIG: /usr/bin/swig3.0 (found version "3.0.8") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.12", minimum required is "2.7") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/afq/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds
+[ 20%] Swig source
+Scanning dependencies of target _bonds_lib
+[ 40%] Building C object CMakeFiles/_bonds_lib.dir/bonds_swigPYTHON_wrap.c.o
+[ 60%] Building C object CMakeFiles/_bonds_lib.dir/line_intersection.c.o
+[ 80%] Building C object CMakeFiles/_bonds_lib.dir/bond_pressure.c.o
+[100%] Linking C shared module _bonds_lib.so
+[100%] Built target _bonds_lib
+Solving Fstab_Littlewood   cubic      1.2   1.5   24
+Solving Fstab_Littlewood   cubic      2.3   1.5   24
+Solving Fstab_Littlewood   cubic      3.4   1.5   24
+Solving Fstab_Littlewood   cubic      7.8   1.5   24
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   24
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   24
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   24
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   24
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   24
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   24
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   24
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   24
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   24
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   24
+Solving Fstab_Silling   cubic      1.2   1.5   24
+Solving Fstab_Silling   cubic      2.3   1.5   24
+Solving Fstab_Silling   cubic      3.4   1.5   24
+Solving Fstab_Silling   cubic      7.8   1.5   24
+Solving Fstab_Littlewood   cubic      1.2   1.5   38
+Solving Fstab_Littlewood   cubic      2.3   1.5   38
+Solving Fstab_Littlewood   cubic      3.4   1.5   38
+Solving Fstab_Littlewood   cubic      7.8   1.5   38
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   38
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   38
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   38
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   38
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   38
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   38
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   38
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   38
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   38
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   38
+Solving Fstab_Silling   cubic      1.2   1.5   38
+Solving Fstab_Silling   cubic      2.3   1.5   38
+Solving Fstab_Silling   cubic      3.4   1.5   38
+Solving Fstab_Silling   cubic      7.8   1.5   38
+Solving Fstab_Littlewood   cubic      1.2   1.5   50
+Solving Fstab_Littlewood   cubic      2.3   1.5   50
+Solving Fstab_Littlewood   cubic      3.4   1.5   50
+Solving Fstab_Littlewood   cubic      7.8   1.5   50
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   50
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   50
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   50
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   50
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   50
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   50
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   50
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   50
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   50
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   50
+Solving Fstab_Silling   cubic      1.2   1.5   50
+Solving Fstab_Silling   cubic      2.3   1.5   50
+Solving Fstab_Silling   cubic      3.4   1.5   50
+Solving Fstab_Silling   cubic      7.8   1.5   50
+Solving Fstab_Littlewood   cubic      1.2   1.5   62
+Solving Fstab_Littlewood   cubic      2.3   1.5   62
+Solving Fstab_Littlewood   cubic      3.4   1.5   62
+Solving Fstab_Littlewood   cubic      7.8   1.5   62
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   62
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   62
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   62
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   62
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   62
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   62
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   62
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   62
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   62
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   62
+Solving Fstab_Silling   cubic      1.2   1.5   62
+Solving Fstab_Silling   cubic      2.3   1.5   62
+Solving Fstab_Silling   cubic      3.4   1.5   62
+Solving Fstab_Silling   cubic      7.8   1.5   62
+Solving Fstab_Littlewood   cubic      1.2   1.5   74
+Solving Fstab_Littlewood   cubic      2.3   1.5   74
+Solving Fstab_Littlewood   cubic      3.4   1.5   74
+Solving Fstab_Littlewood   cubic      7.8   1.5   74
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   74
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   74
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   74
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   74
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   74
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   74
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   74
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   74
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   74
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   74
+Solving Fstab_Silling   cubic      1.2   1.5   74
+Solving Fstab_Silling   cubic      2.3   1.5   74
+Solving Fstab_Silling   cubic      3.4   1.5   74
+Solving Fstab_Silling   cubic      7.8   1.5   74
+Solving Fstab_Littlewood   cubic      1.2   1.5   86
+Solving Fstab_Littlewood   cubic      2.3   1.5   86
+Solving Fstab_Littlewood   cubic      3.4   1.5   86
+Solving Fstab_Littlewood   cubic      7.8   1.5   86
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   86
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   86
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   86
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   86
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   86
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   86
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   86
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   86
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   86
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   86
+Solving Fstab_Silling   cubic      1.2   1.5   86
+Solving Fstab_Silling   cubic      2.3   1.5   86
+Solving Fstab_Silling   cubic      3.4   1.5   86
+Solving Fstab_Silling   cubic      7.8   1.5   86
+Solving Fstab_Littlewood   cubic      1.2   1.5   100
+Solving Fstab_Littlewood   cubic      2.3   1.5   100
+Solving Fstab_Littlewood   cubic      3.4   1.5   100
+Solving Fstab_Littlewood   cubic      7.8   1.5   100
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   100
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   100
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   100
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   100
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   100
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   100
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   100
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   100
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   100
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   100
+Solving Fstab_Silling   cubic      1.2   1.5   100
+Solving Fstab_Silling   cubic      2.3   1.5   100
+Solving Fstab_Silling   cubic      3.4   1.5   100
+Solving Fstab_Silling   cubic      7.8   1.5   100
+Solving Fstab_Littlewood   cubic      1.2   1.5   112
+Solving Fstab_Littlewood   cubic      2.3   1.5   112
+Solving Fstab_Littlewood   cubic      3.4   1.5   112
+Solving Fstab_Littlewood   cubic      7.8   1.5   112
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   112
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   112
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   112
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   112
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   112
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   112
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   112
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   112
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   112
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   112
+Solving Fstab_Silling   cubic      1.2   1.5   112
+Solving Fstab_Silling   cubic      2.3   1.5   112
+Solving Fstab_Silling   cubic      3.4   1.5   112
+Solving Fstab_Silling   cubic      7.8   1.5   112
+Solving Fstab_Littlewood   cubic      1.2   1.5   124
+Solving Fstab_Littlewood   cubic      2.3   1.5   124
+Solving Fstab_Littlewood   cubic      3.4   1.5   124
+Solving Fstab_Littlewood   cubic      7.8   1.5   124
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   124
+Solving Fstab_LittOPENMP FOUND
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/afq/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics
+make[2]: Warning: File 'peridynamics_swig.i' has modification time 16 s in the future
+[  2%] Swig source
+Scanning dependencies of target _peridynamics_lib
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'peridynamics_swig.i' has modification time 16 s in the future
+[  2%] Swig source
+[  4%] Building C object CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
+[  6%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+[  8%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+[ 11%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
+[ 13%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+[ 15%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+[ 17%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
+[ 20%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
+[ 22%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+[ 24%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
+[ 26%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
+[ 28%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
+[ 31%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+[ 33%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
+[ 35%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
+[ 37%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
+[ 40%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
+[ 42%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
+[ 44%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+[ 46%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
+[ 48%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+[ 51%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
+[ 53%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
+[ 55%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
+[ 57%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
+[ 60%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+[ 62%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
+[ 64%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
+[ 66%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+[ 68%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
+[ 71%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
+[ 73%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o
+[ 75%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
+[ 77%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
+[ 80%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+[ 82%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o
+[ 84%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+[ 86%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o
+[ 88%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o
+[ 91%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
+[ 93%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
+[ 95%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+[ 97%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+[100%] Linking C shared module _peridynamics_lib.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target _peridynamics_lib
+[100%] Built target _bonds_lib
+OPENMP FOUND
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/afq/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics
+[  2%] Swig source
+Scanning dependencies of target _peridynamics_lib
+[  4%] Building C object CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
+[  6%] Linking C shared module _peridynamics_lib.so
+[100%] Built target _peridynamics_lib
+[100%] Built target _bonds_lib
+OPENMP FOUND
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/afq/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics
+[  1%] Swig source
+Scanning dependencies of target _peridynamics_lib
+[  3%] Building C object CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
+[  5%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+[  7%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o
+[  9%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
+[ 11%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o
+[ 13%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o
+[ 15%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
+[ 17%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
+[ 19%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
+[ 21%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
+[ 23%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
+[ 25%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
+[ 27%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
+[ 29%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
+[ 31%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o
+[ 33%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
+[ 35%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
+[ 37%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
+[ 39%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
+[ 41%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+[ 43%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o
+[ 45%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
+[ 47%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+[ 49%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
+[ 50%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+[ 52%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
+[ 54%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+[ 56%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+[ 58%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o
+[ 60%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
+[ 62%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+[ 64%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o
+[ 66%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+[ 68%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+[ 70%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o
+[ 72%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
+[ 74%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
+[ 76%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+[ 78%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
+[ 80%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+[ 82%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
+[ 84%] Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
+[ 86%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
+[ 88%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+[ 90%] Building C object CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+[ 92%] Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
+[ 94%] Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+[ 96%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o
+[ 98%] Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o
+[100%] Linking C shared module _peridynamics_lib.so
+[100%] Built target _peridynamics_lib
+[100%] Built target _bonds_lib
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   24
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   24
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   24
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   24
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   38
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   38
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   38
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   38
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   50
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   50
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   50
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   50
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   62
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   62
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   62
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   62
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   74
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   74
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   74
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   74
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   86
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   86
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   86
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   86
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   100
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   100
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   100
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   100
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   112
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   112
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   112
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   112
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   124
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   124
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   124
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   124
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   150
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   150
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   150
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   150
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   162
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   162
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   162
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   162
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   162
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   162
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   174
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   174
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   174
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   174
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   174
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   174
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   174
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   174
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   174
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   174
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   186
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   186
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   186
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   186
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   186
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   186
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   186
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   186
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   186
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   186
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   200
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   200
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   200
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   200
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   200[100%] Built target _peridynamics_lib
+[100%] Built target _bonds_lib
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   24
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   24
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   24
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   24
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   24
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   38
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   38
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   38
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   38
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   38
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   50
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   50
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   50
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   50
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   50
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   62
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   62
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   62
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   62
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   62
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   74
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   74
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   74
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   74
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   74
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   86
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   86
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   86
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   86
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   86
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   100
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   100
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   100
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   100
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   100
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   112
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   112
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   112
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   112
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   112
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   124
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   124
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   124
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   124
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   124
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   150
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   150
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   150
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   150
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   150
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   162
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   162
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   162
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   162
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   162
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   174
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   174
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   174
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   174
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   174
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   186
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   186
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   186
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   186
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   186
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   200
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   200
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   200
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   200
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   200
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   212
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   212
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   212
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   212
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   212
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   212
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   212
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   212
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   212
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   212
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   224
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   224
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   224
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   224
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   224
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   224
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   224
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   224
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   224
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   224
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   224
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   238
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   238
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   238
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   238
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   238
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   238
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   238
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   238
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   238
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   238
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   238
+Solving Fstab_Littlewood2011   cubic      0.1   1.5   250
+Solving Fstab_Littlewood2011   cubic      1.2   1.5   250
+Solving Fstab_Littlewood2011   cubic      2.3   1.5   250
+Solving Fstab_Littlewood2011   cubic      3.4   1.5   250
+Solving Fstab_Littlewood2011   cubic      4.5   1.5   250
+Solving Fstab_Littlewood2011   cubic      5.6   1.5   250
+Solving Fstab_Littlewood2011   cubic      6.7   1.5   250
+Solving Fstab_Littlewood2011   cubic      7.8   1.5   250
+Solving Fstab_Littlewood2011   cubic      8.9   1.5   250
+Solving Fstab_Littlewood2011   cubic      10.0   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      0.1   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      1.2   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      2.3   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      3.4   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      4.5   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      5.6   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      6.7   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      7.8   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      8.9   1.5   250
+Solving Fstab_Littlewood2011minus   cubic      10.0   1.5   250

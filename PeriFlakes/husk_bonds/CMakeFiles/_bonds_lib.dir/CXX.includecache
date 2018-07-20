@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/bond_pressure.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/kernel.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/bonds_swig.i
+line_intersection.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/line_intersection.h
+bond_pressure.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/bond_pressure.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/kernel.h
+line_intersection.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/line_intersection.h
+bond_pressure.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/bond_pressure.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/line_intersection.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_bonds/kernel.h
+
+/Users/afq/Documents/Research/opt/lblsuper2/include/kernel.h
+

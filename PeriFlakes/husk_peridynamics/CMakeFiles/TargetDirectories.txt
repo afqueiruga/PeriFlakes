@@ -1,0 +1,3 @@
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles/rebuild_cache.dir
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles/edit_cache.dir
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles/_peridynamics_lib.dir

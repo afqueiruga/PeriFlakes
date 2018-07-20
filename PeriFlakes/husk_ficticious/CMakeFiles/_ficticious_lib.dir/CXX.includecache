@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n3.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/ficticious_swig.i
+bobaru_n.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.h
+bobaru_y.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.h
+bobaru_n3.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n3.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+bobaru_n.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.h
+bobaru_y.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.h
+bobaru_n3.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n3.h
+
+/Users/afq/Documents/Research/opt/lblsuper2/include/kernel.h
+

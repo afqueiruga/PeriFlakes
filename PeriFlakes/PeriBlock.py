@@ -173,13 +173,15 @@ class PeriBlock():
                           {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                           gdim*self.NPart)
         return K,R
-    def _assemble_KR_fict(self, fictmet, method, weight, stab=0.0):
+    def _assemble_KR_fict(self, K,R, fictmet, method, weight, stab=0.0):
         if fictmet == "trivial":
-            K,R = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+            Kf,Rf = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                               self.HFict,
                               [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
                               {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                               gdim*self.NPart)
+            Rf -= self.data['load'][0].ravel() * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
+            return K+Kf,R+Rf
         elif fictmet=="bobaru":
             K3,R3 = cf.Assemble(hf.kernel_bobaru_n3, self.HFictStencil3,
                                 self.data,
@@ -189,8 +191,36 @@ class PeriBlock():
                                 self.data,
                                 {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
                                 gdim*self.NPart)
-            K = K3 + K4
-            R = R3 + R4
+            Kb = K3 + K4
+            Rb = R3 + R4
+            Kt = K.copy()
+            Rt = R.copy()
+            for e in self.FictNodes:
+                Kt[self.dm_PtVec.Get_List([e]),:]=Kb[self.dm_PtVec.Get_List([e]),:]
+                Rt[self.dm_PtVec.Get_List([e])] = Rb[self.dm_PtVec.Get_List([e])]
+            return Kt,Rt
+        elif fictmet =="both":
+            Kp,Rp = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
+                              self.HFict,
+                              [self.data,{'p_stab':(np.array([stab]),self.dm_GlobalSca)}],
+                              {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                              gdim*self.NPart)
+            K3,R3 = cf.Assemble(hf.kernel_bobaru_n3, self.HFictStencil3,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            K4,R4 = cf.Assemble(hf.kernel_bobaru_n, self.HFictStencil4,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            Kb = K3+K4
+            Rb = R3+R4
+            Kt = K + Kp
+            Rt = R + Rp
+            for e in self.FictNodes:
+                Kt[self.dm_PtVec.Get_List([e]),:]=Kb[self.dm_PtVec.Get_List([e]),:]
+                Rt[self.dm_PtVec.Get_List([e])] = Rb[self.dm_PtVec.Get_List([e])]
+            return Kt,Rt
         return K,R
     def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="trivial"):
         """
@@ -220,15 +250,7 @@ class PeriBlock():
             pass
         # Add the ficticious domain component
         if self.ficticious:
-            Kf,Rf = self._assemble_KR_fict(fictmet,method,weight,stab)
-            if fictmet == 'bobaru':
-                # The rows of K have to be cleared
-                for e in self.FictNodes:
-                    K[self.dm_PtVec.Get_List([e]),:]=Kf[self.dm_PtVec.Get_List([e]),:]
-                    R[self.dm_PtVec.Get_List([e])] = Rf[self.dm_PtVec.Get_List([e])]
-            else:
-                K = K + Kf
-                R += Rf
+            K,R = self._assemble_KR_fict(K,R, fictmet,method,weight,stab)
         else:
             R-= self.data['load'][0].ravel() * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]
 

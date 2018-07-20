@@ -1,0 +1,3 @@
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles/rebuild_cache.dir
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles/edit_cache.dir
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles/_ficticious_lib.dir
