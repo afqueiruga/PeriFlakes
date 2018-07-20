@@ -222,8 +222,10 @@ class PeriBlock():
         # Add the ficticious domain component
         if self.ficticious:
             Kf,Rf = self._assemble_KR_fict(fictmet,method,weight,stab)
-            K=K+Kf
-            R += Rf
+            # The rows of K have to be cleared
+            for e in self.FictNodes:
+                K[self.dm_PtVec.Get_List([e]),:]=Kf[self.dm_PtVec.Get_List([e]),:]
+                R[self.dm_PtVec.Get_List([e])] = Rf[self.dm_PtVec.Get_List([e])]
         else:
             R[self.loaddofs]-= 1.0 * self.data['p_Vol'][0]**0.5/self.data['p_Vol'][0]            
 
