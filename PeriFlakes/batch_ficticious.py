@@ -5,11 +5,11 @@ NS = [10,15,20,25,35,50,75,100,125,150,175,200]
 RFS = [1.5]
 methods = ['Silling','Fbased','Fstab_Silling','Oterkus2']#,'Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic','const']#['const','inv','linear','quadr','cubic','quarticA']
-surface_methods = ['none','trivial','bobaru','both']
-sdb = SimDataDB('results_ficticious_nu0.db')
+surface_methods = ['none','trivial','bobaru','bobaru_F','both']
+sdb = SimDataDB('results_ficticious.db')
 
 E = 1.0
-nu = 0.0
+nu = 0.25
 
 @sdb.Decorate('uniaxial',
               [('surface','TEXT'),('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],

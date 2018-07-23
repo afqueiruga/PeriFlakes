@@ -199,6 +199,23 @@ class PeriBlock():
                 Kt[self.dm_PtVec.Get_List([e]),:]=Kb[self.dm_PtVec.Get_List([e]),:]
                 Rt[self.dm_PtVec.Get_List([e])] = Rb[self.dm_PtVec.Get_List([e])]
             return Kt,Rt
+        elif fictmet=="bobaru_F":
+            K3,R3 = cf.Assemble(hf.kernel_bobaru_F3, self.HFictStencil3,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            K4,R4 = cf.Assemble(hf.kernel_bobaru_F, self.HFictStencil4,
+                                self.data,
+                                {'R':(self.dm_PtVec,), 'K':(self.dm_PtVec,)},
+                                gdim*self.NPart)
+            Kb = K3 + K4
+            Rb = R3 + R4
+            Kt = K.copy()
+            Rt = R.copy()
+            for e in self.FictNodes:
+                Kt[self.dm_PtVec.Get_List([e]),:]=Kb[self.dm_PtVec.Get_List([e]),:]
+                Rt[self.dm_PtVec.Get_List([e])] = Rb[self.dm_PtVec.Get_List([e])]
+            return Kt,Rt
         elif fictmet =="both":
             Kp,Rp = cf.Assemble(hp.__dict__['kernel_{0}_{1}'.format(method,weight)],
                               self.HFict,
@@ -222,7 +239,7 @@ class PeriBlock():
                 Rt[self.dm_PtVec.Get_List([e])] = Rb[self.dm_PtVec.Get_List([e])]
             return Kt,Rt
         return K,R
-    def solve(self, method, weight, P=1.0, smoothing="", stab=0.0,fictmet="trivial"):
+    def solve(self, method, weight, P=1.0, smoothing="", stab=2.0,fictmet="trivial"):
         """
         Solves the deformation of the block matrix given the method name and
         influence function. The influence support is decided at initialization

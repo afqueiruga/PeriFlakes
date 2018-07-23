@@ -88,11 +88,25 @@ K_expr = R_expr.jacobian(i_y)
 Kernel("bobaru_n",
        listing=[
            Asgn(o_R,R_expr,'='),
-           Asgn(o_K,K_expr,'=')   
+           Asgn(o_K,K_expr,'=')
        ])
 
-
-
+#
+# That one doesn't seem good
+#
+DuDn = (uf-uo) / norm(xf-xo)
+DuDt = (up-um) / norm(xp-xm)
+F = DuDn.T * nn + DuDt.T * nt
+E = (F.T+F)/2
+lmdba = (i_E[0]*i_nu[0])/((1+i_nu[0])*(1-2*i_nu[0]))
+G = i_E[0] / 2*(1+i_nu[0])
+tbar =  lmdba * trace(E) *nn + 2*G * nn
+constrant = tbar - t
+Kernel("bobaru_F",
+       listing=[
+           Asgn(o_R,R_expr,'='),
+           Asgn(o_K,K_expr,'=')
+       ])
 #
 # Now we want to make one with only 3 nodes.
 #
@@ -128,9 +142,23 @@ K_expr = R_expr.jacobian(i_y)
 Kernel("bobaru_n3",
        listing=[
            Asgn(o_R,R_expr,'='),
-           Asgn(o_K,K_expr,'=')   
+           Asgn(o_K,K_expr,'=')
        ])
 
+# And my other form
+DuDn = (uf-uo) / norm(xf-xo)
+DuDt = (up-uo) / norm(xp-xo)
+F = DuDn.T * nn + DuDt.T * nt
+E = (F.T+F)/2
+lmdba = (i_E[0]*i_nu[0])/((1+i_nu[0])*(1-2*i_nu[0]))
+G = i_E[0] / 2*(1+i_nu[0])
+tbar =  lmdba * trace(E) *nn + 2*G * nn
+constrant = tbar - t
+Kernel("bobaru_F3",
+       listing=[
+           Asgn(o_R,R_expr,'='),
+           Asgn(o_K,K_expr,'=')
+       ])
 
 # Write out the kernels
 Husk('ficticious')
