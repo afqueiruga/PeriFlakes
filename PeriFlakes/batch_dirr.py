@@ -3,10 +3,11 @@ import numpy as np
 from PeriBlock import PeriBlock
 
 NS = [10,20,25,35,50] #,60,70,80,90,100]
-RFS = [1.5,2.5,3.5] #,2.5,3.5] #,2.5,3.01,3.5]
-methods = ['Fbased','Silling'] #,'Oterkus2','Fbased']#,'Fstab_Littlewood','Fstab_Silling']
+RFS = [1.5,2.5,3.5,4.0] #,2.5,3.5] #,2.5,3.01,3.5]
+methods = ['Silling'] #,'Oterkus2','Fbased']#,'Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic']#['const','inv','linear','quadr','cubic','quarticA']
-surface_methods = ['none','trivial',]
+surface_methods = ['none','trivial']
+ficticious_sizes = [1.0,2.0]
 sdb = SimDataDB('results_dirr.db')
 
 onum = 0
@@ -39,12 +40,15 @@ def sim_uni(surf,met,wei,RF,N):
     return PB.x,u
 
 @sdb.Decorate('uniaxial_try_harder',
-              [('surface','TEXT'),('method','TEXT'),('weight','TEXT'),('RF','FLOAT'),('N','INT')],
+              [('surface','TEXT'),('method','TEXT'),('weight','TEXT'),
+              ('RF','FLOAT'),('N','INT'),('fictsize','FLOAT')],
               [('x','array'),('u','array')])
-def sim_uni(surf,met,wei,RF,N):
+def sim_uni(surf,met,wei,RF,N,fictsize):
     print "Solving", surf, " ", met," ",wei," ",RF," ",N
     global onum
-    PB = PeriBlock(1.0, N, RF*2.0/float(N), E,nu, ficticious=surf!="none")
+    PB = PeriBlock(1.0, N, RF*2.0/float(N), E,nu,
+        ficticious=surf!="none",
+        ficticious_size=ficsize)
     if surf=="none":
         PB.setbcs([(PB.right,-1),(PB.left,-1),(PB.bottom,-1),(PB.top,-1)])
     else:
@@ -62,4 +66,5 @@ for N in NS:
         for met in methods:
             for wei in weights:
                 for surf in surface_methods:
-                    sim_uni(surf,met,wei,RF,N)
+                    for ficsize in ficticious_sizes:
+                        sim_uni(surf,met,wei,RF,N,ficsize)

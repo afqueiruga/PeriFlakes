@@ -13,7 +13,7 @@ class PeriBlock():
     """
     This is a base class for making a square peridynamics domain
     """
-    def __init__(self, L,Nside, delta, E=1.0, nu=0.0, ficticious=False):
+    def __init__(self, L,Nside, delta, E=1.0, nu=0.0, ficticious=False, ficticious_size=1.0):
         """
         Initialize a square domain of half-side-length L with Nside
         particles along its side. delta is the support of the influence
@@ -32,7 +32,7 @@ class PeriBlock():
             h = 2.0*L/float(Nside-1)
             # ceil would give us one more, but it wouldn't be inside
             # any particles' support. Then it's BC wouldn't be obvious
-            Ndel = int(np.floor(delta/h))
+            Ndel = int(np.floor(delta/h)*ficticious_size)
             band = Ndel * h
             Ltot = L+band
             Nside = Nside + Ndel*2
