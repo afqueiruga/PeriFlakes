@@ -1,4 +1,4 @@
-# Periflakes
+# PeriFlakes
 
 Alejandro Francisco Queiruga  
 Lawrence Berkeley National Lab  

@@ -1,11 +1,11 @@
 from SimDataDB import *
 from PeriBlock import PeriBlock
 
-NS = [10,15,20,25,35,50,75,100,125,150,175,200]
-RFS = [1.5]
-methods = ['Silling','Fbased','Fstab_Silling','Oterkus2']#,'Fstab_Littlewood','Fstab_Silling']
-weights = ['cubic','const']#['const','inv','linear','quadr','cubic','quarticA']
-surface_methods = ['none','trivial','bobaru','bobaru_F','both']
+NS = [10,15,20,25,35,50] #,125,150,175,200]
+RFS = [1.5,2.0,2.5,3.0,3.5]
+methods = ['Silling'] #,'Fbased','Fstab_Silling','Oterkus2']#,'Fstab_Littlewood','Fstab_Silling']
+weights = ['cubic']#['const','inv','linear','quadr','cubic','quarticA']
+surface_methods = ['none','trivial','bobaru_F',]
 sdb = SimDataDB('results_ficticious.db')
 
 E = 1.0
