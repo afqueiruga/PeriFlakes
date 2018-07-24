@@ -5,8 +5,10 @@ file(REMOVE_RECURSE
   "ficticious_lib.py"
   "CMakeFiles/_ficticious_lib.dir/ficticious_swigPYTHON_wrap.c.o"
   "CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o"
-  "CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o"
+  "CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o"
+  "CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o"
   "CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o"
+  "CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o"
   "_ficticious_lib.pdb"
   "_ficticious_lib.so"
 )

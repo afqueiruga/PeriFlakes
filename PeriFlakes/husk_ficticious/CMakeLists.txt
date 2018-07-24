@@ -6,8 +6,10 @@ set(huskname ficticious)
 set(KERNEL_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR})
 set(KERNEL_FILES
    ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_n.c 
- ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_y.c 
+ ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_F3.c 
+ ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_F.c 
  ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_n3.c 
+ ${CMAKE_CURRENT_SOURCE_DIR}/bobaru_y.c 
 )
 
 # Required: Cornflakes

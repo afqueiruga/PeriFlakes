@@ -11,5 +11,7 @@ except ImportError:
     call(['make'],  cwd=p)
     from . import ficticious_lib
 kernel_bobaru_n = ficticious_lib.cvar.kernel_bobaru_n
-kernel_bobaru_y = ficticious_lib.cvar.kernel_bobaru_y
+kernel_bobaru_F3 = ficticious_lib.cvar.kernel_bobaru_F3
+kernel_bobaru_F = ficticious_lib.cvar.kernel_bobaru_F
 kernel_bobaru_n3 = ficticious_lib.cvar.kernel_bobaru_n3
+kernel_bobaru_y = ficticious_lib.cvar.kernel_bobaru_y

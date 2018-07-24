@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.c
+bobaru_F.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.h
+math.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/math.h
+gsl/gsl_linalg.h
+-
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.c
+bobaru_F3.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.h
+math.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/math.h
+gsl/gsl_linalg.h
+-
+
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.h
+kernel.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/kernel.h
+
 /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.c
 bobaru_n.h
 /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.h
@@ -51,10 +75,14 @@ string.h
 -
 bobaru_n.h
 /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n.h
-bobaru_y.h
-/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.h
+bobaru_F3.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.h
+bobaru_F.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.h
 bobaru_n3.h
 /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n3.h
+bobaru_y.h
+/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.h
 limits.h
 -
 float.h

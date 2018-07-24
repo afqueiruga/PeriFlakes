@@ -123,6 +123,60 @@ _ficticious_lib/fast:
 	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/build
 .PHONY : _ficticious_lib/fast
 
+bobaru_F.o: bobaru_F.c.o
+
+.PHONY : bobaru_F.o
+
+# target to build an object file
+bobaru_F.c.o:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o
+.PHONY : bobaru_F.c.o
+
+bobaru_F.i: bobaru_F.c.i
+
+.PHONY : bobaru_F.i
+
+# target to preprocess a source file
+bobaru_F.c.i:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F.c.i
+.PHONY : bobaru_F.c.i
+
+bobaru_F.s: bobaru_F.c.s
+
+.PHONY : bobaru_F.s
+
+# target to generate assembly for a file
+bobaru_F.c.s:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F.c.s
+.PHONY : bobaru_F.c.s
+
+bobaru_F3.o: bobaru_F3.c.o
+
+.PHONY : bobaru_F3.o
+
+# target to build an object file
+bobaru_F3.c.o:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o
+.PHONY : bobaru_F3.c.o
+
+bobaru_F3.i: bobaru_F3.c.i
+
+.PHONY : bobaru_F3.i
+
+# target to preprocess a source file
+bobaru_F3.c.i:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.i
+.PHONY : bobaru_F3.c.i
+
+bobaru_F3.s: bobaru_F3.c.s
+
+.PHONY : bobaru_F3.s
+
+# target to generate assembly for a file
+bobaru_F3.c.s:
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.s
+.PHONY : bobaru_F3.c.s
+
 bobaru_n.o: bobaru_n.c.o
 
 .PHONY : bobaru_n.o
@@ -240,6 +294,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... _ficticious_lib"
+	@echo "... bobaru_F.o"
+	@echo "... bobaru_F.i"
+	@echo "... bobaru_F.s"
+	@echo "... bobaru_F3.o"
+	@echo "... bobaru_F3.i"
+	@echo "... bobaru_F3.s"
 	@echo "... bobaru_n.o"
 	@echo "... bobaru_n.i"
 	@echo "... bobaru_n.s"

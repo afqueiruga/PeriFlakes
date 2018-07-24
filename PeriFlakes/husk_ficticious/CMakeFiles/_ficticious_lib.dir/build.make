@@ -114,33 +114,57 @@ CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o.provides: CMakeFiles/_ficticious_lib
 CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o
 
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o: CMakeFiles/_ficticious_lib.dir/flags.make
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o: bobaru_y.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o: CMakeFiles/_ficticious_lib.dir/flags.make
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o: bobaru_F3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.c
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c > CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.c > CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.i
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c -o CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F3.c -o CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.s
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires:
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.requires:
 
-.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.requires
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
-	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides.build
-.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.provides: CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.requires
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.provides.build
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.provides
 
-CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o
+CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o
+
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o: CMakeFiles/_ficticious_lib.dir/flags.make
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o: bobaru_F.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.c
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_ficticious_lib.dir/bobaru_F.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.c > CMakeFiles/_ficticious_lib.dir/bobaru_F.c.i
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_ficticious_lib.dir/bobaru_F.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_F.c -o CMakeFiles/_ficticious_lib.dir/bobaru_F.c.s
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.requires:
+
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.requires
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.provides: CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.requires
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.provides.build
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.provides
+
+CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o
 
 
 CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o: CMakeFiles/_ficticious_lib.dir/flags.make
 CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o: bobaru_n3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_n3.c
 
 CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.i: cmake_force
@@ -162,27 +186,55 @@ CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o.provides: CMakeFiles/_ficticious_li
 CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o
 
 
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o: CMakeFiles/_ficticious_lib.dir/flags.make
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o: bobaru_y.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c
+
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c > CMakeFiles/_ficticious_lib.dir/bobaru_y.c.i
+
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/bobaru_y.c -o CMakeFiles/_ficticious_lib.dir/bobaru_y.c.s
+
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires:
+
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
+
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
+	$(MAKE) -f CMakeFiles/_ficticious_lib.dir/build.make CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides.build
+.PHONY : CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides
+
+CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.provides.build: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o
+
+
 # Object files for target _ficticious_lib
 _ficticious_lib_OBJECTS = \
 "CMakeFiles/_ficticious_lib.dir/ficticious_swigPYTHON_wrap.c.o" \
 "CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o" \
-"CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o" \
-"CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o"
+"CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o" \
+"CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o" \
+"CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o" \
+"CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o"
 
 # External object files for target _ficticious_lib
 _ficticious_lib_EXTERNAL_OBJECTS =
 
 _ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/ficticious_swigPYTHON_wrap.c.o
 _ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o
-_ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o
+_ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o
+_ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o
 _ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o
+_ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o
 _ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/build.make
 _ficticious_lib.so: /opt/local/lib/libgsl.dylib
 _ficticious_lib.so: /opt/local/lib/libgslcblas.dylib
 _ficticious_lib.so: /opt/local/lib/libpython2.7.dylib
 _ficticious_lib.so: /Users/afq/Documents/Research/opt/lblsuper2/lib/libcornflakes.a
 _ficticious_lib.so: CMakeFiles/_ficticious_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared module _ficticious_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_ficticious/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared module _ficticious_lib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_ficticious_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,8 +244,10 @@ CMakeFiles/_ficticious_lib.dir/build: _ficticious_lib.so
 
 CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/ficticious_swigPYTHON_wrap.c.o.requires
 CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_n.c.o.requires
-CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
+CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_F3.c.o.requires
+CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_F.c.o.requires
 CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_n3.c.o.requires
+CMakeFiles/_ficticious_lib.dir/requires: CMakeFiles/_ficticious_lib.dir/bobaru_y.c.o.requires
 
 .PHONY : CMakeFiles/_ficticious_lib.dir/requires
 
