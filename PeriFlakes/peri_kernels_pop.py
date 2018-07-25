@@ -3,7 +3,7 @@ import operator
 # This is going to be a variable length kernel, but it's a little funky.
 # It has both Particle and Bond DOFs, and in the edge they'll be ordered like this
 #
-# P0  P1 P2 P3 ... Pn  B1 B2 B3 ... Bn 
+# P0  P1 P2 P3 ... Pn  B1 B2 B3 ... Bn
 #
 # to represent this
 #
@@ -37,6 +37,8 @@ i_E = Input("p_E", Param)
 i_nu = Input("p_nu", Param)
 i_Vol = Input("p_Vol", Param)
 i_stab = Input("p_stab",Param)
+i_hyper_n = Input("h_bond_n",Param)
+
 # Outputs
 o_R  = Output("R",  [PointVec], 1)
 o_K  = Output("K",  [PointVec], 2 )
@@ -98,11 +100,11 @@ class StateBased():
         theta_Dy0 = PopcornVariable("theta_Dy0",gdim,1)
         theta_exprJ = theta_expr.subs(
             zip(yI,yJ)+zip(xI,xJ)+[(alpha_I,alpha_J)])
-        
+
         theta_DyJ = Matrix([theta_exprJ]).jacobian(yJ).T
         # And tangent matrices
         tA_Dtheta = tA.diff(theta[0])
-        tAI_Dy0 =  tA.jacobian(y0) + tA_Dtheta*theta_Dy0.T 
+        tAI_Dy0 =  tA.jacobian(y0) + tA_Dtheta*theta_Dy0.T
         tAI_DyI =  tA.jacobian(yI)
         tAI_DyJ = tA_Dtheta * theta_DyJ.T
         prgm = reduce(operator.add,[self._sum_prgm(P,E) for P,E in self.list_moments()]) + \
@@ -111,7 +113,7 @@ class StateBased():
         [
             Loop(II,1,Npart,[
                 Asgn(o_R.View((0,)), tA,"+="),
-                Asgn(o_R.View((gdim*II,)), tA,"-="),                
+                Asgn(o_R.View((gdim*II,)), tA,"-="),
             ]),
             Loop(II,1,Npart,[
                 Asgn(o_K.View((0,0)),             tAI_Dy0,"+="),
@@ -146,7 +148,45 @@ class Oterkus(StateBased):
         b = c_G /( 2* b_denom[0])
         A = 2 * self.w0I* alpha_I  * ( a*2/m[0]*(yn.T*xn)[0,0]*theta[0] + b*(ryabs-rxabs) )
         return A * yn
-    
+
+#
+# A family of bond based models
+#
+class BondBased(StateBased):
+    # def __init__(self, name, w_of_r):
+        # super(BondBased, self).__init__()
+        # self.hyper_n = hyper_n
+    def list_states(self):
+        return []
+    def list_moments(self):
+        return [(m, Matrix([self.m_expr()]) )]
+    def force(self):
+        n = i_hyper_n[0] #self.hyper_n
+        c = i_E[0] * (4-n)*(3-n) / (i_delta[0]**(3-n))
+        A = self.w0I * alpha_I * c * (ryabs - rxabs) / (rxabs**n)
+        return A*yn * i_Vol[0]
+    def kernel(self):
+        tA = self.force()
+        tAI_Dy0 =  tA.jacobian(y0)
+        tAI_DyI =  tA.jacobian(yI)
+        prgm = reduce(operator.add,[self._sum_prgm(P,E) for P,E in self.list_moments()]) + \
+        [
+            Loop(II,1,Npart,[
+                Asgn(o_R.View((0,)), tA,"+="),
+                Asgn(o_R.View((gdim*II,)), tA,"-="),
+            ]),
+            Loop(II,1,Npart,[
+                Asgn(o_K.View((0,0)),             tAI_Dy0,"+="),
+                Asgn(o_K.View((0,gdim*II)),       tAI_DyI,"+="),
+                Asgn(o_K.View((gdim*II,0)),       tAI_Dy0,"-="),
+                Asgn(o_K.View((gdim*II,gdim*II)), tAI_DyI,"-="),
+            ])
+        ]
+        return Kernel(self.name, listing=prgm)
+
+#
+# The correspondence gradient problem
+#
 mK = PopcornVariable("mK",gdim,2)
 mKi = PopcornVariable("mKi",gdim,2)
 mN = PopcornVariable("mN",gdim,2)
@@ -200,7 +240,7 @@ class Fbased(StateBased):
         [
             Loop(II,1,Npart,[
                 Asgn(o_R.View((0,)), tI,"+="),
-                Asgn(o_R.View((gdim*II,)), tI,"-="),                
+                Asgn(o_R.View((gdim*II,)), tI,"-="),
             ]),
             Loop(II,1,Npart,[
                 Asgn(o_K.View((0,0)),             tI_Dy0,"+="),
@@ -221,7 +261,7 @@ class Fstab_Littlewood2010(Fbased):
         F = mN * mKi
         Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * rxI * ( ryabs  - norm(F*rxI) )/rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
-    
+
 class Fstab_Littlewood2011(Fbased):
     def force(self):
         P = self.stress()
@@ -238,7 +278,7 @@ class Fstab_Littlewood2011minus(Fbased):
         hproj = h.dot(rxI)
         Tstab = i_stab[0] * 18*c_K/(i_delta[0]**4*pi) * hproj/rxabs * rxI /rxabs
         return self.w0I * alpha_I * (P * mKi.T * rxI + Tstab) * i_Vol[0]
-    
+
 pv_w0 = PopcornVariable('w0integ',1,1)
 class Fstab_Silling(Fbased):
     def w0_expr(self):
@@ -290,6 +330,7 @@ formulations = {
     'Fstab_Littlewood2011':Fstab_Littlewood2011,
     'Fstab_Littlewood2011minus':Fstab_Littlewood2011minus,
     'Fstab_Silling':Fstab_Silling,
+    'BondBased': BondBased,
 }
 delta = i_delta[0]
 weight_funcs = {
