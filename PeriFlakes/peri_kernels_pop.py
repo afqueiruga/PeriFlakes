@@ -345,6 +345,13 @@ weight_funcs = {
     #    (0.0,True) ),
     'quarticA':lambda r: Piecewise( (1.0 - 6.0*(r/delta)**2 + 8.0*(r/delta)**3 - 3.0*(r/delta)**4, Le(r,delta)), (0.0,True))
 }
+# Append the set of rational weight functions
+# The cases 0,0 = const; 1,0 = linear; 0,1 = inv
+def rational(a,n):
+    return lambda r : Piecewise( ((1.0-r / delta)**a / (r**n), Le(r,delta)), (0.0,True))
+for a in range(0,3):
+    for n in range(0,3):
+        weight_funcs['rational_{0}_{1}'.format(a,n)] = rational(a,n)
 
 # Generate the peridynamics kernels
 for n,c in formulations.iteritems():

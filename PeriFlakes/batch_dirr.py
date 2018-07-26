@@ -8,12 +8,12 @@ methods = ['Silling'] #,'Oterkus2','Fbased']#,'Fstab_Littlewood','Fstab_Silling'
 weights = ['cubic']#['const','inv','linear','quadr','cubic','quarticA']
 surface_methods = ['none','trivial']
 ficticious_sizes = [1.0,2.0]
-sdb = SimDataDB('results_dirr.db')
+sdb = SimDataDB('results_dirr_3.db')
 
 onum = 0
 
 E = 1.0
-nu = 0.25
+nu = 1.0/3.0
 T = 1.0
 H = 2.0
 sol = lambda x : ((x[:,1]+H/2.0)* \
