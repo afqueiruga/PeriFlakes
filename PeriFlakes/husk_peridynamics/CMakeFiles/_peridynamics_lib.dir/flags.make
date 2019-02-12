@@ -8,99 +8,273 @@ C_DEFINES = -D_peridynamics_lib_EXPORTS
 
 C_INCLUDES = -I/Users/afq/Documents/Research/opt/lblsuper2/include -I/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/include -I/opt/local/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -I/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics 
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o_FLAGS =  -fPIC
 
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o_FLAGS =  -fPIC
 
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o_FLAGS =  -fPIC
-
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o_FLAGS =  -fPIC
-
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o_FLAGS =  -fPIC
 
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o_FLAGS =  -fPIC
 
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o_FLAGS =  -fPIC
 
-# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o_FLAGS =  -fPIC
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o_FLAGS =  -fPIC
 
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o_FLAGS =  -fPIC
 
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o_FLAGS =  -fPIC
+
 # Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o_FLAGS =  -fPIC
+
+# Custom flags: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o_FLAGS =  -fPIC
 

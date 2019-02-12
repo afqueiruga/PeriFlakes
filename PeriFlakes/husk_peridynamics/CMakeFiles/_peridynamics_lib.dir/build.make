@@ -90,465 +90,105 @@ CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o.provides: CMak
 CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o: Silling_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o: Fstab_Littlewood_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c > CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c -o CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o: Fstab_Littlewood2011minus_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o: Silling_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_0.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o: smooth_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o: smooth_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_2.c
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c > CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.i
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c -o CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.s
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o: Fstab_Littlewood2011minus_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o: Fstab_Littlewood_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_0.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o: Fstab_Littlewood2011minus_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o: Fstab_Littlewood2011_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o: Fstab_Silling_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o: Fstab_Silling_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o: Fbased_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c > CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o: Fstab_Silling_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o: Fstab_Silling_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o: Silling_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c > CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o: Oterkus2_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o: Fstab_Littlewood2011minus_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o: Fbased_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o: Fstab_Littlewood2011_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o: Silling_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c > CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o: Fstab_Silling_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o: Fstab_Littlewood_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o
 
 
 CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
 CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o: smooth_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_inv.c
 
 CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.i: cmake_force
@@ -570,177 +210,153 @@ CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o.provides: CMakeFiles/_peridynami
 CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o: Silling_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o: Fstab_Littlewood_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_2.c
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c > CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c -o CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o: Oterkus2_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o: Fbased_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o: smooth_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c > CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_quadr.c -o CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o: smooth_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c > CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c -o CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o: Fstab_Silling_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o: BondBased_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_0.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o: Fstab_Littlewood_quadr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o: Fstab_Littlewood_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o: smooth_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o: Oterkus2_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_inv.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o: Fstab_Littlewood2011minus_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o
 
 
 CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
 CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o: smooth_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_linear.c
 
 CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.i: cmake_force
@@ -762,153 +378,561 @@ CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o.provides: CMakeFiles/_peridyn
 CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o: Oterkus2_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o: Fstab_Littlewood2011_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o: Fstab_Littlewood_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o: Fstab_Littlewood2011minus_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o: Fstab_Littlewood2011_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o: Fstab_Littlewood2011_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o: Fbased_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o: Oterkus2_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c > CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o: Fstab_Littlewood2011minus_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o: BondBased_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_cubic.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_cubic.c > CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_cubic.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o
+CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o: Oterkus2_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o: Oterkus2_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o: Fstab_Littlewood2011_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o: Fstab_Silling_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o: Fstab_Littlewood_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o: Fstab_Silling_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o: BondBased_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_inv.c > CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_inv.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o: Fstab_Littlewood_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o: Fstab_Littlewood_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o: BondBased_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quadr.c > CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quadr.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o: Fstab_Littlewood2011_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o: Fstab_Silling_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o: BondBased_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_const.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_const.c > CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_const.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o: Fstab_Littlewood_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o: Fstab_Littlewood2011_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o: Fbased_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o: Fstab_Silling_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o: Silling_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o: Fstab_Silling_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o
 
 
 CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
 CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o: Silling_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quarticA.c
 
 CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.i: cmake_force
@@ -930,124 +954,100 @@ CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o.provides: CMakeFiles/_peri
 CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o: Fbased_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o: smooth_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o: Oterkus2_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o: Fstab_Littlewood2011_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o: Fbased_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c > CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_const.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o: smooth_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c > CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c -o CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o: Fstab_Littlewood2011_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o: BondBased_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_2.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.i
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.s
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o: smooth_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o
 
 
 CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
@@ -1074,129 +1074,225 @@ CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o.provides: CMakeFiles/_perid
 CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o: Fstab_Littlewood_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o: BondBased_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_1.c
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.i
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.s
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o: Fstab_Littlewood2011_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o: Silling_inv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o: Fstab_Littlewood2011minus_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c > CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c -o CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
-
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o: Fstab_Littlewood_quarticA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.i
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.s
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires:
-
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides
-
-CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o
 
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o: Fbased_linear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o: BondBased_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_0.c
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c > CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.i
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s"
-	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.s
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires:
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.requires:
 
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.requires
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
-	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides.build
-.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.provides
 
-CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o: Fbased_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c > CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o: smooth_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o: Fstab_Littlewood_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o: Fstab_Silling_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o: Fbased_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o: Fbased_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o
 
 
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o: Oterkus2_const.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_const.c
 
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.i: cmake_force
@@ -1218,9 +1314,1545 @@ CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o.provides: CMakeFiles/_peridy
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o
 
 
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o: BondBased_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o: Silling_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o: Fstab_Littlewood_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o: Fbased_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o: smooth_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c > CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_cubic.c -o CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o: smooth_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c > CMakeFiles/_peridynamics_lib.dir/smooth_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_const.c -o CMakeFiles/_peridynamics_lib.dir/smooth_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o: Fstab_Littlewood_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o: BondBased_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o: Silling_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o: Fbased_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c > CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o: Fstab_Littlewood2011minus_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o: Silling_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o: Silling_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o: Oterkus2_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o: Fbased_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o: Fstab_Silling_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o: Fstab_Littlewood2011minus_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o: Oterkus2_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_linear.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o: Silling_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o: Oterkus2_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o: Fstab_Littlewood2011minus_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o: Oterkus2_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o: Fbased_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o: Fbased_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o: Fstab_Littlewood_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o: Fstab_Littlewood2011minus_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o: Oterkus2_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o: Fstab_Littlewood2011minus_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o: Fstab_Littlewood2011_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o: Fstab_Silling_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o: Oterkus2_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o: smooth_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o: Fstab_Littlewood_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o: Silling_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c > CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o: Fstab_Littlewood2011minus_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o: Fstab_Silling_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o: Fstab_Littlewood2011_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o: Fstab_Littlewood2011_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o: Fstab_Silling_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o: Fbased_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o: Fstab_Littlewood2011minus_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_const.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o: Fstab_Silling_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o: Oterkus2_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o: Fstab_Littlewood2011minus_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o: Fstab_Littlewood2011_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o: Fstab_Littlewood2011_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o: Fbased_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o: Fstab_Littlewood2011_rational_2_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o: BondBased_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o: BondBased_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o: BondBased_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_linear.c > CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_linear.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o: Fstab_Littlewood2011_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o: Fbased_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o: smooth_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o: Fstab_Littlewood_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o: Silling_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c > CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_linear.c -o CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o: Fstab_Silling_rational_2_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_2_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o: Oterkus2_rational_1_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_1.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_rational_1_1.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o: Fstab_Littlewood2011minus_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o: smooth_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o: Fstab_Littlewood2011_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o: Fstab_Littlewood2011minus_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o: Fbased_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o: BondBased_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o
+
+
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o: Oterkus2_cubic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o"
 	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_cubic.c
 
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.i: cmake_force
@@ -1242,117 +2874,747 @@ CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o.provides: CMakeFiles/_peridy
 CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o
 
 
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o: Silling_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c > CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o: Fstab_Littlewood2011_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_linear.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o: Fstab_Silling_rational_0_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_0_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o: Silling_rational_1_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_2.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_1_2.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o: Silling_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o: BondBased_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quarticA.c > CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/BondBased_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o: Fstab_Littlewood_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o: Silling_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c > CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_inv.c -o CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o: Fstab_Littlewood2011minus_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o: Fstab_Silling_rational_1_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_0.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_0.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_rational_1_0.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o: Silling_const.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c > CMakeFiles/_peridynamics_lib.dir/Silling_const.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Silling_const.c -o CMakeFiles/_peridynamics_lib.dir/Silling_const.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o: Fbased_cubic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c > CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fbased_cubic.c -o CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o: Fstab_Littlewood2011minus_rational_0_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_1.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_1.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_rational_0_1.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o: Fstab_Littlewood2011minus_inv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011minus_inv.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o: Fstab_Silling_quadr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Silling_quadr.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o: Fstab_Littlewood2011_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood2011_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o: smooth_rational_0_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_2.c
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_2.c > CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/smooth_rational_0_2.c -o CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o: Oterkus2_quarticA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c > CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Oterkus2_quarticA.c -o CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
+
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o: CMakeFiles/_peridynamics_lib.dir/flags.make
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o: Fstab_Littlewood_rational_2_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o   -c /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_2.c
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.i"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -E /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_2.c > CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.i
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.s"
+	/opt/local/bin/gcc-mp-5 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS)  -fPIC -S /Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/Fstab_Littlewood_rational_2_2.c -o CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.s
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.requires:
+
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.requires
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.provides: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.requires
+	$(MAKE) -f CMakeFiles/_peridynamics_lib.dir/build.make CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.provides.build
+.PHONY : CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.provides
+
+CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.provides.build: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o
+
+
 # Object files for target _peridynamics_lib
 _peridynamics_lib_OBJECTS = \
 "CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o" \
 "CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o" \
-"CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o"
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o" \
+"CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o"
 
 # External object files for target _peridynamics_lib
 _peridynamics_lib_EXTERNAL_OBJECTS =
 
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o
-_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o
+_peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/build.make
 _peridynamics_lib.so: /opt/local/lib/libgsl.dylib
 _peridynamics_lib.so: /opt/local/lib/libgslcblas.dylib
 _peridynamics_lib.so: /opt/local/lib/libpython2.7.dylib
 _peridynamics_lib.so: /Users/afq/Documents/Research/opt/lblsuper2/lib/libcornflakes.a
 _peridynamics_lib.so: CMakeFiles/_peridynamics_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Linking C shared module _peridynamics_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/afq/Documents/Dropbox/LBL/PeriFlakes/PeriFlakes/husk_peridynamics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Linking C shared module _peridynamics_lib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_peridynamics_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1361,54 +3623,141 @@ CMakeFiles/_peridynamics_lib.dir/build: _peridynamics_lib.so
 .PHONY : CMakeFiles/_peridynamics_lib.dir/build
 
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/peridynamics_swigPYTHON_wrap.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_0.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_2.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_const.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_2.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_cubic.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_const.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quarticA.c.o.requires
-CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_2.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_2_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_rational_1_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_2_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_rational_0_0.c.o.requires
 CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_linear.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_0_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_1_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/BondBased_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_rational_1_0.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Silling_const.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fbased_cubic.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_rational_0_1.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011minus_inv.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Silling_quadr.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood2011_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/smooth_rational_0_2.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Oterkus2_quarticA.c.o.requires
+CMakeFiles/_peridynamics_lib.dir/requires: CMakeFiles/_peridynamics_lib.dir/Fstab_Littlewood_rational_2_2.c.o.requires
 
 .PHONY : CMakeFiles/_peridynamics_lib.dir/requires
 
