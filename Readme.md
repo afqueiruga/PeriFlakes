@@ -28,6 +28,8 @@ The easiest way to run this code yourself is to pull the cornflakes image:
 docker pull afqu/cornflakes
 ```
 and then find this code in `/opt_cornflakes/PeriFlakes`.
+The Docker image is not automatically rebuilt with pushes to PeriFlakes, so do a
+`git pull` to get the latest version.
 
 ## Datasets
 
