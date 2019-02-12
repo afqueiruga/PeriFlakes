@@ -2,9 +2,9 @@ from SimDataDB import *
 
 from PeriBlock import PeriBlock
 
-NS = [25,35,50,60,70,80,90,100]
-RFS = [1.5,2.01,2.5,3.01,3.5]
-methods = ['Silling'] #,'Oterkus2','Fbased']#,'Fstab_Littlewood','Fstab_Silling']
+NS = [10,20,25,35,50] #,60,70,80,90,100]
+RFS = [1.5,2.0]#,2.5,3.01,3.5]
+methods = ['BondBased','Silling'] #,'Oterkus2','Fbased']#,'Fstab_Littlewood','Fstab_Silling']
 weights = ['cubic']#['const','inv','linear','quadr','cubic','quarticA']
 sdb = SimDataDB('results.db')
 

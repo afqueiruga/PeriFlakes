@@ -37,7 +37,6 @@ i_E = Input("p_E", Param)
 i_nu = Input("p_nu", Param)
 i_Vol = Input("p_Vol", Param)
 i_stab = Input("p_stab",Param)
-i_hyper_n = Input("h_bond_n",Param)
 
 # Outputs
 o_R  = Output("R",  [PointVec], 1)
@@ -161,9 +160,9 @@ class BondBased(StateBased):
     def list_moments(self):
         return [(m, Matrix([self.m_expr()]) )]
     def force(self):
-        n = i_hyper_n[0] #self.hyper_n
-        c = i_E[0] * (4-n)*(3-n) / (i_delta[0]**(3-n))
-        A = self.w0I * alpha_I * c * (ryabs - rxabs) / (rxabs**n)
+        #n = i_hyper_n[0] #self.hyper_n
+        c = i_E[0] / m[0] # (4-n)*(3-n) / (i_delta[0]**(3-n))
+        A = self.w0I * alpha_I * c * (ryabs - rxabs) / rxabs
         return A*yn * i_Vol[0]
     def kernel(self):
         tA = self.force()
