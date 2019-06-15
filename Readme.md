@@ -4,6 +4,8 @@ Alejandro Francisco Queiruga
 Lawrence Berkeley National Lab  
 2015-2018
 
+[![DOI](https://zenodo.org/badge/131775368.svg)](https://zenodo.org/badge/latestdoi/131775368)
+
 ## Introduction
 
 PeriFlakes is an open source solver of state-based Peridynamics.
